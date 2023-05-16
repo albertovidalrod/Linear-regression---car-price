@@ -71,9 +71,9 @@ data = data[data["year"] > 2005].reset_index(drop=True)
 # Remove outliers based on "price" feature
 mask_audi = (data["brand"] == "audi") & (data["price"] < 75000)
 mask_vw = (data["brand"] == "vw") & (data["price"] < 60000)
-mask_bmw = (data["brand"] == "bmw") & (data["price"] < 100000)
+mask_bmw = (data["brand"] == "bmw") & (data["price"] < 80000)
 mask_brand = mask_audi | mask_vw | mask_bmw
-data_brand = data[mask_brand].reset_index(drop=True)
+data = data[mask_brand].reset_index(drop=True)
 
 # Remove outliers based on "mileage" feature
 data = data[data["mileage"] < 150000].reset_index(drop=True)
@@ -91,6 +91,9 @@ data = data[~mask].reset_index(drop=True)
 
 # Drop irrelevant columns
 data.drop(columns=["tax", "model"], axis=1, inplace=True)
+
+# Save clean data
+data.to_parquet("clean_data.parquet")
 
 # Load sample data to fit data transformer
 sample_data = pd.read_parquet("sample_data.parquet")
