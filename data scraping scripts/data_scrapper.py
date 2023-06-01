@@ -223,7 +223,7 @@ def scrape_car_data(brand: str, postcode: str) -> None:
 
 
 # define the url
-SEARCH_BRAND = "bmw"
+SEARCH_BRAND = "audi"
 
 postcode_all = [
     "E34JN",  # East London
@@ -243,6 +243,8 @@ postcode_all = [
     "SA11NU",  # Swansea
     "BT12HB",  # Belfast
 ]
+
+postcode_all[-2:]
 
 for postcode in postcode_all:
     scrape_car_data(SEARCH_BRAND, postcode)
