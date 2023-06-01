@@ -4,3 +4,5 @@ test_class.ipynb
 .DS_Store
 
 /__pycache__
+/.vscode
+/data/Scraped data

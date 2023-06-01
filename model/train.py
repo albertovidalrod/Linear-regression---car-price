@@ -96,7 +96,7 @@ data.drop(columns=["tax", "model"], axis=1, inplace=True)
 data.to_parquet("clean_data.parquet")
 
 # Load sample data to fit data transformer
-sample_data = pd.read_parquet("sample_data.parquet")
+sample_data = pd.read_parquet("sample_data-v1.parquet")
 
 
 # Define features to be one-hot-encoded, log transformed and non-transformed
