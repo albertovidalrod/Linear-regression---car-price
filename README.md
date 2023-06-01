@@ -16,10 +16,10 @@ The project isn't there yet, but I've taken a first few steps in the right direc
 - [x] Develop a web scraper to gather more data
 
 But there are a few tasks to complete:
-- [] Deploy streamlit app
-- [] Automatically re-train model after new data is gathered
-- [] CI: write unit testing
-- [] CI / CD: deploy new model after re-training and test that there are no errors
+- [ ] Deploy streamlit app
+- [ ] Automatically re-train model after new data is gathered
+- [ ] CI: write unit testing
+- [ ] CI / CD: deploy new model after re-training and test that there are no errors
 
 Although the open actions are challenging, I believe that I've already completed the most daunting tasks!
 
@@ -63,7 +63,7 @@ The linear regression model is created using `train.py`, which can be found in t
 
 Where X represents the version of the model.
 
-- [] Create model metadata file to keep track of changes
+- [ ] Create model metadata file to keep track of changes
 ## Model deployment
 Model deployment was my ultimate goal when I started the project. Since this is my first attempt at deploying a Machine Learning model, I chose Streamlit because they make it very easy to create a decent web app with a few lines of code. The files used to run the app are:
 

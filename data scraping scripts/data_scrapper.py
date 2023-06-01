@@ -129,13 +129,13 @@ def scrape_car_data(brand: str, postcode: str) -> None:
     # Define the url from which the data will be scraped
     url = f"https://www.exchangeandmart.co.uk/used-cars-for-sale/{brand}"
 
-    # Define the wait element to pause the script until an element is found or ready to
-    # be clicked
-    wait = WebDriverWait(driver, 20)
-
     # Get url information
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     driver.get(url)
+
+    # Define the wait element to pause the script until an element is found or ready to
+    # be clicked
+    wait = WebDriverWait(driver, 20)
 
     # Dind the postcode and update button elements
     postcode_element = driver.find_element(
@@ -223,7 +223,7 @@ def scrape_car_data(brand: str, postcode: str) -> None:
 
 
 # define the url
-SEARCH_BRAND = "audi"
+SEARCH_BRAND = "bmw"
 
 postcode_all = [
     "E34JN",  # East London

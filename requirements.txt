@@ -1,5 +1,4 @@
 numpy
-pygwalker
 pandas
 streamlit
 scikit-learn
