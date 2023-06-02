@@ -14,9 +14,9 @@ The project isn't there yet, but I've taken a first few steps in the right direc
 - [x] Create v1 of the model using Kaggle's data
 - [x] Develop Streamlit app locally using Docker
 - [x] Develop a web scraper to gather more data
+- [ ] Deploy streamlit app
 
 But there are a few tasks to complete:
-- [ ] Deploy streamlit app
 - [ ] Automatically re-train model after new data is gathered
 - [ ] CI: write unit testing
 - [ ] CI / CD: deploy new model after re-training and test that there are no errors
@@ -65,7 +65,11 @@ Where X represents the version of the model.
 
 - [ ] Create model metadata file to keep track of changes
 ## Model deployment
-Model deployment was my ultimate goal when I started the project. Since this is my first attempt at deploying a Machine Learning model, I chose Streamlit because they make it very easy to create a decent web app with a few lines of code. The files used to run the app are:
+Model deployment was my ultimate goal when I started the project. Since this is my first attempt at deploying a Machine Learning model, I chose Streamlit because they make it very easy to create a decent web app with a few lines of code. The app is available on Streamlit cloud: [car price prediction app](https://albertovidalrod-car-price-prediction.streamlit.app). The app is fairly straightforward, as you can see:
+
+![app gif](https://github.com/albertovidalrod/Linear-regression---car-price/blob/main/media/streamlit_gif_hd.gif)
+
+The files used to run the app are:
 
     .
     ├── app.py                        # Script for the Streamlit app
@@ -80,8 +84,9 @@ I used Docker for the development and testing of the web app. As you can see, th
     ├── dockerfile                    # Docker image instructions
     └── requirements.txt              # Python packages for Docker image
 
+Streamlit also uses the `requirements.txt` file to install packages, although the python version is selected is the advanced settings when the app is first created. 
 
-The app runs as desired, but I'm yet to publish it in Streamlit. 
+
 
 ## MLOps
 
