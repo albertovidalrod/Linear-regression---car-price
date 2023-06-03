@@ -8,7 +8,7 @@ import numpy as np
 import plotly.figure_factory as ff
 
 # Load data for the plot
-clean_data = pd.read_parquet("model/clean_data.parquet")
+clean_data = pd.read_parquet("model/clean_data-v1.parquet")
 
 
 st.title("Estimate the price of a used car")

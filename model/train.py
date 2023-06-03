@@ -23,7 +23,7 @@ from sklearn.preprocessing import (
 
 
 # Load data
-path_data = "/Users/albertovidalrodriguez-bobada/Library/Mobile Documents/com~apple~CloudDocs/Python/Projects/Linear regression - car price/data/UK used cars"
+path_data = "../data/UK used cars/"
 
 # list of files to load
 files_to_load = ["audi.csv", "bmw.csv", "vw.csv"]
@@ -93,7 +93,7 @@ data = data[~mask].reset_index(drop=True)
 data.drop(columns=["tax", "model"], axis=1, inplace=True)
 
 # Save clean data
-data.to_parquet("clean_data.parquet")
+# data.to_parquet("clean_data.parquet")
 
 # Load sample data to fit data transformer
 sample_data = pd.read_parquet("sample_data-v1.parquet")
@@ -177,4 +177,4 @@ regression_model = GridSearchCV(
 
 regression_model.fit(X_train, y_train)
 
-dump(regression_model.best_estimator_, os.getcwd() + "/car-price-v1.joblib")
+# dump(regression_model.best_estimator_, os.getcwd() + "/car-price-v1.joblib")
