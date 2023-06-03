@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 from utils import PredictCarPrice
 import pandas as pd
-import pygwalker as pyg
 import plotly.graph_objects as go
 import numpy as np
 import plotly.figure_factory as ff
