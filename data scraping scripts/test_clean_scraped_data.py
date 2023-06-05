@@ -129,3 +129,5 @@ csv_path = data_all_dir + f"/all_scraped_cars-v{new_version}.csv"
 parquet_path = data_all_dir + f"/all_scraped_cars-v{new_version}.parquet"
 data_save.to_csv(csv_path)
 data_save.to_parquet(parquet_path)
+
+# Comment to test GitHub action file
