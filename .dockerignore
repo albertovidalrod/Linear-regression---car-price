@@ -1,6 +1,8 @@
 /__pycache__
 /My first ever ML notebook - Car price
 /Not so simple regression
+/data scraping scripts
+/data
 
 .gitignore
 car price prediction.ipynb

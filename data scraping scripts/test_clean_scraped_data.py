@@ -5,7 +5,7 @@ import re
 import pandas as pd
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-data_all_dir = os.path.join(current_dir, "..", "data/Scraped data")
+data_all_dir = os.path.join(current_dir, "..", "data/Test scraped data")
 os.makedirs(data_all_dir, exist_ok=True)
 
 # Define information from previous datasets
@@ -25,7 +25,7 @@ else:
     new_version = 1
 
 # Define path to data
-data_month_dir = os.path.join(current_dir, "..", "data/Scraped data/June 2023")
+data_month_dir = os.path.join(current_dir, "..", "data/Test scraped data/June 2023")
 
 # empty list to store data
 data_list = []

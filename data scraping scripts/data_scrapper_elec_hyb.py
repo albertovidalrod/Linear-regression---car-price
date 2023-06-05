@@ -123,9 +123,9 @@ def save_data(cars_data: list, postcode: str, car_type: str) -> None:
     cars_df.columns = col_names
     # Save the dataframe to csv
     if car_type == "all":
-        cars_df.to_csv(f"../data/Scraped data/May 2023/{SEARCH_BRAND}_{postcode}.csv")
+        cars_df.to_csv(f"../data/Scraped data/June 2023/{SEARCH_BRAND}_{postcode}.csv")
     else:
-        cars_df.to_csv(f"../data/Scraped data/May 2023/{SEARCH_BRAND}_{car_type}.csv")
+        cars_df.to_csv(f"../data/Scraped data/June 2023/{SEARCH_BRAND}_{car_type}.csv")
 
 
 def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
