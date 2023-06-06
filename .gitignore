@@ -3,6 +3,7 @@ test_class.ipynb
 
 .DS_Store
 
-/__pycache__
+**/__pycache__
+**/.pytest_cache
 /.vscode
 /data/Scraped data
