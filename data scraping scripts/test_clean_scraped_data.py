@@ -8,7 +8,7 @@ import pandas as pd
 @pytest.fixture
 def all_data():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    data_all_dir = os.path.join(current_dir, "..", "data/Test scraped data")
+    data_all_dir = os.path.join(current_dir, "..", "data/Scraped data")
     os.makedirs(data_all_dir, exist_ok=True)
 
     # Define information from previous datasets

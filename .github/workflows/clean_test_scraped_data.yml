@@ -3,7 +3,7 @@ name: clean_test_scraped_data.py
 on:
   push:
     paths:
-      - 'data/Test scraped data/**.csv'
+      - 'data/Scraped data/**.csv'
   workflow_dispatch:
 
 jobs:
@@ -26,9 +26,9 @@ jobs:
           
       - name: execute py script # run clean_scraped_data.py
         run: |
-          python data\ scraping\ scripts/clean_scraped_data_gh_actions.py
+          python data\ scraping\ scripts/clean_scraped_data.py
 
-      - name: execute unit testing # run clean_scraped_data.py
+      - name: execute unit testing # run pytest
         run: |
           pytest
           git config user.name github-actions

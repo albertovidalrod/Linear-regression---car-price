@@ -1,6 +1,8 @@
 import os
 import csv
 import re
+import json
+from datetime import datetime
 
 import pandas as pd
 
@@ -8,24 +10,10 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 data_all_dir = os.path.join(current_dir, "..", "data/Scraped data")
 os.makedirs(data_all_dir, exist_ok=True)
 
-# Define information from previous datasets
-previous_files = [x for x in os.listdir(data_all_dir) if ".parquet" in x]
-
-if previous_files:
-    sorted_files = sorted(
-        previous_files, key=lambda x: int(re.search(r"\d+", x).group())
-    )
-    latest_file = sorted_files[-1]
-
-    latest_version = int(
-        max([file_name.split("v")[1].split(".")[0] for file_name in previous_files])
-    )
-    new_version = latest_version + 1
-else:
-    new_version = 1
-
 # Define path to data
-data_month_dir = os.path.join(current_dir, "..", "data/Scraped data/June 2023")
+previous_months = [x for x in os.listdir(data_all_dir) if "all" not in x]
+latest_month = previous_months[-1]
+data_month_dir = os.path.join(data_all_dir, latest_month)
 
 # empty list to store data
 data_list = []
@@ -61,7 +49,6 @@ data.reset_index(drop=True, inplace=True)
 
 # Create a boolean ev_mask for elements containing the word "Electric"
 ev_mask = data.apply(lambda x: x.str.contains("Electric", case=False)).any(axis=1)
-
 ev_mileage = data.loc[ev_mask, "mpg"]
 data = data.copy()
 data.loc[ev_mask, "mileage"] = ev_mileage
@@ -122,10 +109,63 @@ data.reset_index(drop=True, inplace=True)
 # Replace the brand "volkswagen" with "vw" as this used in the other dataset
 data.loc[data["brand"] == "volkswagen", "brand"] = "vw"
 
-data_save = data.copy()
-data_save.drop(columns=["carId"], inplace=True)
+# Define information from previous datasets
+previous_files = [x for x in os.listdir(data_all_dir) if ".parquet" in x]
 
-csv_path = data_all_dir + f"/all_scraped_cars-v{new_version}.csv"
-parquet_path = data_all_dir + f"/all_scraped_cars-v{new_version}.parquet"
+if previous_files:
+    # Sort files based on version number and find the latest file
+    sorted_files = sorted(
+        previous_files, key=lambda x: int(re.search(r"\d+", x).group())
+    )
+    latest_file = sorted_files[-1]
+    # Extract the last version number and generate the new version number
+    latest_version = int(
+        max([file_name.split("v")[1].split(".")[0] for file_name in previous_files])
+    )
+    new_version = latest_version + 1
+
+    # Concatenate the previous all cars dataset and the one from the new month
+    all_data_previous = pd.read_parquet(os.path.join(data_all_dir, latest_file))
+    all_data = pd.concat([all_data_previous, data])
+    # Drop duplicates
+    all_data = all_data.drop_duplicates(subset="carId").reset_index(drop=True)
+    data_save = all_data.copy()
+else:
+    # Define variables in case no previous all cars dataset is found
+    latest_file = "No previous file"
+    new_version = 1
+    data_save = data.copy()
+
+
+# Define filename and paths to saved
+data_save_filename = f"all_scraped_cars-v{new_version}"
+csv_path = data_all_dir + f"/{data_save_filename}.csv"
+parquet_path = data_all_dir + f"/{data_save_filename}.parquet"
 data_save.to_csv(csv_path)
 data_save.to_parquet(parquet_path)
+
+# Generate data for metadata file
+# Filename
+metadata_filename = f"all_scraped_cars-v{new_version}_metadata"
+# Current date
+current_date = datetime.now()
+current_date_string = current_date.strftime("%d/%m/%Y")
+
+metadata = {
+    "filename": f"{metadata_filename}.json",
+    "creation_date": current_date_string,
+    "latest_source_of_data": latest_month,
+    "previous_all_data_file": latest_file,
+    "version": f"v{new_version}",
+    "associated_files": [f"{data_save_filename}.csv", f"{data_save_filename}.parquet"],
+    "columns": {column: str(data_save[column].dtype) for column in data_save.columns},
+    "dataset_size": {
+        "number_rows": data_save.shape[0],
+        "number_columns": data_save.shape[1],
+    },
+}
+
+# Save the metadata to a JSON file
+metadata_path = data_all_dir + f"/{metadata_filename}.json"
+with open(metadata_path, "w") as file:
+    json.dump(metadata, file, indent=4)
