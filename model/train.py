@@ -1,5 +1,7 @@
 import csv
 import os
+import json
+from datetime import datetime
 
 import pandas as pd
 import numpy as np
@@ -7,7 +9,7 @@ from joblib import dump, load
 
 from sklearn.compose import make_column_transformer, ColumnTransformer
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_squared_error, r2_score, make_scorer
 from sklearn.model_selection import (
     StratifiedKFold,
     GridSearchCV,
@@ -23,7 +25,9 @@ from sklearn.preprocessing import (
 
 
 # Load data
-path_data = "../data/UK used cars/"
+current_dir = os.path.dirname(os.path.abspath(__file__))  # current dir is model folder
+data_dir = os.path.join(current_dir, "..", "data/UK used cars")
+os.makedirs(data_dir, exist_ok=True)
 
 # list of files to load
 files_to_load = ["audi.csv", "bmw.csv", "vw.csv"]
@@ -32,11 +36,11 @@ files_to_load = ["audi.csv", "bmw.csv", "vw.csv"]
 data_list = []
 
 # loop through files in directory
-for file in os.listdir(path_data):
+for file in os.listdir(data_dir):
     # check if file is in list of files to load
     if file in files_to_load:
         # open file and read data
-        with open(os.path.join(path_data, file), newline="") as f:
+        with open(os.path.join(data_dir, file), newline="") as f:
             # create csv reader object
             reader = csv.reader(f)
             # iterate over rows in the csv file and add filename to each row
@@ -66,37 +70,54 @@ data.drop_duplicates(ignore_index=True, inplace=True)
 data.duplicated().value_counts()
 
 # Remove outliers based on "year" feature
-data = data[data["year"] > 2005].reset_index(drop=True)
+lowest_year = 2005
+data = data[data["year"] > lowest_year].reset_index(drop=True)
 
 # Remove outliers based on "price" feature
-mask_audi = (data["brand"] == "audi") & (data["price"] < 75000)
-mask_vw = (data["brand"] == "vw") & (data["price"] < 60000)
-mask_bmw = (data["brand"] == "bmw") & (data["price"] < 80000)
+audi_max_price = 75000
+vw_max_price = 60000
+bmw_max_price = 80000
+mask_audi = (data["brand"] == "audi") & (data["price"] < audi_max_price)
+mask_vw = (data["brand"] == "vw") & (data["price"] < vw_max_price)
+mask_bmw = (data["brand"] == "bmw") & (data["price"] < bmw_max_price)
 mask_brand = mask_audi | mask_vw | mask_bmw
 data = data[mask_brand].reset_index(drop=True)
 
 # Remove outliers based on "mileage" feature
+max_mileage = 150000
 data = data[data["mileage"] < 150000].reset_index(drop=True)
 
 # Remove outliers based on "MPG" feature
-data = data[(data["mpg"] > 18) & (data["mpg"] < 200)].reset_index(drop=True)
+low_mpg = 18
+high_mpg = 200
+data = data[(data["mpg"] > low_mpg) & (data["mpg"] < high_mpg)].reset_index(drop=True)
 
 # Remove outliers based on "engineSize" feature
-data = data[(data["engineSize"] > 1) & (data["engineSize"] < 5.2)].reset_index(
-    drop=True
-)
+low_engine_size = 1.0
+high_engine_size = 5.2
+data = data[
+    (data["engineSize"] > low_engine_size) & (data["engineSize"] < high_engine_size)
+].reset_index(drop=True)
 
-mask = (data["fuelType"] == "Other") | (data["fuelType"] == "Electric")
+# Remove fuel types for which there are very few datapoints
+fuel_type_remove = ["Other", "Electric"]
+mask = (data["fuelType"] == fuel_type_remove[0]) | (
+    data["fuelType"] == fuel_type_remove[1]
+)
 data = data[~mask].reset_index(drop=True)
 
 # Drop irrelevant columns
 data.drop(columns=["tax", "model"], axis=1, inplace=True)
 
 # Save clean data
-# data.to_parquet("clean_data.parquet")
+new_version_clean_data = 1
+clean_data_name = f"clean_data-v{new_version_clean_data}.parquet"
+data.to_parquet(current_dir + f"/{clean_data_name}")
 
 # Load sample data to fit data transformer
-sample_data = pd.read_parquet("sample_data-v1.parquet")
+new_version_sample_data = 1
+sample_data_name = f"sample_data-v{new_version_sample_data}.parquet"
+sample_data = pd.read_parquet(current_dir + f"/{sample_data_name}")
 
 
 # Define features to be one-hot-encoded, log transformed and non-transformed
@@ -122,7 +143,10 @@ transformer.fit(sample_data)
 transformed = transformer.transform(data)
 
 # Save the transformer to a file
-dump(transformer, "data-transformer-v1.joblib")
+new_version_transformer = 1
+transformer_name = f"data_transformer-v{new_version_transformer}.joblib"
+dump(transformer, current_dir + f"/{transformer_name}")
+
 
 # Define column names of new columns created after one-hot-encoding transformation
 ohe_cols_transformed = (
@@ -165,16 +189,96 @@ pipeline = Pipeline(steps=steps)
 
 param_grid = {"pol_features__degree": range(1, 6)}
 
+
+# Define metric for Grid Search process
+# The rmse of the log transformed prices isn't the same as the rmse of the actual prices
+# Therefore, I will create a metric that computes the rmse of the actual prices and
+# predictions to select the best performing model
+def rmse(y_true, y_pred):
+    # Compute the rmse of log prices
+    rmse_log = np.sqrt(mean_squared_error(y_true, y_pred))
+    rmse_value = rmse_log
+    #  Sometimes, if the degree is too high for an accurate model, the rmse will yield
+    # cray values exceeded 10000 (for reference, for the log prices the average rmse is
+    # 0.2)
+    # If the value is less than 1000, I will compute the rmse of the actual prices.
+    # Otherwise, the output of the function is the rmse of log prices
+    if rmse_log < 1000:
+        rmse_exp = np.sqrt(mean_squared_error(np.exp(y_true), np.exp(y_pred)))
+        rmse_value = rmse_exp
+    return rmse_value
+
+
+rmse_scorer = make_scorer(rmse, greater_is_better=False)
+scoring_params = rmse_scorer
+scoring_params_name = "rmse_function"
 regression_model = GridSearchCV(
     estimator=pipeline,
     param_grid=param_grid,
-    scoring=["neg_root_mean_squared_error", "r2"],
-    refit="neg_root_mean_squared_error",
+    scoring=scoring_params,
     cv=folds,
     n_jobs=-1,
     verbose=0,
 )
 
 regression_model.fit(X_train, y_train)
+# Save model
+new_version_model = 2
+model_name = f"car_price-v{new_version_model}"
+dump(regression_model.best_estimator_, current_dir + f"/{model_name}.joblib")
 
-# dump(regression_model.best_estimator_, os.getcwd() + "/car-price-v1.joblib")
+# Make predictions and
+predictions_log = regression_model.best_estimator_.predict(X_test)
+predictions = np.exp(predictions_log)
+y_test_exp = np.exp(y_test)
+model_rmse = np.sqrt(mean_squared_error(y_test_exp, predictions))
+model_r2_score_log = r2_score(y_test, predictions_log)
+model_r2_score = r2_score(y_test_exp, predictions)
+
+
+# Generate data for metadata file
+# Filename
+# metadata_filename = f"all_scraped_cars-v{new_version}_metadata"
+metadata_filename = f"{model_name}_metadata"
+# Current date
+current_date = datetime.now()
+current_date_string = current_date.strftime("%d/%m/%Y")
+
+metadata = {
+    "filename": f"{metadata_filename}.json",
+    "creation_date": current_date_string,
+    "source_of_data": ["autos"],
+    "version": f"v{new_version_model}",
+    "associated_model": [
+        f"{model_name}.joblib",
+        transformer_name,
+        clean_data_name,
+        sample_data_name,
+    ],
+    "model_polynomial_degree": regression_model.best_estimator_.named_steps[
+        "pol_features"
+    ].degree,
+    "model_metrics": {
+        "rmse": f"{model_rmse:.2f}",
+        "r2_score": f"{model_r2_score:.3f}",
+        "r2_score_log_predictions": f"{model_r2_score_log:.3f}",
+    },
+    "model_scoring": scoring_params_name,
+    "outlier_limits": {
+        "lowest_year": lowest_year,
+        "car_max_prices": {
+            "audi": audi_max_price,
+            "bmw": bmw_max_price,
+            "volkswagen": vw_max_price,
+        },
+        "max_mileage": max_mileage,
+        "mpg_limits": {"low": low_mpg, "high": high_mpg},
+        "engine_size_limits": {"low": low_engine_size, "high": high_engine_size},
+        "fuel_type_removed": fuel_type_remove,
+    },
+}
+
+# Save the metadata to a JSON file
+metadata_path = current_dir + f"/{metadata_filename}.json"
+with open(metadata_path, "w") as file:
+    json.dump(metadata, file, indent=4)

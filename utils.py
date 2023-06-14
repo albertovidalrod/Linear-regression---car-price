@@ -5,10 +5,10 @@ import numpy as np
 
 class PredictCarPrice:
     def __init__(self):
-        sample_data = pd.read_parquet("model/sample_data.parquet")
-        self.transformer = load("model/data-transformer-v1.joblib")
+        sample_data = pd.read_parquet("model/sample_data-v1.parquet")
+        self.transformer = load("model/data_transformer-v1.joblib")
         self.transformer.fit(sample_data)
-        self.model = load("model/car-price-v1.joblib")
+        self.model = load("model/car_price-v1.joblib")
 
     def transform(self, input_data):
         col_names = [
