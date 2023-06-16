@@ -1,6 +1,6 @@
 {
     "filename": "car_price-v2_metadata.json",
-    "creation_date": "14/06/2023",
+    "creation_date": "16/06/2023",
     "source_of_data": [
         "autos"
     ],
@@ -13,9 +13,9 @@
     ],
     "model_polynomial_degree": 2,
     "model_metrics": {
-        "rmse": "3649.10",
-        "r2_score": "0.875",
-        "r2_score_log_predictions": "0.903"
+        "rmse": "3573.80",
+        "r2_score": "0.879",
+        "r2_score_log_predictions": "0.906"
     },
     "model_scoring": "rmse_function",
     "outlier_limits": {
