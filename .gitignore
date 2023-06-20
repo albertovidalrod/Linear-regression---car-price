@@ -6,3 +6,4 @@ test_class.ipynb
 **/__pycache__
 **/.pytest_cache
 /.vscode
+/model/test_new_models.ipynb

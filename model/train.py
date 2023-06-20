@@ -1,6 +1,7 @@
 import csv
 import os
 import json
+import re
 from datetime import datetime
 
 import pandas as pd
@@ -26,8 +27,8 @@ from sklearn.preprocessing import (
 
 # Load data
 current_dir = os.path.dirname(os.path.abspath(__file__))  # current dir is model folder
-data_dir = os.path.join(current_dir, "..", "data/UK used cars")
-os.makedirs(data_dir, exist_ok=True)
+data_kaggle_dir = os.path.join(current_dir, "..", "data/UK used cars")
+os.makedirs(data_kaggle_dir, exist_ok=True)
 
 # list of files to load
 files_to_load = ["audi.csv", "bmw.csv", "vw.csv"]
@@ -36,11 +37,11 @@ files_to_load = ["audi.csv", "bmw.csv", "vw.csv"]
 data_list = []
 
 # loop through files in directory
-for file in os.listdir(data_dir):
+for file in os.listdir(data_kaggle_dir):
     # check if file is in list of files to load
     if file in files_to_load:
         # open file and read data
-        with open(os.path.join(data_dir, file), newline="") as f:
+        with open(os.path.join(data_kaggle_dir, file), newline="") as f:
             # create csv reader object
             reader = csv.reader(f)
             # iterate over rows in the csv file and add filename to each row
@@ -50,16 +51,37 @@ for file in os.listdir(data_dir):
             data_list.append(reader_data[1:])
 
 # concatenate data from all files into one dataframe
-data = pd.concat(
+data_kaggle = pd.concat(
     [pd.DataFrame(data_list[0]), pd.DataFrame(data_list[1]), pd.DataFrame(data_list[2])]
 ).reset_index(drop=True)
 
 # rename last column to "brand"
 col_names[-1] = "brand"
-data.columns = col_names
+data_kaggle.columns = col_names
+
+# Drop tax column as it hasn't been scraped
+data_kaggle.drop(columns=["tax"], inplace=True)
+
+# Defined
+data_scraped_dir = os.path.join(current_dir, "..", "data/Scraped data")
+os.makedirs(data_kaggle_dir, exist_ok=True)
+previous_files = [x for x in os.listdir(data_scraped_dir) if ".parquet" in x]
+
+if previous_files:
+    sorted_files = sorted(
+        previous_files, key=lambda x: int(re.search(r"\d+", x).group())
+    )
+    latest_file = sorted_files[-1]
+
+    data_scraped = pd.read_parquet(data_scraped_dir + f"/{latest_file}")
+    data_scraped.drop(columns=["carId"], inplace=True)
+
+data = pd.concat([data_kaggle, data_scraped])
+data.drop_duplicates(ignore_index=True, inplace=True)
+
 
 # Transform data types after importing data
-int_cols = ["year", "price", "mileage", "tax"]
+int_cols = ["year", "price", "mileage"]
 float_cols = ["mpg", "engineSize"]
 
 data[int_cols] = data[int_cols].astype(int)
@@ -84,8 +106,11 @@ mask_brand = mask_audi | mask_vw | mask_bmw
 data = data[mask_brand].reset_index(drop=True)
 
 # Remove outliers based on "mileage" feature
+min_mileage = 1
 max_mileage = 150000
-data = data[data["mileage"] < 150000].reset_index(drop=True)
+data = data[
+    (data["mileage"] > min_mileage) & (data["mileage"] < max_mileage)
+].reset_index(drop=True)
 
 # Remove outliers based on "MPG" feature
 low_mpg = 18
@@ -107,17 +132,38 @@ mask = (data["fuelType"] == fuel_type_remove[0]) | (
 data = data[~mask].reset_index(drop=True)
 
 # Drop irrelevant columns
-data.drop(columns=["tax", "model"], axis=1, inplace=True)
+data.drop(columns=["model"], axis=1, inplace=True)
 
 # Save clean data
-new_version_clean_data = 1
+model_data_dir = current_dir + "/model_data"
+previous_data_files = [
+    x for x in os.listdir(model_data_dir) if (".parquet" in x) and ("clean" in x)
+]
+
+if previous_data_files:
+    # Sort files based on version number and find the latest file
+    sorted_data_files = sorted(
+        previous_data_files, key=lambda x: int(re.search(r"\d+", x).group())
+    )
+    previous_data_file = sorted_data_files[-1]
+    # Extract the last version number and generate the new version number
+    previous_version_clean_data = int(
+        max(
+            [file_name.split("v")[1].split(".")[0] for file_name in previous_data_files]
+        )
+    )
+    new_version_clean_data = previous_version_clean_data + 1
+else:
+    # Define variables in case no previous all cars dataset is found
+    previous_data_file = "No previous clean data file"
+    new_version_clean_data = 1
 clean_data_name = f"clean_data-v{new_version_clean_data}.parquet"
-data.to_parquet(current_dir + f"/{clean_data_name}")
+data.to_parquet(model_data_dir + f"/{clean_data_name}")
 
 # Load sample data to fit data transformer
 new_version_sample_data = 1
 sample_data_name = f"sample_data-v{new_version_sample_data}.parquet"
-sample_data = pd.read_parquet(current_dir + f"/{sample_data_name}")
+sample_data = pd.read_parquet(model_data_dir + f"/{sample_data_name}")
 
 
 # Define features to be one-hot-encoded, log transformed and non-transformed
@@ -145,7 +191,7 @@ transformed = transformer.transform(data)
 # Save the transformer to a file
 new_version_transformer = 1
 transformer_name = f"data_transformer-v{new_version_transformer}.joblib"
-dump(transformer, current_dir + f"/{transformer_name}")
+dump(transformer, model_data_dir + f"/{transformer_name}")
 
 
 # Define column names of new columns created after one-hot-encoding transformation
@@ -223,17 +269,43 @@ regression_model = GridSearchCV(
 
 regression_model.fit(X_train, y_train)
 # Save model
-new_version_model = 2
-model_name = f"car_price-v{new_version_model}"
-dump(regression_model.best_estimator_, current_dir + f"/{model_name}.joblib")
+previous_models = [
+    x for x in os.listdir(model_data_dir) if (".joblib" in x) and ("car" in x)
+]
 
-# Make predictions and
+if previous_models:
+    # Sort files based on version number and find the latest file
+    sorted_models = sorted(
+        previous_models, key=lambda x: int(re.search(r"\d+", x).group())
+    )
+    previous_model = sorted_models[-1]
+    # Extract the last version number and generate the new version number
+    previous_version_model = int(
+        max([file_name.split("v")[1].split(".")[0] for file_name in previous_models])
+    )
+    new_version_model = previous_version_model + 1
+else:
+    # Define variables in case no previous all cars dataset is found
+    previous_model = "No previous model"
+    new_version_model = 1
+model_name = f"car_price-v{new_version_model}"
+dump(regression_model.best_estimator_, model_data_dir + f"/{model_name}.joblib")
+
+# Make predictions on test data and compute metrics
 predictions_log = regression_model.best_estimator_.predict(X_test)
 predictions = np.exp(predictions_log)
 y_test_exp = np.exp(y_test)
 model_rmse = np.sqrt(mean_squared_error(y_test_exp, predictions))
 model_r2_score_log = r2_score(y_test, predictions_log)
 model_r2_score = r2_score(y_test_exp, predictions)
+
+# Make predictions on test data and compute metrics
+predictions_log_all = regression_model.best_estimator_.predict(X_data)
+predictions_all = np.exp(predictions_log_all)
+y_data_exp = np.exp(y_data)
+model_rmse_all = np.sqrt(mean_squared_error(y_data_exp, predictions_all))
+model_r2_score_log_all = r2_score(y_data, predictions_log_all)
+model_r2_score_all = r2_score(y_data_exp, predictions_all)
 
 
 # Generate data for metadata file
@@ -259,9 +331,16 @@ metadata = {
         "pol_features"
     ].degree,
     "model_metrics": {
-        "rmse": f"{model_rmse:.2f}",
-        "r2_score": f"{model_r2_score:.3f}",
-        "r2_score_log_predictions": f"{model_r2_score_log:.3f}",
+        "test_set": {
+            "rmse": f"{model_rmse:.2f}",
+            "r2_score": f"{model_r2_score:.3f}",
+            "r2_score_log_predictions": f"{model_r2_score_log:.3f}",
+        },
+        "train_test_sets": {
+            "rmse": f"{model_rmse_all:.2f}",
+            "r2_score": f"{model_r2_score_all:.3f}",
+            "r2_score_log_predictions": f"{model_r2_score_log_all:.3f}",
+        },
     },
     "model_scoring": scoring_params_name,
     "outlier_limits": {
@@ -271,7 +350,10 @@ metadata = {
             "bmw": bmw_max_price,
             "volkswagen": vw_max_price,
         },
-        "max_mileage": max_mileage,
+        "mileage_limits": {
+            "min_mileage": min_mileage,
+            "max_mileage": max_mileage,
+        },
         "mpg_limits": {"low": low_mpg, "high": high_mpg},
         "engine_size_limits": {"low": low_engine_size, "high": high_engine_size},
         "fuel_type_removed": fuel_type_remove,
@@ -279,6 +361,6 @@ metadata = {
 }
 
 # Save the metadata to a JSON file
-metadata_path = current_dir + f"/{metadata_filename}.json"
+metadata_path = model_data_dir + f"/{metadata_filename}.json"
 with open(metadata_path, "w") as file:
     json.dump(metadata, file, indent=4)
