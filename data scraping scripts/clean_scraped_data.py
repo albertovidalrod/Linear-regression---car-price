@@ -11,15 +11,28 @@ data_all_dir = os.path.join(current_dir, "..", "data/Scraped data")
 os.makedirs(data_all_dir, exist_ok=True)
 
 # Define path to data
-previous_months = [x for x in os.listdir(data_all_dir) if "all" not in x]
-latest_month = previous_months[-1]
+previous_months = [
+    x for x in os.listdir(data_all_dir) if ("all" not in x) and (".DS" not in x)
+]
+
+
+# Define a custom key function to extract the datetime from the string
+def extract_date(date_string):
+    return datetime.strptime(date_string, "%B %Y")
+
+
+# Sort the dates using the custom key
+sorted_months = sorted(previous_months, key=extract_date)
+latest_month = sorted_months[-1]
 data_month_dir = os.path.join(data_all_dir, latest_month)
 
 # empty list to store data
 data_list = []
 
 # loop through files in directory
-for file in os.listdir(data_month_dir):
+month_files = os.listdir(data_month_dir)
+month_files = sorted(month_files)
+for file in month_files:
     # check if file is in list of files to load
     if ".csv" in file:
         # open file and read data
