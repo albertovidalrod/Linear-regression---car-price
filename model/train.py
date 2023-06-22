@@ -6,6 +6,7 @@ from datetime import datetime
 import pandas as pd
 import numpy as np
 from joblib import dump
+import pyarrow as pa
 
 from sklearn.compose import make_column_transformer, ColumnTransformer
 from sklearn.linear_model import LinearRegression
@@ -166,6 +167,12 @@ else:
     new_version_model = 1
 model_name = f"car_price-v{new_version_model}"
 dump(regression_model.best_estimator_, model_data_dir + f"/{model_name}.joblib")
+
+#! For debugging only
+np.savetxt(
+    model_data_dir + f"/X_train-v{new_version_model}.csv", X_train, delimiter=","
+)
+np.savetxt(model_data_dir + f"/X_test-v{new_version_model}.csv", X_test, delimiter=",")
 
 # Make predictions on test data and compute metrics
 predictions_log = regression_model.best_estimator_.predict(X_test)
