@@ -1,4 +1,4 @@
-name: retrain model
+name: generate and test clean data
 
 on:
 #   push:
