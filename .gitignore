@@ -7,3 +7,4 @@ test_class.ipynb
 **/.pytest_cache
 /.vscode
 /model/test_new_models.ipynb
+/model/reproducibility_debug
