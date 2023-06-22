@@ -24,11 +24,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements_all_actions.txt
           
+      - name: generate clean data # run train.py
+        run: |
+          python model/generate_clean_data.py
+
+      - name: test clean data # run train.py
+        run: |
+          py.test model/test_clean_scrapped_data.py
+
       - name: execute py script # run train.py
         run: |
           python model/train.py
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "Train new model"
+          git commit -m "Generate data & train new model"
           git push
