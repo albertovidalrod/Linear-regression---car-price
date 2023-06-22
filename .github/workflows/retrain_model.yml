@@ -30,7 +30,7 @@ jobs:
 
       - name: test clean data # run train.py
         run: |
-          py.test model/test_clean_scrapped_data.py
+          py.test model/test_clean_data.py
 
       - name: execute py script # run train.py
         run: |
