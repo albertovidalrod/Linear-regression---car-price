@@ -1,15 +1,28 @@
+import os
+import re
+
 import streamlit as st
 import numpy as np
-from utils import PredictCarPrice
 import pandas as pd
 import plotly.graph_objects as go
-import numpy as np
 import plotly.figure_factory as ff
 
-# Load data for the plot
-clean_data = pd.read_parquet("model/clean_data-v1.parquet")
+from utils import PredictCarPrice
 
 
+# Find all the data files
+data_files = [
+    x for x in os.listdir("model/model_data") if (".parquet" in x) and ("clean" in x)
+]
+
+# Sort files based on version number and find the latest file
+sorted_data_files = sorted(data_files, key=lambda x: int(re.search(r"\d+", x).group()))
+latest_data = sorted_data_files[-1]
+# Load the latest data file
+clean_data = pd.read_parquet("model/model_data" + f"/{latest_data}")
+
+
+st.title(latest_data)
 st.title("Estimate the price of a used car")
 
 # INPUT DATA
@@ -35,7 +48,7 @@ with st.container():
     # create a selectbox in each column
     with col_1:
         mileage = st.number_input(
-            "Input car mileage: ", 0, 1500000, value=20000, step=1
+            "Input car mileage: ", 1, 1500000, value=20000, step=1
         )
 
     with col_2:

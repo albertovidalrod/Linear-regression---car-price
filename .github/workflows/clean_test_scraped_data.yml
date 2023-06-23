@@ -22,7 +22,7 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements_actions.txt
+          pip install -r requirements_GH_actions.txt
           
       - name: execute py script # run clean_scraped_data.py
         run: |

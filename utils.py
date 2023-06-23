@@ -1,3 +1,5 @@
+import os
+import re
 from joblib import load
 import pandas as pd
 import numpy as np
@@ -5,10 +7,21 @@ import numpy as np
 
 class PredictCarPrice:
     def __init__(self):
-        sample_data = pd.read_parquet("model/sample_data-v1.parquet")
-        self.transformer = load("model/data_transformer-v1.joblib")
+        sample_data = pd.read_parquet("model/model_data/sample_data-v1.parquet")
+        self.transformer = load("model/model_data/data_transformer-v1.joblib")
         self.transformer.fit(sample_data)
-        self.model = load("model/car_price-v1.joblib")
+        # Find all the previous models
+        previous_models = [
+            x
+            for x in os.listdir("model/model_data")
+            if (".joblib" in x) and ("car" in x)
+        ]
+        # Sort files based on version number and find the latest file
+        sorted_models = sorted(
+            previous_models, key=lambda x: int(re.search(r"\d+", x).group())
+        )
+        latest_model = sorted_models[-1]
+        self.model = load("model/model_data" + f"/{latest_model}")
 
     def transform(self, input_data):
         col_names = [
