@@ -1,0 +1,53 @@
+{
+    "filename": "car_price-v4_metadata.json",
+    "creation_date": "25/06/2023",
+    "source_of_data": [
+        "autos",
+        "clean_data-v3.parquet"
+    ],
+    "version": "v4",
+    "associated_model": [
+        "car_price-v4.joblib",
+        "data_transformer-v1.joblib",
+        "clean_data-v3.parquet",
+        "sample_data-v1.parquet"
+    ],
+    "model_polynomial_degree": 3,
+    "model_metrics": {
+        "test_set": {
+            "rmse": "3390.87",
+            "r2_score": "0.902",
+            "r2_score_log_predictions": "0.920"
+        },
+        "train_test_sets": {
+            "rmse": "3403.80",
+            "r2_score": "0.899",
+            "r2_score_log_predictions": "0.919"
+        }
+    },
+    "model_scoring": "rmse_function",
+    "outlier_limits": {
+        "lowest_year": 2005,
+        "car_max_prices": {
+            "audi": 75000,
+            "bmw": 80000,
+            "volkswagen": 60000
+        },
+        "mileage_limits": {
+            "min_mileage": 1,
+            "max_mileage": 150000
+        },
+        "mpg_limits": {
+            "low": 18,
+            "high": 200
+        },
+        "engine_size_limits": {
+            "low": 1.0,
+            "high": 5.2
+        },
+        "fuel_type_removed": [
+            "Other",
+            "Electric"
+        ]
+    }
+}
