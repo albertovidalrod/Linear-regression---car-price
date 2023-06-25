@@ -23,16 +23,24 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements_GH_actions.txt
+
+      - name: clean scraped data
+        run: |
+          python data\ scraping\ scripts/clean_scraped_data.py
+
+      - name: test clean scraped data 
+        run: |
+          py.test data\ scraping\ scripts/test_clean_scraped_data.py
           
-      - name: generate clean data # run train.py
+      - name: generate clean data
         run: |
           python model/generate_clean_data.py
 
-      - name: test clean data # run train.py
+      - name: test clean data
         run: |
           py.test model/test_clean_data.py
 
-      - name: execute py script # run train.py
+      - name: execute py script
         run: |
           python model/train.py
           git config user.name github-actions
