@@ -21,6 +21,18 @@ latest_data = sorted_data_files[-1]
 # Load the latest data file
 clean_data = pd.read_parquet("model/model_data" + f"/{latest_data}")
 
+# Define values for input data elements
+car_brands = sorted(clean_data["brand"].unique().tolist())
+car_transmission = sorted(clean_data["transmission"].unique().tolist())
+car_fuel_type = sorted(clean_data["fuelType"].unique().tolist())
+car_engine_size = sorted(clean_data["engineSize"].unique().tolist())
+car_min_mileage = int(clean_data["mileage"].min())
+car_max_mileage = int(clean_data["mileage"].max())
+car_min_year = int(clean_data["year"].min())
+car_max_year = int(clean_data["year"].max())
+car_min_mpg = clean_data["mpg"].min()
+car_max_mpg = clean_data["mpg"].max()
+
 
 st.title(latest_data)
 st.title("Estimate the price of a used car")
@@ -32,14 +44,11 @@ with st.container():
 
     # create a selectbox in each column
     with col_1:
-        brand = st.selectbox("Select car brand", ["Audi", "BMW", "Volkswagen"])
-
+        brand = st.selectbox("Select car brand", car_brands)
     with col_2:
-        transmission = st.selectbox(
-            "Input transmission type", ["Manual", "Semi-Auto", "Automatic"]
-        )
+        transmission = st.selectbox("Input transmission type", car_transmission)
     with col_3:
-        fuel_type = st.selectbox("Select fuel type: ", ["Petrol", "Diesel", "Hybrid"])
+        fuel_type = st.selectbox("Select fuel type: ", car_fuel_type)
 
 with st.container():
     # create three columns of equal width
@@ -48,23 +57,27 @@ with st.container():
     # create a selectbox in each column
     with col_1:
         mileage = st.number_input(
-            "Input car mileage: ", 1, 1500000, value=20000, step=1
+            "Input car mileage: ", car_min_mileage, car_max_mileage, value=20000, step=1
         )
 
     with col_2:
         mpg = st.number_input(
             "Input car mpg: ",
-            18.0,
-            200.0,
+            car_min_mpg,
+            car_max_mpg,
             value=30.0,
             step=0.1,
         )
     with col_3:
-        engine_size = st.number_input(
-            "Input engine size: ", 1.0, 5.2, value=2.0, step=0.1
-        )
+        # engine_size = st.number_input(
+        #     "Input engine size: ", 1.0, 5.2, value=2.0, step=0.1
+        # )
+        engine_size = st.selectbox("Select engine size", car_engine_size)
+        engine_size = float(engine_size)
 
-year = st.slider("Input year the car was manufactured", 2005, 2020, value=2010)
+year = st.slider(
+    "Input year the car was manufactured", car_min_year, car_max_year, value=2010
+)
 
 st.caption(
     """Note: Although *Hybrid* is included as one of the options for the fuel type, 
@@ -151,6 +164,9 @@ if st.session_state["predict_button"] == True:
             )
         )
         # Add trace representing the prediction
+        if feature_1 == "engineSize":
+            feature_1 = "engine_size"
+
         fig.add_trace(
             go.Scatter(
                 x=[eval(feature_1)],

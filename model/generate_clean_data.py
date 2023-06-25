@@ -77,7 +77,7 @@ data.duplicated().value_counts()
 
 # Remove outliers based on "year" feature
 lowest_year = 2005
-data = data[data["year"] > lowest_year].reset_index(drop=True)
+data = data[data["year"] >= lowest_year].reset_index(drop=True)
 
 # Remove outliers based on "price" feature
 audi_max_price = 75000

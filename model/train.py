@@ -100,11 +100,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 num_splits = 5
 sk_fold = StratifiedKFold(n_splits=num_splits, random_state=42, shuffle=True)
 folds = sk_fold.split(X_train, X_train[:, hybrid_idx])
-#! For debugging only
-folds_debug = sk_fold.split(X_train, X_train[:, hybrid_idx])
-save_folds = [fold for fold in folds_debug]
-train_idx_folds = [list(fold[0]) for fold in save_folds]
-test_idx_folds = [list(fold[1]) for fold in save_folds]
 
 # Define pipeline steps
 steps = [
@@ -173,20 +168,6 @@ else:
     new_version_model = 1
 model_name = f"car_price-v{new_version_model}"
 dump(regression_model.best_estimator_, model_data_dir + f"/{model_name}.joblib")
-
-#! For debugging only
-np.savetxt(
-    model_data_dir + f"/X_train-v{new_version_model}.csv", X_train, delimiter=","
-)
-np.savetxt(model_data_dir + f"/X_test-v{new_version_model}.csv", X_test, delimiter=",")
-
-with open(model_data_dir + f"/train_cv_idx-v{new_version_model}.csv", "w") as f_train:
-    writer = csv.writer(f_train)
-    writer.writerows(train_idx_folds)
-
-with open(model_data_dir + f"/test_cv_idx-v{new_version_model}.csv", "w") as f_test:
-    writer = csv.writer(f_test)
-    writer.writerows(test_idx_folds)
 
 # Make predictions on test data and compute metrics
 predictions_log = regression_model.best_estimator_.predict(X_test)
