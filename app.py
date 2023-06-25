@@ -34,7 +34,6 @@ car_min_mpg = clean_data["mpg"].min()
 car_max_mpg = clean_data["mpg"].max()
 
 
-st.title(latest_data)
 st.title("Estimate the price of a used car")
 
 # INPUT DATA
