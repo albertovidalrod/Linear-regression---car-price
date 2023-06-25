@@ -3,7 +3,7 @@ name: retrain model
 on:
   push:
     paths:
-      - 'data/Test scraped data/**.csv'
+      - 'data/Scraped data/**.csv'
   workflow_dispatch:
 
 jobs:
