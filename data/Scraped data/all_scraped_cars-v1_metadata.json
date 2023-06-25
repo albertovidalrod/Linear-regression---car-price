@@ -1,0 +1,27 @@
+{
+    "filename": "all_scraped_cars-v1_metadata.json",
+    "creation_date": "25/06/2023",
+    "latest_source_of_data": "June 2023",
+    "previous_all_data_file": "No previous file",
+    "version": "v1",
+    "associated_files": [
+        "all_scraped_cars-v1.csv",
+        "all_scraped_cars-v1.parquet"
+    ],
+    "columns": {
+        "model": "object",
+        "year": "int64",
+        "price": "int64",
+        "transmission": "object",
+        "mileage": "int64",
+        "fuelType": "object",
+        "mpg": "float64",
+        "engineSize": "float64",
+        "brand": "object",
+        "carId": "object"
+    },
+    "dataset_size": {
+        "number_rows": 25571,
+        "number_columns": 10
+    }
+}
