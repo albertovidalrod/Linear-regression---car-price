@@ -1,0 +1,8 @@
+,model,year,price,transmission,mileage,fuelType,mpg,engineSize,brand,carId
+0,A3,2022,28491,Manual,10,Petrol,46.3,1.5,audi,30305660
+1,A3,2022,28491,Manual,10,Petrol,46.3,1.5,audi,30305661
+2,A3,2022,26991,Manual,15,Petrol,50.4,1,audi,30305662
+3,A3,2022,26991,Manual,20,Petrol,50.4,1,audi,30305663
+4,B Class,2023,30995,Semi-Auto,24,Diesel,55.4,2,mercedes-benz,29982531
+5,A8,2022,65991,Semi-Auto,100,Diesel,39.2,3,audi,29473641
+6,RS5,2023,68991,Semi-Auto,100,Petrol,29.7,2.9,audi,30152079

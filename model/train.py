@@ -67,7 +67,7 @@ transformer.fit(sample_data)
 transformed = transformer.transform(data)
 
 # Save the transformer to a file
-new_version_transformer = 1
+new_version_transformer = 2
 transformer_name = f"data_transformer-v{new_version_transformer}.joblib"
 dump(transformer, model_data_dir + f"/{transformer_name}")
 

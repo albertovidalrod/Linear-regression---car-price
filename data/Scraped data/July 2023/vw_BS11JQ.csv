@@ -1,0 +1,991 @@
+,model,year,price,transmission,mileage,fuelType,mpg,engineSize,brand,carId
+0,Niro,2018,17900,Automatic,10612,Hybrid,74.3,1.6,kia,30268179
+1,Niro,2017,18900,Automatic,15385,Hybrid,64.2,1.6,kia,29558053
+2,Picanto,2021,13885,Automatic,16397,Petrol,53.3,1,kia,30290985
+3,Pro Ceed,2022,19900,Manual,24899,Petrol,48.7,1.5,kia,29639972
+4,e-Niro,2022,21900,White,Electric,Automatic,29770,,kia,29956816
+5,e-Niro,2022,25900,Grey,Electric,Automatic,1055,,kia,29987249
+6,Xceed,2022,21303,Manual,3897,Petrol,44.8,1.5,kia,30218136
+7,e-Niro,2022,25400,Grey,Electric,Automatic,5694,,kia,29980036
+8,Sportage,2022,24969,Manual,5773,Petrol,42.2,1.6,kia,30169412
+9,Xceed,2022,21078,Manual,5874,Petrol,44.8,1.5,kia,30218138
+10,Picanto,2020,12405,Manual,9263,Petrol,50.4,1,kia,30079445
+11,Sportage,2020,18948,Manual,9565,Petrol,34.9,1.6,kia,30120303
+12,Niro,2018,17900,Automatic,10612,Hybrid,74.3,1.6,kia,30268179
+13,Niro,2022,24192,Automatic,11255,Hybrid,64.2,1.6,kia,30169409
+14,Stonic,2021,17707,Manual,11670,Hybrid,51.4,1,kia,30069495
+15,Sportage,2022,23747,Manual,11700,Petrol,42.2,1.6,kia,29987253
+16,Niro,2022,24357,Automatic,11924,Hybrid,64.2,1.6,kia,30169410
+17,Niro,2019,18500,Automatic,12858,Hybrid,74.3,1.6,kia,30120304
+18,Sportage,2022,23605,Manual,12890,Petrol,42.2,1.6,kia,29956818
+19,Picanto,2021,11964,Manual,14545,Petrol,55.4,1,kia,30285918
+20,Niro,2022,24357,Automatic,11924,Hybrid,64.2,1.6,kia,30169410
+21,Niro,2019,18500,Automatic,12858,Hybrid,74.3,1.6,kia,30120304
+22,Sportage,2022,23605,Manual,12890,Petrol,42.2,1.6,kia,29956818
+23,Picanto,2021,11964,Manual,14545,Petrol,55.4,1,kia,30285918
+24,Sportage,2020,19162,Manual,16705,Petrol,33.2,1.6,kia,30149759
+25,Sportage,2022,23884,Manual,17037,Petrol,42.2,1.6,kia,29956820
+26,Sportage,2020,21447,Manual,19360,Petrol,34.9,1.6,kia,30218135
+27,Picanto,2020,11477,Manual,21938,Petrol,48.7,1.25,kia,30218134
+28,Niro,2022,22840,Automatic,23159,Hybrid,64.2,1.6,kia,30169408
+29,Polo,2018,15499,Semi-Auto,23660,Petrol,61.4,1,volkswagen,29956815
+30,Sportage,2021,23488,Automatic,24986,Petrol,33.2,1.6,kia,30149762
+31,Vitara,2019,14159,Manual,25354,Petrol,44.1,1,suzuki,30149763
+32,Zoe,2020,12289,Grey,Electric,Automatic,27359,,renault,30169411
+33,Niro,2019,16900,Automatic,30633,Hybrid,74.3,1.6,kia,30120309
+34,Stonic,2020,13498,Manual,33587,Petrol,47.1,1,kia,30120311
+35,Sportage,2017,16151,Automatic,44497,Diesel,47.9,2,kia,30120305
+36,Sportage,2015,11590,Manual,49760,Diesel,55.4,1.7,kia,30221585
+37,Niro,2016,14900,Automatic,53964,Hybrid,64.2,1.6,kia,30149758
+38,Grandland X,2018,12894,Manual,57444,Petrol,55.4,1.2,vauxhall,30218132
+39,Sportage,2020,19024,Manual,25011,Petrol,33.2,1.6,kia,30149761
+40,Sportage,2018,16995,Manual,53837,Petrol,34.9,1.6,kia,30305009
+41,Leaf,2022,28000,Black,Electric,Automatic,1170,,nissan,29366846
+42,Leaf,2022,28000,Black,Electric,Automatic,2440,,nissan,29366847
+43,Leaf,2022,23600,Black,Electric,Automatic,2983,,nissan,29811731
+44,Leaf,2022,20900,White,Electric,Automatic,4134,,nissan,29619174
+45,Leaf,2022,19650,Red,Electric,Automatic,4274,,nissan,29811728
+46,Leaf,2022,24900,Red,Electric,Automatic,6830,,nissan,29811730
+47,Corsa,2021,13800,Manual,8880,Petrol,53.3,1.2,vauxhall,30268293
+48,CX-5,2023,29759,Manual,443,Petrol,41.5,2,mazda,30185090
+49,Mazda3,2023,23900,Manual,1863,Petrol,50.4,2,mazda,30268294
+50,CX-60,2023,41900,Automatic,1885,Hybrid,188.3,2.5,mazda,30156208
+51,Niro,2022,31437,Automatic,2625,Hybrid,None,1.6,kia,30252246
+52,MX-5,2021,21529,Manual,3814,Petrol,44.8,1.5,mazda,29980042
+53,Niro,2022,31770,Automatic,4237,Hybrid,None,1.6,kia,30296039
+54,Sportage,2022,34143,Automatic,5852,Hybrid,49.6,1.6,kia,30252251
+55,Niro,2022,30754,Green,Electric,Automatic,7317,,kia,30252252
+56,Mazda2,2022,19027,Automatic,7676,Petrol,52.3,1.5,mazda,30290988
+57,Niro,2022,31327,Red,Electric,Automatic,8483,,kia,30285924
+58,Mazda3,2022,23071,Automatic,8895,Petrol,47.1,2,mazda,29980041
+59,Cooper,2020,19013,Manual,9012,Petrol,44.8,1.5,mini,30060569
+60,e-Niro,2022,24644,Grey,Electric,Automatic,9567,,kia,30252249
+61,Niro,2022,24531,Automatic,9575,Hybrid,64.2,1.6,kia,30162398
+62,Ka+,2017,9400,Manual,10173,Petrol,57.7,1.2,ford,30285923
+63,CX-30,2020,23784,Automatic,10871,Petrol,43.5,2,mazda,29974148
+64,Ignis,2018,13280,Semi-Auto,11020,Petrol,61.4,1.2,suzuki,30268182
+65,Xceed,2022,20156,Manual,11124,Petrol,44.8,1.5,kia,30252256
+66,Sportage,2019,23250,Automatic,11165,Petrol,32.5,1.6,kia,30084829
+67,Mazda3,2021,21360,Manual,11311,Petrol,50.4,2,mazda,30055061
+68,C3,2020,12931,Manual,11572,Petrol,51.4,1.2,citroen,30156207
+69,Niro,2022,29789,Automatic,11919,Hybrid,None,1.6,kia,30252247
+70,CX-30,2021,23900,Manual,12300,Petrol,43.5,2,mazda,29253567
+71,e-Niro,2022,23830,Grey,Electric,Automatic,12664,,kia,30081561
+72,Niro,2022,29816,Grey,Electric,Automatic,13022,,kia,30252253
+73,Jazz,2019,12763,Manual,13190,Petrol,48.7,1.3,honda,30149769
+74,i10,2020,13603,Manual,14039,Petrol,51.4,1.2,hyundai,30104557
+75,Niro,2022,29308,Automatic,14725,Hybrid,None,1.6,kia,30252250
+76,Xceed,2022,19959,Manual,15119,Petrol,44.8,1.5,kia,30178957
+77,CX-30,2021,23912,Manual,15276,Petrol,43.5,2,mazda,30234903
+78,Niro,2022,24008,Automatic,15953,Hybrid,64.2,1.6,kia,30252248
+79,CX-30,2020,20758,Manual,16515,Petrol,47.9,2,mazda,30162395
+80,CX-30,2020,19376,Manual,17936,Petrol,45.6,2,mazda,30084830
+81,Niro,2022,23514,Automatic,18146,Hybrid,64.2,1.6,kia,30162396
+82,Kuga,2018,19972,Semi-Auto,19674,Diesel,42.2,2,ford,30060567
+83,CX-3,2019,16167,Manual,20226,Petrol,42.8,2,mazda,28099228
+84,CX-30,2020,17655,Manual,20500,Petrol,None,2,mazda,30234231
+85,Ceed,2022,20344,Manual,22029,Petrol,49.6,1.5,kia,30252255
+86,C4 Picasso,2017,15011,Semi-Auto,25165,Diesel,74.3,1.6,citroen,30165501
+87,CX-5,2018,18903,Manual,25986,Petrol,44.1,2,mazda,30149771
+88,A Class,2020,21900,Manual,26184,Petrol,47.1,1.3,mercedes-benz,30221589
+89,Mazda6,2019,16900,Manual,26990,Petrol,42.2,2,mazda,29967051
+90,Mazda2,2019,14040,Manual,27473,Petrol,48.7,1.5,mazda,30252254
+91,Focus,2018,15514,Manual,28107,Petrol,53.3,1.5,ford,30149772
+92,Mirage,2019,11182,Semi-Auto,29134,Petrol,57.6,1.2,mitsubishi,30268183
+93,CX-30,2020,17500,Manual,29245,Petrol,45.6,2,mazda,29897024
+94,A4,2018,20012,Semi-Auto,29248,Petrol,50.4,2,audi,30060568
+95,500X,2016,9668,Manual,31227,Petrol,44.1,1.6,fiat,30074735
+96,CX-30,2020,19043,Manual,31875,Petrol,47.9,2,mazda,25960335
+97,Focus,2017,12511,Semi-Auto,37292,Diesel,74.3,1.5,ford,30285925
+98,CX-5,2018,21500,Automatic,42123,Petrol,36.7,2,mazda,30296040
+99,CX-5,2018,19900,Manual,43419,Petrol,38.2,2,mazda,30285928
+100,S90,2017,17616,Semi-Auto,48445,Diesel,64.2,2,volvo,30218153
+101,Astra,2019,10552,Manual,55192,Petrol,47.1,1.4,vauxhall,30060566
+102,SQ7,2019,63490,Automatic,46967,Diesel,29.4,4.0,audi,30280073
+103,Juke,2013,5990,Manual,64448,Petrol,47.1,1.6,nissan,30254898
+104,Fabia,2015,8490,Manual,65047,Petrol,60.1,1.2,skoda,30207992
+105,Fabia,2013,5490,Manual,70152,Petrol,49.6,1.2,skoda,30154163
+106,Fiesta,2008,3990,Manual,72338,Petrol,49.6,1.4,ford,30154170
+107,Focus,2017,8490,Manual,80821,Petrol,51.4,1.5,ford,30154166
+108,Leon,2014,6990,Manual,82679,Petrol,57.6,1.2,seat,30154176
+109,Golf,2013,7990,Manual,83855,Petrol,53.3,1.4,volkswagen,30199785
+110,Citigo,2014,4690,Manual,94568,Petrol,62.8,1.0,skoda,30154160
+111,Hatch,2014,7990,Manual,95135,Petrol,49.6,2.0,mini,30154169
+112,Golf,2012,5900,Manual,99999,Petrol,45.6,1.4,volkswagen,30245184
+113,R8,2018,93980,Automatic,21000,Petrol,23,5.2,audi,30154155
+114,Yaris,2015,7750,Manual,62264,Petrol,55,1.3,toyota,30172619
+115,Yaris,2011,3850,Manual,88787,Petrol,54.3,1.3,toyota,30154161
+116,Golf,2011,5490,Automatic,95952,Diesel,62.8,1.6,volkswagen,30261739
+117,Forfour,2022,16995,Automatic,1482,Other,None,0,smart,29239039
+118,Yaris,2018,13995,Automatic,8608,Petrol,47.1,1.5,toyota,30261346
+119,Zoe,2019,12995,Automatic,11247,Other,None,0,renault,29233263
+120,2008,2020,22995,Automatic,13470,Other,None,0,peugeot,28716066
+121,V40,2019,17995,Automatic,30327,Petrol,47.9,1.5,volvo,30261347
+122,Leaf,2018,13995,Automatic,31900,Other,None,0,nissan,29491155
+123,RS4,2014,31995,Automatic,32180,Petrol,26.4,4.2,audi,30048188
+124,Niro,2016,15450,Automatic,34880,Other,74.3,1.6,kia,30171937
+125,Juke,2016,9495,Manual,38741,Petrol,49.6,1.2,nissan,29908162
+126,RAV4,2017,18750,Automatic,41858,Other,None,2.5,toyota,30261344
+127,i10,2015,6995,Manual,44241,Petrol,57.6,1.2,hyundai,29776047
+128,RAV4,2014,12995,Manual,45766,Diesel,49.6,2.2,toyota,30182041
+129,500X,2017,9995,Manual,50059,Petrol,47.1,1.4,fiat,29908161
+130,Range Rover Sport,2014,32995,Automatic,55800,Petrol,22.1,5.0,land rover,27504775
+131,ASX,2012,6995,Manual,63173,Petrol,47.9,1.6,mitsubishi,30261343
+132,Leon,2022,23450,Automatic,100,Petrol,42.2,2.0,seat,30123247
+133,Octavia,2022,29450,Automatic,8012,Petrol,40.9,2.0,skoda,29726500
+134,Other,2021,28450,Automatic,20008,Other,None,0,other,30257869
+135,Kodiaq,2019,30950,Automatic,23317,Diesel,39.2,2.0,skoda,30112922
+136,Octavia,2019,25450,Automatic,23555,Diesel,43.5,2.0,skoda,29788555
+137,Octavia,2021,21950,Automatic,26671,Diesel,61.4,2.0,skoda,30245125
+138,Formentor,2022,349500,Automatic,4870,Petrol,33.2,2.0,cupra,28965178
+139,Leon,2021,29950,Automatic,19092,Petrol,37.2,2.0,cupra,30228875
+140,Ibiza,2015,7250,Manual,43767,Petrol,47.9,1.4,seat,30123240
+141,Karoq,2022,24450,Manual,15,Petrol,48.7,1.0,skoda,29592502
+142,Fabia,2022,19550,Manual,3193,Petrol,55.4,1.0,skoda,30020784
+143,Formentor,2022,26950,Automatic,4000,Petrol,42.2,1.5,cupra,29293947
+144,Formentor,2022,26950,Automatic,4414,Petrol,42.2,1.5,cupra,30154309
+145,Karoq,2022,30750,Automatic,5839,Petrol,44.1,1.5,skoda,30169668
+146,Kamiq,2020,18950,Automatic,7247,Petrol,45.6,1.0,skoda,30163398
+147,Leon,2023,24950,Manual,7500,Petrol,48.7,1.5,seat,29978282
+148,Formentor,2022,26750,Automatic,8590,Petrol,42.2,1.5,cupra,29550359
+149,Scala,2021,21950,Automatic,8608,Petrol,48.7,1.0,skoda,30112919
+150,Leon,2020,14950,Manual,9588,Petrol,53.3,1.0,seat,30099808
+151,Leon,2018,17850,Automatic,11293,Petrol,56.5,1.4,seat,29871195
+152,Arona,2021,17950,Manual,12955,Petrol,53.3,1.0,seat,30123244
+153,Ateca,2020,23850,Automatic,13098,Petrol,41.5,1.5,seat,30154308
+154,Ibiza,2021,15950,Manual,14653,Petrol,51.4,1.0,seat,30099806
+155,Ateca,2021,21450,Manual,16181,Petrol,42.8,1.5,seat,29877172
+156,Octavia,2021,18950,Manual,17302,Petrol,50.4,1.5,skoda,30112923
+157,Arona,2021,16950,Automatic,17924,Petrol,47.9,1.0,seat,30020783
+158,Karoq,2021,22950,Manual,19076,Petrol,44.8,1.5,skoda,30044823
+159,Octavia,2021,18950,Manual,22346,Petrol,50.4,1.5,skoda,29712247
+160,Mii,2019,9750,Manual,23492,Petrol,54.3,1.0,seat,30199744
+161,Fabia,2019,15950,Manual,31053,Petrol,60.1,1.0,skoda,30112920
+162,Octavia,2020,19550,Manual,31119,Petrol,51.4,1.5,skoda,30007844
+163,Karoq,2018,21950,Automatic,39178,Petrol,50.4,1.5,skoda,30020785
+164,Karoq,2022,20450,Manual,5006,Petrol,47.9,1.0,skoda,30307648
+165,Formentor,2022,28950,Automatic,7795,Petrol,40.9,1.5,cupra,30238930
+166,Ateca,2021,23950,Automatic,12652,Petrol,41.5,1.5,seat,30289117
+167,Karoq,2021,18950,Manual,13008,Petrol,47.9,1.0,skoda,30245127
+168,Arona,2020,17950,Automatic,13990,Petrol,47.1,1.0,seat,30294174
+169,Fabia,2020,14950,Manual,15690,Petrol,50.4,1.0,skoda,30257870
+170,Arona,2020,18450,Automatic,15988,Petrol,47.1,1.0,seat,30280123
+171,Karoq,2020,25450,Manual,18219,Petrol,43.5,1.5,skoda,30276441
+172,Ateca,2019,16950,Manual,18496,Petrol,46.3,1.0,seat,30289119
+173,Leon,2021,20950,Manual,18580,Petrol,48.7,1.5,seat,30280129
+174,Leon,2020,16450,Manual,20541,Petrol,51.4,1.5,seat,30294175
+175,Ateca,2020,22450,Manual,23207,Petrol,42.2,1.5,seat,30235067
+176,Karoq,2018,18950,Automatic,25345,Petrol,54.3,1.0,skoda,30238951
+177,Arona,2020,16250,Manual,25868,Petrol,50.4,1.5,seat,30247182
+178,Karoq,2019,25450,Automatic,26015,Petrol,41.5,1.5,skoda,30307646
+179,Ibiza,2021,17450,Manual,26513,Petrol,52.3,1.0,seat,30280121
+180,Fabia,2021,13450,Manual,27540,Petrol,51.4,1.0,skoda,30307647
+181,Arona,2019,13250,Manual,28774,Petrol,50.4,1.0,seat,30289120
+182,Karoq,2018,21950,Manual,33028,Petrol,51.4,1.5,skoda,30245122
+183,Ateca,2017,15450,Manual,38915,Petrol,52.3,1.4,seat,30294176
+184,Karoq,2018,20950,Automatic,40216,Petrol,50.4,1.5,skoda,30271862
+185,Leon,2019,23750,Automatic,43928,Petrol,34.5,2.0,seat,30257866
+186,Leon,2016,11950,Manual,43936,Petrol,60.1,1.4,seat,30271861
+187,Ibiza,2018,10750,Manual,45390,Petrol,60.1,1.0,seat,30289118
+188,Kodiaq,2017,22450,Automatic,52225,Petrol,39.8,1.4,skoda,30245123
+189,Fabia,2013,5950,Manual,72542,Petrol,53.3,1.2,skoda,30266299
+190,Picanto,2021,16995,Automatic,1137,Petrol,52.3,1,kia,30286877
+191,Tucson,2023,40995,Semi-Auto,4953,Hybrid,201.8,1.6,hyundai,30180446
+192,Yaris,2022,19750,Automatic,4967,Hybrid,68.9,1.5,toyota,30242624
+193,i30,2023,32499,Manual,7386,Petrol,35.3,2,hyundai,30092621
+194,Karoq,2021,22995,Automatic,10523,Petrol,44.8,1.5,skoda,30073100
+195,Xceed,2020,16995,Manual,11654,Petrol,44.1,1,kia,30286881
+196,Tucson,2022,36995,Semi-Auto,15824,Hybrid,201.8,1.6,hyundai,29452627
+197,Tucson,2021,27750,Semi-Auto,18288,Hybrid,50.4,1.6,hyundai,30286883
+198,i20,2017,12990,Automatic,18793,Petrol,45.6,1.4,hyundai,30286878
+199,CLA Class,2021,28995,Semi-Auto,21293,Diesel,56.5,2,mercedes-benz,30126228
+200,i30,2019,15495,Manual,31693,Petrol,42.2,1.4,hyundai,29988941
+201,i30,2021,17750,Manual,38596,Hybrid,44.8,1.5,hyundai,30258611
+202,C-HR,2018,17995,Automatic,47153,Hybrid,74.3,1.8,toyota,30258613
+203,Q3,2017,17750,Manual,28443,Diesel,62.8,2,audi,30297354
+204,i10,2021,14795,Semi-Auto,12997,Petrol,50.4,1,hyundai,30302761
+205,Tucson,2022,25995,Manual,17064,Petrol,41.5,1.6,hyundai,30302759
+206,1 Series,2018,19750,Semi-Auto,21836,Petrol,36.7,1.5,bmw,30302763
+207,Leaf,2017,8995,Red,Electric,Automatic,34497,,nissan,30302760
+208,Astra,2016,7995,Manual,51675,Diesel,76.3,1.6,vauxhall,30302758
+209,Focus,2023,25750,Manual,10,Petrol,51.4,1,ford,30231438
+210,Focus,2023,26500,Automatic,10,Petrol,52.3,1,ford,30231437
+211,Focus,2020,20500,Automatic,1170,Petrol,48.7,1,ford,30221511
+212,C-MAX,2018,14500,Manual,2010,Petrol,49.6,1,ford,30281593
+213,Fiesta,2020,16900,Manual,2019,Petrol,54.3,1,ford,30227911
+214,EcoSport,2023,22500,Manual,2454,Petrol,47.1,1,ford,30098230
+215,EcoSport,2021,18000,Manual,5229,Petrol,47.1,1,ford,30091219
+216,Focus,2022,32200,Manual,6313,Petrol,35.3,2.3,ford,30149710
+217,Puma,2021,19900,Manual,6476,Petrol,51.4,1,ford,30060148
+218,Focus,2022,25500,Manual,7066,Petrol,52.3,1,ford,30268284
+219,Fiesta,2021,18850,Manual,7588,Petrol,54.3,1,ford,30162348
+220,Fiesta,2020,16900,Semi-Auto,7945,Petrol,48.7,1,ford,30179851
+221,Fiesta,2020,16250,Manual,8563,Petrol,54.3,1,ford,30009338
+222,Kuga,2018,22900,Semi-Auto,9101,Diesel,42.2,2,ford,30281598
+223,Focus,2021,21500,Manual,10123,Petrol,52.3,1,ford,30263391
+224,Puma,2020,19900,Manual,10751,Petrol,51.4,1,ford,30091221
+225,Mondeo,2020,24900,Automatic,11494,Hybrid,47.1,2,ford,30281594
+226,Puma,2021,20900,Manual,13109,Petrol,None,1,ford,27681080
+227,Fiesta,2019,15000,Manual,13620,Petrol,58.9,1,ford,30217495
+228,Fiesta,2019,16350,Semi-Auto,13672,Petrol,48.7,1,ford,30186580
+229,Focus,2019,16300,Manual,14033,Petrol,58.9,1,ford,29897813
+230,Fiesta,2020,16900,Manual,16742,Petrol,55.4,1,ford,30074661
+231,Fiesta,2020,15000,Manual,17432,Petrol,58.9,1,ford,30098227
+232,Focus,2020,20900,Manual,18150,Petrol,53.3,1,ford,30087109
+233,Fiesta,2019,13900,Manual,18851,Petrol,58.9,1,ford,30217498
+234,Kuga,2020,27500,Automatic,19424,Hybrid,201.8,2.5,ford,30217501
+235,Fiesta,2020,14250,Manual,20900,Petrol,55.4,1,ford,30252176
+236,Kuga,2021,23900,Manual,22005,Petrol,41.5,1.5,ford,30281597
+237,Puma,2021,22600,Manual,22233,Petrol,49.6,1,ford,28768010
+238,Ka+,2019,11250,Manual,24506,Petrol,43.5,1.2,ford,30217496
+239,Grand Tourneo Connect,2020,20000,Manual,25269,Diesel,61.4,1.5,ford,30285859
+240,Focus,2019,17700,Manual,26609,Petrol,53.3,1.5,ford,30011441
+241,Fiesta,2020,14900,Manual,26828,Petrol,54.3,1,ford,30179850
+242,Kuga,2019,19200,Manual,27798,Petrol,35.3,1.5,ford,30256923
+243,Kuga,2019,18900,Manual,29488,Petrol,35.3,1.5,ford,30221512
+244,Fiesta,2019,13500,Manual,30285,Petrol,58.9,1,ford,30217494
+245,Ka+,2019,10500,Manual,31859,Petrol,43.5,1.2,ford,30217497
+246,Corsa,2018,9000,Manual,34100,Petrol,55.4,1.4,vauxhall,30054755
+247,CX-3,2019,15350,Manual,34905,Petrol,42.8,2,mazda,30074659
+248,Focus,2019,14500,Manual,35163,Petrol,58.9,1,ford,30263393
+249,2008,2016,9500,Manual,35665,Diesel,76.3,1.6,peugeot,30252175
+250,Fiesta,2019,13500,Manual,37330,Petrol,58.9,1,ford,30217499
+251,Focus,2021,17550,Manual,48094,Diesel,62.8,1.5,ford,30228518
+252,Golf,2016,12500,Manual,50123,Petrol,53.3,1.4,volkswagen,30217500
+253,Grand C4 Picasso,2017,12900,Manual,56148,Petrol,56.5,1.2,citroen,30281596
+254,Puma,2020,19357,Manual,4622,Petrol,51.4,1,ford,29870229
+255,Fiesta,2021,16497,Manual,6787,Petrol,54.3,1,ford,29956768
+256,EcoSport,2020,16250,Manual,11226,Petrol,51.4,1,ford,30263390
+257,Puma,2020,20397,Manual,12440,Petrol,50.4,1,ford,29942572
+258,Puma,2021,20397,Manual,13454,Petrol,50.4,1,ford,29956767
+259,Kuga,2020,28300,Automatic,14797,Hybrid,201.8,2.5,ford,30162347
+260,Focus,2021,17550,Manual,48094,Diesel,62.8,1.5,ford,30228518
+261,Golf,2016,12500,Manual,50123,Petrol,53.3,1.4,volkswagen,30217500
+262,Grand C4 Picasso,2017,12900,Manual,56148,Petrol,56.5,1.2,citroen,30281596
+263,Arona,2019,17750,Automatic,8524,Petrol,47.1,1.0,seat,29705343
+264,Renegade,2020,18995,Manual,11041,Petrol,42.2,1.0,jeep,29579734
+265,Stonic,2019,16599,Automatic,13001,Petrol,46.3,1.0,kia,29823770
+266,i3,2020,17415,Automatic,13082,Other,None,1,bmw,30069874
+267,3008,2019,20062,Automatic,13504,Diesel,68.9,1.5,peugeot,28657650
+268,Countryman,2019,21299,Automatic,13762,Petrol,37.2,2.0,mini,29579720
+269,Corolla,2021,24330,Automatic,13853,Other,53.3,2.0,toyota,29934020
+270,Caddy Maxi,2019,24095,Automatic,14696,Diesel,46.3,2.0,volkswagen,29643462
+271,EcoSport,2019,14500,Manual,15286,Petrol,51.4,1.0,ford,27070183
+272,Kamiq,2021,18725,Automatic,19903,Petrol,47.9,1.0,skoda,29432151
+273,2 Series,2018,19500,Automatic,23889,Diesel,47.1,2.0,bmw,30261337
+274,Outlander,2019,24540,Automatic,27121,Other,156.9,2.4,mitsubishi,30203066
+275,Outlander,2020,22000,Automatic,27707,Petrol,32.5,2.0,mitsubishi,30254506
+276,Tourneo Connect,2019,19495,Automatic,28506,Diesel,44.1,1.5,ford,27070194
+277,Outlander,2019,23616,Automatic,29225,Other,156.9,2.4,mitsubishi,30218580
+278,Corolla,2020,27180,Automatic,29762,Other,53.3,2.0,toyota,30171924
+279,Countryman,2018,18149,Automatic,36174,Diesel,62.8,2.0,mini,27483890
+280,Caddy Maxi,2019,20995,Automatic,37137,Diesel,46.3,2.0,volkswagen,30182035
+281,Meriva,2015,6950,Manual,39157,Diesel,64.2,1.6,vauxhall,30002384
+282,Octavia,2020,16175,Automatic,39592,Petrol,56.5,1.5,skoda,29823738
+283,Tourneo Custom,2019,29990,Manual,41232,Diesel,32.5,2.0,ford,30036037
+284,2 Series,2019,15299,Manual,42452,Petrol,40.9,1.5,bmw,30261338
+285,Ateca,2019,18450,Automatic,42770,Diesel,48.7,1.6,seat,30134698
+286,2 Series,2018,13995,Manual,43306,Petrol,40.9,1.5,bmw,29996516
+287,3008,2019,21714,Automatic,48545,Petrol,39.8,1.6,peugeot,29823756
+288,Boxster,2009,21995,Manual,48900,Petrol,30.1,2.9,porsche,29996508
+289,C-HR,2019,18000,Automatic,49287,Other,72.4,1.8,toyota,30036026
+290,E Class,2017,29995,Automatic,49500,Petrol,33.6,3.0,mercedes-benz,28402504
+291,Kodiaq,2018,18795,Automatic,57371,Petrol,34,1.5,skoda,29823774
+292,Rifter,2020,19495,Manual,63811,Diesel,54.3,1.5,peugeot,30171917
+293,5008,2020,18395,Manual,75714,Petrol,47.1,1.2,peugeot,30134703
+294,Berlingo,2004,3490,Manual,113751,Diesel,40.9,1.9,citroen,29934027
+295,Grand C4 Picasso,2012,3195,Manual,126000,Diesel,54.3,1.6,citroen,29934004
+296,Grand C-MAX,2014,3795,Manual,151093,Diesel,60.1,1.6,ford,29655068
+297,Corolla,2022,23900,Automatic,3844,Other,62.8,1.8,toyota,29934025
+298,Eclipse Cross,2018,15990,Manual,18734,Petrol,42.8,1.5,mitsubishi,30171927
+299,A1,2019,16455,Manual,19800,Petrol,50.4,1.0,audi,29823746
+300,Insignia,2015,7565,Manual,46000,Petrol,53.3,1.4,vauxhall,30134692
+301,3008,2019,20062,Automatic,13504,Diesel,68.9,1.5,peugeot,28657650
+302,Tiguan Allspace,2020,25945,Automatic,21463,Diesel,44.1,2.0,volkswagen,29934008
+303,IONIQ,2021,20000,Automatic,6314,Other,62.8,1.6,hyundai,29262965
+304,Combo Life,2020,17115,Manual,7502,Diesel,50.4,1.5,vauxhall,30134687
+305,C5,2019,18395,Manual,7594,Petrol,36.6,1.2,citroen,29348278
+306,B Class,2020,24500,Automatic,12737,Petrol,44.8,1.3,mercedes-benz,30134710
+307,5008,2020,23600,Manual,15363,Petrol,47.1,1.2,peugeot,30134694
+308,IONIQ,2020,17862,Automatic,17755,Other,None,1,hyundai,28796205
+309,2 Series,2019,16995,Manual,19052,Petrol,40.9,1.5,bmw,30134708
+310,Tiguan,2019,21734,Automatic,19521,Diesel,46.3,2.0,volkswagen,29909620
+311,Focus,2021,19085,Manual,21196,Petrol,53.3,1.0,ford,29823771
+312,Prius,2019,20582,Automatic,23874,Other,None,1.8,toyota,29002039
+313,Outlander,2020,23300,Automatic,23909,Petrol,32.5,2.0,mitsubishi,30171926
+314,T-Roc,2018,17929,Manual,24557,Petrol,44.1,1.0,volkswagen,29002011
+315,Auris,2017,15772,Automatic,25861,Other,72.4,1.8,toyota,29411216
+316,2 Series,2020,18795,Manual,26549,Petrol,40.4,1.5,bmw,30134719
+317,Outlander,2020,22900,Automatic,26901,Petrol,32.5,2.0,mitsubishi,30147070
+318,IONIQ,2020,17500,Automatic,27070,Other,62.8,1.6,hyundai,29960445
+319,2 Series,2018,19533,Automatic,27415,Petrol,36.7,2.0,bmw,29722924
+320,5008,2020,25250,Manual,28586,Petrol,47.1,1.2,peugeot,30153644
+321,Niro,2020,17900,Automatic,35194,Other,58.9,1.6,kia,30244499
+322,Leon,2021,16695,Manual,35391,Petrol,50.4,1.5,seat,29623802
+323,Sharan,2019,23410,Automatic,37632,Diesel,41.5,2.0,volkswagen,30134689
+324,Grandland X,2018,12565,Manual,39068,Petrol,44.1,1.2,vauxhall,29977560
+325,2 Series,2019,17750,Manual,39328,Petrol,40.4,1.5,bmw,30171928
+326,Outlander,2019,17990,Automatic,42493,Petrol,37.7,2.0,mitsubishi,30134702
+327,IONIQ,2021,18872,Automatic,45165,Other,62.8,1.6,hyundai,29909628
+328,Tiguan Allspace,2020,26945,Automatic,47282,Petrol,35.8,1.5,volkswagen,30147066
+329,5008,2019,19059,Manual,51507,Diesel,67.3,1.5,peugeot,28744417
+330,Outlander,2019,22794,Automatic,52264,Other,156.9,2.4,mitsubishi,30244501
+331,Niro,2019,21900,Automatic,57176,Other,217.3,1.6,kia,30203065
+332,IONIQ,2019,14605,Automatic,59501,Other,78.5,1.6,hyundai,29486665
+333,Eclipse Cross,2019,15588,Manual,61061,Petrol,40.4,1.5,mitsubishi,30171916
+334,Countryman,2018,20975,Automatic,63364,Other,None,1.5,mini,29348285
+335,Tiguan,2021,33950,Automatic,8322,Diesel,42.8,2.0,volkswagen,29902282
+336,Tiguan,2022,39650,Automatic,3440,Petrol,34,2.0,volkswagen,30044835
+337,Arteon,2021,27450,Automatic,13080,Diesel,55.4,2.0,volkswagen,27156626
+338,Golf,2021,31200,Automatic,20976,Petrol,38.2,2.0,volkswagen,30112956
+339,Tiguan,2019,21200,Automatic,40511,Diesel,46.3,2.0,volkswagen,30112952
+340,Golf,2022,26450,Manual,4300,Petrol,51.4,1.5,volkswagen,30169681
+341,Golf,2021,38450,Automatic,4404,Petrol,36.2,2.0,volkswagen,29698574
+342,Golf,2023,25850,Manual,5000,Petrol,49.6,1.5,volkswagen,30189327
+343,Golf,2023,33150,Automatic,5000,Petrol,49.6,1.5,volkswagen,29997326
+344,Golf,2022,27250,Manual,5432,Petrol,51.4,1.5,volkswagen,29828544
+345,T-Roc,2019,28350,Automatic,7143,Petrol,51.4,1.5,volkswagen,29984082
+346,Golf,2022,22450,Manual,7188,Petrol,52.3,1.5,volkswagen,29875020
+347,Polo,2021,17550,Manual,8393,Petrol,51.4,1.0,volkswagen,30014032
+348,Up,2020,13450,Manual,9898,Petrol,50.4,1.0,volkswagen,27580140
+349,Polo,2021,17950,Manual,10217,Petrol,50.4,1.0,volkswagen,30174625
+350,Polo,2021,17950,Manual,13976,Petrol,54.3,1.0,volkswagen,30174624
+351,Golf,2021,30791,Automatic,14587,Diesel,54.3,2.0,volkswagen,29403859
+352,Polo,2022,17400,Manual,15285,Petrol,54.3,1.0,volkswagen,30099725
+353,Golf,2019,18250,Manual,15707,Petrol,50.4,1.5,volkswagen,29984088
+354,Tiguan,2022,27750,Automatic,15982,Petrol,40.4,1.5,volkswagen,30169682
+355,T-Cross,2020,19250,Manual,17267,Petrol,47.1,1.0,volkswagen,30189328
+356,Tiguan,2020,23950,Automatic,17930,Petrol,37.7,1.5,volkswagen,30007869
+357,Passat,2020,20750,Manual,18443,Petrol,45.6,1.5,volkswagen,27156634
+358,Polo,2021,16750,Manual,19273,Petrol,50.4,1.0,volkswagen,30189329
+359,Golf,2020,23450,Automatic,20386,Petrol,44.8,1.5,volkswagen,30112955
+360,Polo,2022,19750,Automatic,21941,Petrol,51.4,1.0,volkswagen,30163413
+361,Polo,2020,20750,Automatic,22228,Petrol,46.3,1.0,volkswagen,25959517
+362,Touareg,2020,37950,Automatic,22599,Petrol,25.7,3.0,volkswagen,30117398
+363,Golf,2019,17750,Manual,25140,Petrol,43.5,1.5,volkswagen,30174623
+364,Tiguan,2020,21950,Manual,25501,Petrol,38.2,1.5,volkswagen,30014027
+365,Golf,2019,17550,Manual,26511,Petrol,49.6,1.5,volkswagen,30014030
+366,Golf,2021,19450,Manual,26818,Petrol,47.9,1.5,volkswagen,30112953
+367,T-Roc,2019,18750,Manual,28835,Diesel,50.4,1.6,volkswagen,30014031
+368,Golf,2020,23450,Automatic,32305,Other,141.3,1.4,volkswagen,30014028
+369,T-Roc,2019,17950,Manual,34226,Diesel,50.4,1.6,volkswagen,29984085
+370,Tiguan,2021,23250,Automatic,44869,Petrol,40.4,1.5,volkswagen,29972209
+371,Golf,2019,15950,Automatic,48645,Diesel,54.3,1.6,volkswagen,30174622
+372,T-Roc,2023,30950,Manual,715,Petrol,47.1,1.5,volkswagen,30226338
+373,Tiguan Allspace,2023,35450,Automatic,767,Petrol,40.9,1.5,volkswagen,30294183
+374,T-Roc,2023,31450,Manual,3265,Petrol,47.1,1.5,volkswagen,30257883
+375,T-Roc,2022,31250,Automatic,4800,Petrol,46.3,1.5,volkswagen,30278686
+376,Polo,2022,18750,Manual,5376,Petrol,54.3,1.0,volkswagen,30271874
+377,Polo,2022,18250,Manual,6369,Petrol,52.3,1.0,volkswagen,30257888
+378,Polo,2019,17950,Automatic,8078,Petrol,45.6,1.0,volkswagen,30226341
+379,Polo,2020,17500,Manual,8216,Petrol,50.4,1.0,volkswagen,30226346
+380,Up,2018,11950,Manual,8223,Petrol,68.9,1.0,volkswagen,30276448
+381,Tiguan,2021,28450,Automatic,12669,Petrol,40.4,1.5,volkswagen,30228898
+382,Tiguan,2021,25550,Manual,13585,Petrol,43.5,1.5,volkswagen,30226331
+383,Polo,2021,17250,Manual,14056,Petrol,50.4,1.0,volkswagen,30294193
+384,Polo,2020,16600,Manual,16165,Petrol,50.4,1.0,volkswagen,30257881
+385,Golf,2021,34250,Automatic,16469,Petrol,38.2,2.0,volkswagen,30294194
+386,Polo,2021,16950,Manual,17124,Petrol,50.4,1.0,volkswagen,30299049
+387,Polo,2020,16250,Manual,17355,Petrol,50.4,1.0,volkswagen,30306342
+388,Tiguan,2021,24200,Manual,17874,Petrol,44.1,1.5,volkswagen,30257879
+389,Golf,2019,18175,Manual,19685,Petrol,47.1,1.5,volkswagen,30257887
+390,ID4,2021,35950,Automatic,20000,Other,None,0,volkswagen,30278687
+391,Polo,2019,19950,Automatic,21346,Petrol,39.8,2.0,volkswagen,30299056
+392,T-Roc,2021,20500,Manual,22211,Petrol,46.3,1.0,volkswagen,30299052
+393,T-Roc,2019,22750,Manual,25433,Diesel,50.4,1.6,volkswagen,30226336
+394,Golf,2020,20950,Automatic,27472,Petrol,45.6,1.5,volkswagen,30306345
+395,Golf,2021,25450,Automatic,28487,Other,None,1.4,volkswagen,30306343
+396,Polo,2020,17250,Manual,30276,Petrol,49.6,1.0,volkswagen,30289035
+397,Polo,2020,16950,Manual,31290,Petrol,49.6,1.0,volkswagen,30299057
+398,Tiguan,2018,19150,Manual,33585,Petrol,46.3,1.4,volkswagen,30226347
+399,Polo,2019,14375,Manual,34617,Petrol,52.3,1.0,volkswagen,30257885
+400,ID3,2020,23750,Automatic,35000,Other,None,0,volkswagen,30280145
+401,Tiguan,2019,20450,Manual,41355,Petrol,38.2,1.5,volkswagen,30306344
+402,Golf,2018,17250,Manual,42172,Petrol,45.6,1.5,volkswagen,30299041
+403,Polo,2016,11450,Manual,45286,Petrol,60.1,1.2,volkswagen,30299040
+404,Up,2017,9950,Manual,47058,Petrol,64.2,1.0,volkswagen,30306341
+405,Golf,2016,10950,Manual,49733,Petrol,57.6,1.2,volkswagen,30306340
+406,T-Roc,2018,21850,Automatic,51958,Petrol,41.5,2.0,volkswagen,30306346
+407,Model 3,2022,43750,Automatic,6100,Other,0.1,1,tesla,30008288
+408,Citigo,2013,7695,Manual,6956,Petrol,67.3,1.0,skoda,30062252
+409,108,2019,8350,Manual,24000,Petrol,58.9,1.0,peugeot,29948424
+410,Forfour,2016,7650,Manual,42500,Petrol,67.3,1.0,smart,30014654
+411,Macan,2015,30495,Automatic,46800,Petrol,32.1,3.0,porsche,28022491
+412,E Class,2013,10995,Automatic,50000,Diesel,58.9,2.1,mercedes-benz,29948415
+413,Clio,2018,8995,Manual,53000,Petrol,60.1,0.9,renault,30167309
+414,Fiesta,2007,2995,Manual,56000,Petrol,45.6,1.4,ford,28460884
+415,C1,2017,6250,Manual,63000,Petrol,65.7,1.2,citroen,29948421
+416,A Class,2013,13495,Automatic,68000,Petrol,44.1,2.0,mercedes-benz,30167308
+417,308,2014,7850,Automatic,80000,Diesel,67.3,2.0,peugeot,30270886
+418,X1,2014,8295,Manual,86907,Diesel,51.4,2.0,bmw,30145053
+419,Prius,2016,14000,Automatic,100081,Other,85.6,1.8,toyota,29644930
+420,C1,2017,6250,Manual,63000,Petrol,65.7,1.2,citroen,29948421
+421,A Class,2013,13495,Automatic,68000,Petrol,44.1,2.0,mercedes-benz,30167308
+422,308,2014,7850,Automatic,80000,Diesel,67.3,2.0,peugeot,30270886
+423,2008,2017,10380,Manual,84000,Petrol,60.1,1.2,peugeot,29997946
+424,X1,2014,8295,Manual,86907,Diesel,51.4,2.0,bmw,30145053
+425,Transit Connect,2019,15000,Manual,90000,Diesel,None,1.5,ford,29617919
+426,Prius,2016,14000,Automatic,100081,Other,85.6,1.8,toyota,29644930
+427,Mazda6,2020,12714,Manual,102000,Diesel,55.4,2.2,mazda,30196076
+428,CRV,2016,10595,Manual,106953,Diesel,55.4,1.6,honda,29965011
+429,Fabia,2007,1650,Manual,123000,Diesel,58.9,1.4,skoda,29965010
+430,CRV,2016,10595,Manual,106953,Diesel,55.4,1.6,honda,29965011
+431,500,2018,9490,Manual,20969,Petrol,55.4,1.2,fiat,30160140
+432,Jazz,2015,9740,Manual,24500,Petrol,50.4,1.3,honda,29442865
+433,Sportage,2017,12995,Manual,31836,Petrol,42.2,1.6,kia,30172022
+434,500,2012,5995,Manual,40332,Petrol,70.6,0.9,fiat,30218739
+435,One,2010,5495,Manual,45666,Petrol,49.6,1.6,mini,30288778
+436,A3,2009,6195,Manual,49454,Petrol,38.7,1.8,audi,30248348
+437,Jazz,2011,6295,Manual,61025,Petrol,51.4,1.3,honda,29604605
+438,Focus,2011,3995,Manual,66113,Petrol,42.2,1.6,ford,30244588
+439,Mazda2,2015,7995,Manual,76928,Petrol,56.5,1.5,mazda,30199217
+440,Korando,2016,6995,Manual,79418,Diesel,53.3,2.2,ssangyong,30127993
+441,A Class,2017,14650,Automatic,68014,Diesel,74.3,1.5,mercedes-benz,30099471
+442,Micra,2010,4495,Manual,37587,Petrol,47.9,1.2,nissan,30172023
+443,M Class,2014,16995,Automatic,65576,Diesel,44.8,2.1,mercedes-benz,30238233
+444,A3,2009,5995,Manual,76155,Petrol,40.9,1.6,audi,30298716
+445,1 Series,2014,6995,Manual,82733,Diesel,74.3,1.6,bmw,30298717
+446,Juke,2015,7695,Manual,66640,Diesel,70.6,1.5,nissan,30303576
+447,E Class,2009,7995,Automatic,67441,Diesel,41.5,3.0,mercedes-benz,30303577
+448,TT,2013,9995,Manual,71492,Petrol,44.1,1.8,audi,30303578
+449,CLA Class,2022,31549,Semi-Auto,2486,Petrol,45.6,1.3,mercedes-benz,30079742
+450,X2,2019,20799,Manual,2610,Petrol,42.8,1.5,bmw,29893599
+451,Ka+,2017,9049,Manual,3113,Petrol,57.7,1.2,ford,30050265
+452,Golf,2021,24549,Manual,3633,Petrol,49.6,1.5,volkswagen,30267166
+453,i10,2022,16999,Manual,3691,Petrol,52.3,1.0,hyundai,30283987
+454,Micra,2020,14549,Manual,3831,Petrol,47.9,1.0,nissan,29779093
+455,ZS,2022,18299,Manual,4270,Petrol,42.8,1.5,mg,29974698
+456,Berlingo,2020,21549,Manual,4584,Diesel,50.4,1.5,citroen,30050218
+457,Yaris,2021,19049,Automatic,4748,Hybrid,68.9,1.5,toyota,29854941
+458,Swift,2019,11849,Manual,5042,Petrol,51.4,1.2,suzuki,30090148
+459,Mokka,2021,20799,Manual,5086,Petrol,50.4,1.2,vauxhall,30075293
+460,Polo,2020,19549,Semi-Auto,5136,Petrol,46.3,1.0,volkswagen,29836497
+461,Corsa,2018,10749,Manual,5185,Petrol,54.3,1.4,vauxhall,30188256
+462,i20,2019,12799,Manual,5222,Petrol,46.3,1.2,hyundai,29986803
+463,Xceed,2021,17849,Manual,5252,Petrol,47.1,1.0,kia,30281146
+464,Rio,2020,12499,Manual,5620,Petrol,46.3,1.2,kia,30251148
+465,i10,2021,12549,Manual,5763,Petrol,56.5,1.0,hyundai,29854734
+466,Celerio,2019,8049,Manual,5773,Petrol,58.9,1.0,suzuki,29986695
+467,Crossland X,2020,15049,Manual,6017,Petrol,47.1,1.2,vauxhall,30132553
+468,Corsa,2021,13949,Manual,6042,Petrol,53.3,1.2,vauxhall,30225517
+469,T-Cross,2019,18599,Manual,6066,Petrol,47.9,1.0,volkswagen,30178669
+470,108,2021,11049,Manual,6243,Petrol,58.9,1.0,peugeot,30103440
+471,Adam,2019,10999,Manual,6271,Petrol,44.8,1.2,vauxhall,29906017
+472,Mazda2,2021,16849,Manual,6389,Petrol,53.3,1.5,mazda,30178652
+473,Qashqai,2020,15749,Manual,6717,Diesel,53.3,1.5,nissan,29915759
+474,108,2020,10199,Manual,6831,Petrol,58.9,1.0,peugeot,30046113
+475,Swift,2021,15849,Automatic,6959,Petrol,55.4,1.2,suzuki,29871808
+476,Fabia,2021,17849,Semi-Auto,7026,Petrol,47.9,1.0,skoda,30281298
+477,Up,2019,11049,Manual,7359,Petrol,54.3,1.0,volkswagen,30267174
+478,Hatch,2020,23349,Semi-Auto,7394,Petrol,42.2,2.0,mini,30240329
+479,108,2016,8199,Manual,7527,Petrol,68.9,1.0,peugeot,30148583
+480,i20,2019,12799,Manual,5222,Petrol,46.3,1.2,hyundai,29986803
+481,Xceed,2021,17849,Manual,5252,Petrol,47.1,1.0,kia,30281146
+482,ZS,2022,18499,Manual,5572,Petrol,42.8,1.0,mg,30025577
+483,Rio,2020,12499,Manual,5620,Petrol,46.3,1.2,kia,30251148
+484,Corsa,2021,13499,Manual,5712,Petrol,None,1.2,vauxhall,30208711
+485,Corsa,2020,12949,Manual,5745,Petrol,53.3,1.2,vauxhall,29993452
+486,i10,2021,12549,Manual,5763,Petrol,56.5,1.0,hyundai,29854734
+487,Celerio,2019,8049,Manual,5773,Petrol,58.9,1.0,suzuki,29986695
+488,Twingo,2016,8399,Manual,5885,Petrol,56.5,1.0,renault,30225504
+489,108,2021,11399,Manual,5969,Petrol,58.9,1.0,peugeot,30267318
+490,Mazda2,2019,15799,Automatic,8153,Petrol,47.9,1.5,mazda,29950376
+491,EcoSport,2021,18549,Manual,8163,Petrol,47.1,1.0,ford,30233590
+492,2 Series,2019,21199,Semi-Auto,8177,Diesel,None,2.0,bmw,30267208
+493,Fortwo,2018,13499,Automatic,8249,Petrol,68.9,0.9,smart,30178733
+494,Picanto,2019,9749,Manual,8314,Petrol,56.5,1.0,kia,30063573
+495,Picanto,2019,11449,Manual,8345,Petrol,55.4,1.0,kia,29826198
+496,C Class,2020,27799,Manual,8364,Petrol,2.8,1.6,mercedes-benz,30095384
+497,Fiesta,2019,18649,Semi-Auto,8402,Petrol,48.7,1.0,ford,30113727
+498,Corsa,2021,13749,Manual,8445,Petrol,53.3,1.2,vauxhall,30281382
+499,Celerio,2019,8899,Manual,8446,Petrol,58.9,1.0,suzuki,30075059
+500,Vitara,2019,14899,Manual,8454,Petrol,44.1,1.0,suzuki,30233592
+501,Puma,2020,19999,Manual,8490,Petrol,50.4,1.0,ford,29888389
+502,Hatch,2016,16049,Semi-Auto,8648,Petrol,60.1,1.5,mini,30272342
+503,Astra,2020,16349,Manual,8684,Petrol,54.3,1.2,vauxhall,30250961
+504,Mazda2,2019,14749,Automatic,8863,Petrol,47.9,1.5,mazda,29905979
+505,Corsa,2018,10249,Manual,8887,Petrol,54.3,1.4,vauxhall,30079767
+506,Sandero Stepway,2020,10699,Manual,8906,Petrol,55.4,0.9,dacia,30103683
+507,Captur,2019,14899,Manual,9028,Petrol,42.8,1.3,renault,29968920
+508,E-PACE,2019,26049,Automatic,9048,Diesel,39.2,2.0,jaguar,30281407
+509,108,2020,10649,Manual,9056,Petrol,58.9,1.0,peugeot,30161842
+510,Grandland X,2019,17499,Manual,9073,Diesel,55.4,1.5,vauxhall,30107800
+511,Duster,2021,16899,Manual,9145,OTHER,44.1,1.0,dacia,30219212
+512,Corsa,2021,17949,Automatic,9181,Petrol,55.4,1.2,vauxhall,30148663
+513,2 Series,2020,22649,Semi-Auto,9234,Petrol,None,1.5,bmw,30208398
+514,Range Rover Evoque,2020,27549,Manual,9453,Diesel,44.8,2.0,land rover,30284820
+515,Up,2019,9699,Manual,9513,Petrol,62.8,1.0,volkswagen,29950276
+516,Up,2019,15849,Manual,9515,Petrol,50.4,1.0,volkswagen,30267184
+517,Captur,2022,19699,Manual,9575,Petrol,47.9,1.3,renault,30107733
+518,Aygo,2019,10649,Manual,9582,Petrol,57.7,1.0,toyota,30025563
+519,T-Roc,2021,29799,Semi-Auto,9602,Petrol,40.4,1.5,volkswagen,30132511
+520,Clio,2020,14299,Manual,9729,Petrol,49.6,1.0,renault,30178691
+521,Micra,2018,11499,Manual,9785,Petrol,51.4,0.9,nissan,29836526
+522,A5,2020,26549,Manual,9831,Petrol,37.7,2.0,audi,30272351
+523,EcoSport,2019,16049,Manual,9851,Petrol,51.4,1.0,ford,30050310
+524,i20,2020,16549,Semi-Auto,9852,Petrol,55.4,1.0,hyundai,29739687
+525,108,2022,11549,Manual,9918,Petrol,58.9,1.0,peugeot,30267288
+526,Ignis,2019,13299,Manual,9935,Petrol,65.6,1.2,suzuki,30250986
+527,Picanto,2018,11899,Manual,9951,Petrol,55.4,1.0,kia,30167949
+528,Corsa,2017,9749,Manual,9993,Petrol,54.3,1.4,vauxhall,30079750
+529,A1,2020,18899,Manual,10020,Petrol,50.4,1.0,audi,30095441
+530,Mazda2,2021,16849,Manual,10046,Petrol,53.3,1.5,mazda,30251103
+531,Corsa,2018,11949,Manual,10099,Petrol,43.5,1.4,vauxhall,30260929
+532,A3,2021,24549,Semi-Auto,10119,Petrol,53.3,1.0,audi,30255995
+533,Clio,2021,15549,Manual,10132,Petrol,54.3,1.0,renault,30260995
+534,Aygo,2020,11349,Manual,10158,Petrol,None,1.0,toyota,30208520
+535,108,2018,9549,Manual,10172,Petrol,68.9,1.0,peugeot,30281200
+536,Forfour,2019,13049,Automatic,10295,Petrol,67.3,1.0,smart,30103579
+537,500,2019,10349,Manual,10299,Petrol,51.4,1.2,fiat,30161779
+538,Mokka X,2019,14049,Manual,10301,Petrol,39.2,1.4,vauxhall,30075312
+539,A1,2017,16049,Manual,10320,Petrol,55.4,1.4,audi,30251107
+540,Fiesta,2016,10049,Manual,10376,Petrol,65.7,1.0,ford,30255967
+541,208,2020,17799,Semi-Auto,10428,Petrol,50.4,1.2,peugeot,29854934
+542,Ka+,2018,9949,Manual,10437,Petrol,57.7,1.2,ford,30255994
+543,Clio,2019,12799,Manual,10476,Diesel,56.5,1.5,renault,30219189
+544,Picanto,2017,9049,Manual,10492,Petrol,61.4,1.2,kia,29860554
+545,Corsa,2020,13349,Manual,10497,Petrol,53.3,1.2,vauxhall,30188258
+546,Up,2021,13449,Manual,10507,Petrol,54.3,1.0,volkswagen,30063588
+547,Compass,2020,19549,Manual,10526,Petrol,36.7,1.4,jeep,30255914
+548,Corsa,2021,14699,Manual,10611,Petrol,54.3,1.2,vauxhall,30161764
+549,108,2019,12549,Semi-Auto,10631,Petrol,67.3,1.0,peugeot,30107730
+550,Citigo,2018,9399,Manual,10671,Petrol,64.2,1.0,skoda,30090222
+551,Fiesta,2020,16549,Manual,10682,Petrol,51.4,1.0,ford,30155447
+552,Crossland X,2019,13599,Manual,10737,Petrol,47.1,1.2,vauxhall,30118233
+553,Captur,2019,14049,Manual,10745,Petrol,42.8,1.3,renault,29888210
+554,Fabia,2020,13049,Manual,10746,Petrol,51.4,1.0,skoda,29888365
+555,Fiesta,2020,20599,Manual,10749,Petrol,40.3,1.5,ford,29865534
+556,Panda,2018,12599,Manual,10759,Petrol,37.7,0.9,fiat,30225499
+557,500C,2021,13549,Manual,10784,Petrol,55.4,1.0,fiat,29888535
+558,Ateca,2021,21799,Manual,10870,Petrol,42.8,1.5,seat,30079606
+559,Polo,2020,16599,Manual,10885,Petrol,52.3,1.0,volkswagen,30079714
+560,Clubman,2018,18799,Semi-Auto,10918,Petrol,40.9,1.5,mini,30042350
+561,Mokka X,2017,13949,Manual,10944,Petrol,47.1,1.4,vauxhall,30079751
+562,Corsa,2020,14449,Manual,10955,Petrol,52.3,1.2,vauxhall,30267172
+563,Corsa,2020,13349,Manual,10993,Petrol,53.3,1.2,vauxhall,30272260
+564,1 Series,2021,22299,Manual,10996,Diesel,58.9,1.5,bmw,30155455
+565,i10,2019,14299,Semi-Auto,11010,Petrol,47.9,1.2,hyundai,30178668
+566,Ka+,2019,11549,Manual,11011,Petrol,47.9,1.2,ford,30251277
+567,Polo,2019,17299,Semi-Auto,11126,Petrol,45.6,1.0,volkswagen,30178631
+568,HRV,2019,15899,Manual,11173,Petrol,42.8,1.5,honda,30103691
+569,Juke,2021,19599,Manual,11186,Petrol,45.6,1.0,nissan,29888176
+570,Hatch,2020,19649,Manual,11242,Petrol,47.9,1.5,mini,30281233
+571,HRV,2019,18549,Manual,11245,Petrol,42.2,1.5,honda,30225548
+572,Aygo,2018,9599,Manual,11268,Petrol,56.5,1.0,toyota,30046100
+573,Aygo,2020,10549,Manual,11273,Petrol,56.5,1.0,toyota,30281158
+574,1 Series,2020,23299,Manual,11313,Petrol,41.5,1.5,bmw,30112190
+575,Corsa,2020,13099,Manual,11358,Petrol,53.3,1.2,vauxhall,30281387
+576,Mazda3,2018,14249,Manual,11477,Petrol,55.4,2.0,mazda,30233576
+577,Celerio,2017,7399,Manual,11522,Petrol,65.7,1.0,suzuki,30181561
+578,C3,2019,14049,Manual,11523,Petrol,51.4,1.2,citroen,30281474
+579,500,2019,11049,Manual,11526,Petrol,51.4,1.2,fiat,30281319
+580,HRV,2019,17299,Manual,11621,Petrol,42.2,1.5,honda,29866338
+581,Panda,2019,10999,Manual,11624,Petrol,44.1,1.2,fiat,29866368
+582,Focus,2020,16549,Manual,11650,Petrol,49.6,1.0,ford,29768314
+583,Aygo,2018,9549,Manual,11665,Petrol,68.9,1.0,toyota,30084510
+584,Q2,2021,23549,Manual,11696,Petrol,45.6,1.0,audi,29836479
+585,A1,2020,20049,Manual,11720,Petrol,47.9,1.0,audi,30267181
+586,Fiesta,2018,14599,Semi-Auto,11734,Petrol,48.7,1.0,ford,30178427
+587,500,2019,10549,Manual,11748,Petrol,55.4,1.2,fiat,30281439
+588,Corsa,2020,14049,Manual,11784,Petrol,52.3,1.2,vauxhall,30103758
+589,Aygo,2019,10849,Manual,11790,Petrol,57.7,1.0,toyota,30272311
+590,Fabia,2019,12299,Manual,11877,Petrol,47.1,1.0,skoda,30042247
+591,Mazda2,2021,16549,Manual,11911,Petrol,53.3,1.5,mazda,30255953
+592,108,2019,9599,Manual,11923,Petrol,58.9,1.0,peugeot,30103568
+593,Viva,2019,10049,Manual,11947,Petrol,46.3,1.0,vauxhall,29915904
+594,Other,2017,9549,Manual,11957,Petrol,65.7,1.2,peugeot,30251032
+595,Sportage,2020,24549,Automatic,11997,Petrol,32.5,1.6,kia,30250991
+596,Corsa,2019,10899,Manual,12047,Petrol,43.5,1.4,vauxhall,30132502
+597,Aygo,2019,10399,Manual,12109,Petrol,56.5,1.0,toyota,30251331
+598,Zoe,2021,15049,White,Electric,Automatic,12151,,renault,30284849
+599,Focus,2019,18099,Manual,12183,Petrol,None,1.0,ford,30208788
+600,Forfour,2015,8499,Manual,12207,Petrol,67.3,1.0,smart,30261053
+601,Swift,2019,10299,Manual,12245,Petrol,51.4,1.0,suzuki,29888296
+602,Forfour,2019,13049,Automatic,12257,Petrol,46.3,0.9,smart,30284879
+603,500,2019,9849,Manual,12295,Petrol,55.4,1.2,fiat,30046202
+604,Puma,2020,21849,Manual,12328,Petrol,49.6,1.0,ford,30261017
+605,500,2019,10349,Manual,12349,Petrol,51.4,1.2,fiat,30063476
+606,Clio,2019,11999,Manual,12355,Petrol,47.1,0.9,renault,30251133
+607,Juke,2021,19049,Manual,12422,Petrol,45.6,1.0,nissan,29808003
+608,Yaris,2017,11799,Manual,12437,Petrol,58,1.3,toyota,30255961
+609,Juke,2022,17849,Manual,12442,Petrol,47.9,1.0,nissan,30032930
+610,C1,2019,10299,Manual,12471,Petrol,58.9,1.0,citroen,30281483
+611,Aygo,2020,10249,Manual,12487,Petrol,57.7,1.0,toyota,29893611
+612,Tipo,2019,14299,Manual,12506,Petrol,40.4,1.4,fiat,30281422
+613,Aygo,2018,9699,Manual,12512,Petrol,56.5,1.0,toyota,30123844
+614,Corsa,2020,13799,Manual,12569,Petrol,53.3,1.2,vauxhall,29878660
+615,Clio,2019,11299,Manual,12602,Petrol,47.1,0.9,renault,30281246
+616,Micra,2020,12899,Manual,12626,Petrol,48.7,1.0,nissan,29878774
+617,Astra,2020,16049,Manual,12647,Petrol,54.3,1.2,vauxhall,30079614
+618,500,2019,9049,Manual,12668,Petrol,46.3,1.2,fiat,30267217
+619,Mokka X,2018,15299,Semi-Auto,12678,Petrol,37.2,1.4,vauxhall,30103606
+620,Arona,2020,16749,Semi-Auto,12699,Petrol,47.1,1.0,seat,30188227
+621,208,2019,11499,Manual,12716,Petrol,51.4,1.2,peugeot,29968979
+622,Swift,2020,12299,Manual,12759,Petrol,56.5,1.2,suzuki,30281472
+623,Polo,2020,16149,Manual,12788,Petrol,52.3,1.0,volkswagen,30281423
+624,Leon,2019,17099,Manual,12821,Petrol,52.3,1.5,seat,30250937
+625,Captur,2019,12549,Manual,12877,Petrol,52.3,0.9,renault,30250899
+626,Panda,2020,11749,Manual,12921,Petrol,49.6,1.0,fiat,29888123
+627,Corsa,2020,13899,Manual,12986,Petrol,52.3,1.2,vauxhall,29878661
+628,108,2019,9249,Manual,13017,Petrol,58.9,1.0,peugeot,29871856
+629,500,2019,10249,Manual,13048,Petrol,51.4,1.2,fiat,30196628
+630,CLA Class,2018,23599,Semi-Auto,13050,Petrol,44.1,1.6,mercedes-benz,30260947
+631,Polo,2020,15849,Manual,13065,Petrol,51.4,1.0,volkswagen,30103585
+632,T-Roc,2021,22549,Manual,13124,Petrol,46.3,1.0,volkswagen,30050294
+633,Aygo,2018,10449,Manual,13134,Petrol,56.5,1.0,toyota,30042401
+634,Puma,2020,19049,Manual,13155,Petrol,51.4,1.0,ford,30132231
+635,Mokka X,2019,17499,Semi-Auto,13178,Petrol,37.2,1.4,vauxhall,30161786
+636,Polo,2021,18049,Manual,13178,Petrol,53.3,1.0,volkswagen,30267283
+637,Corsa,2021,15349,Manual,13192,Petrol,53.3,1.2,vauxhall,30250973
+638,Duster,2022,17149,Manual,13193,Petrol,45.6,1.0,dacia,30255909
+639,208,2021,19049,Manual,13193,Petrol,56.5,1.2,peugeot,30251125
+640,Micra,2020,16249,Automatic,10553,Petrol,None,1.0,nissan,30208729
+641,Citigo,2018,10299,Automatic,10564,Petrol,65.7,1.0,skoda,30132592
+642,Corsa,2018,10049,Manual,10591,Petrol,54.3,1.4,vauxhall,30079766
+643,Corsa,2020,16049,Manual,10606,Petrol,52.3,1.2,vauxhall,30250974
+644,Corsa,2021,14699,Manual,10611,Petrol,54.3,1.2,vauxhall,30161764
+645,Corsa,2019,11899,Manual,10624,Petrol,44.8,1.4,vauxhall,30155543
+646,108,2018,9099,Manual,10627,Petrol,65.7,1.2,peugeot,29969014
+647,108,2019,12549,Semi-Auto,10631,Petrol,67.3,1.0,peugeot,30107730
+648,Citigo,2018,9399,Manual,10671,Petrol,64.2,1.0,skoda,30090222
+649,Aygo,2019,10649,Manual,10677,Petrol,57.7,1.0,toyota,30132385
+650,C Class,2019,27399,Semi-Auto,13389,Diesel,61.4,1.9,mercedes-benz,30251055
+651,Focus,2019,16899,Manual,13393,Petrol,60.1,1.0,ford,29854972
+652,500,2017,7899,Manual,13418,Petrol,60.1,1.2,fiat,30284876
+653,Range Rover Evoque,2019,29549,Manual,13423,Diesel,44.8,2.0,land rover,30240339
+654,Range Rover Evoque,2019,32049,Automatic,13431,Diesel,41.5,2.0,land rover,30261012
+655,MG3,2020,11049,Manual,13452,Petrol,47.1,1.5,mg,29981249
+656,Q2,2020,21849,Manual,13462,Petrol,45.6,1.0,audi,30118240
+657,Corsa,2018,10549,Manual,13488,Petrol,43.5,1.4,vauxhall,29878729
+658,Golf,2020,19349,Manual,13496,Petrol,49.6,1.5,volkswagen,30240190
+659,Polo,2016,12449,Manual,13544,Petrol,58.9,1.0,volkswagen,30272321
+660,Fortwo,2017,9649,Manual,10849,Petrol,68.9,1.0,smart,30155504
+661,Ateca,2021,21549,Manual,10865,Petrol,42.8,1.5,seat,30103479
+662,Ateca,2021,21799,Manual,10870,Petrol,42.8,1.5,seat,30079606
+663,Polo,2020,16599,Manual,10885,Petrol,52.3,1.0,volkswagen,30079714
+664,Arona,2019,17499,Manual,10902,Petrol,50.4,1.5,seat,30123820
+665,Clubman,2018,18799,Semi-Auto,10918,Petrol,40.9,1.5,mini,30042350
+666,Mokka X,2017,13949,Manual,10944,Petrol,47.1,1.4,vauxhall,30079751
+667,Corsa,2020,14449,Manual,10955,Petrol,52.3,1.2,vauxhall,30267172
+668,1 Series,2020,24049,Manual,10964,Petrol,41.5,1.5,bmw,30161978
+669,Corsa,2020,12549,Manual,10980,Petrol,53.3,1.2,vauxhall,29981335
+670,Corsa,2020,13349,Manual,10993,Petrol,53.3,1.2,vauxhall,30272260
+671,1 Series,2021,22299,Manual,10996,Diesel,58.9,1.5,bmw,30155455
+672,i10,2019,14299,Semi-Auto,11010,Petrol,47.9,1.2,hyundai,30178668
+673,Ka+,2019,11549,Manual,11011,Petrol,47.9,1.2,ford,30251277
+674,Kadjar,2021,18349,Manual,11061,Diesel,55.38,1.5,renault,30042540
+675,CLA Class,2022,34799,Semi-Auto,11105,Hybrid,None,1.3,mercedes-benz,30181251
+676,Fabia,2020,11699,Manual,11117,Petrol,47.9,1.0,skoda,29916094
+677,Rio,2021,13499,Manual,11118,Petrol,None,1.2,kia,30208631
+678,Polo,2019,17299,Semi-Auto,11126,Petrol,45.6,1.0,volkswagen,30178631
+679,Fiesta,2020,15899,Manual,11151,Petrol,55.4,1.0,ford,30008794
+680,Qashqai,2020,19399,Semi-Auto,14179,Petrol,40.9,1.3,nissan,30075361
+681,Swift,2020,10649,Manual,14193,Petrol,56.5,1.2,suzuki,29768427
+682,Corsa,2020,15549,Manual,14216,Petrol,52.3,1.2,vauxhall,30250965
+683,Adam,2019,9899,Manual,14226,Petrol,44.8,1.2,vauxhall,29798970
+684,Swift,2020,10999,Manual,14237,Petrol,56.5,1.2,suzuki,29893761
+685,208,2018,11049,Manual,14250,Petrol,58.9,1.2,peugeot,30225533
+686,Yaris,2017,11849,Manual,14250,Petrol,56.5,1.5,toyota,30281338
+687,Celerio,2017,7549,Manual,14269,Petrol,65.7,1.0,suzuki,30046076
+688,Picanto,2019,9199,Manual,14299,Petrol,56.5,1.0,kia,29888056
+689,Aygo,2018,10299,Manual,14316,Petrol,None,1.0,toyota,30208605
+690,1 Series,2020,23299,Manual,11313,Petrol,41.5,1.5,bmw,30112190
+691,Captur,2020,14749,Manual,11324,Petrol,52.3,0.9,renault,30240267
+692,Corsa,2020,13099,Manual,11358,Petrol,53.3,1.2,vauxhall,30281387
+693,Polo,2019,16749,Semi-Auto,11448,Petrol,45.6,1.0,volkswagen,30008833
+694,Leon,2021,18549,Manual,11475,Diesel,64.2,2.0,seat,30240192
+695,Mazda3,2018,14249,Manual,11477,Petrol,55.4,2.0,mazda,30233576
+696,Corsa,2019,11499,Manual,11482,Petrol,43.5,1.4,vauxhall,30181588
+697,X1,2022,33649,Semi-Auto,11497,Hybrid,148.7,1.5,bmw,30298495
+698,Sandero Stepway,2020,11599,Manual,11499,Petrol,55.4,0.9,dacia,30196767
+699,Celerio,2017,7399,Manual,11522,Petrol,65.7,1.0,suzuki,30181561
+700,C3,2019,14049,Manual,11523,Petrol,51.4,1.2,citroen,30281474
+701,A1,2019,17299,Manual,11525,Petrol,51.4,1.0,audi,29831148
+702,500,2019,11049,Manual,11526,Petrol,51.4,1.2,fiat,30281319
+703,Adam,2019,11349,Manual,11572,Petrol,44.8,1.2,vauxhall,30042389
+704,HRV,2019,17299,Manual,11621,Petrol,42.2,1.5,honda,29866338
+705,Panda,2019,10999,Manual,11624,Petrol,44.1,1.2,fiat,29866368
+706,Kuga,2019,18699,Manual,11642,Petrol,39.2,1.5,ford,29950238
+707,Focus,2020,16549,Manual,11650,Petrol,49.6,1.0,ford,29768314
+708,Mazda2,2021,16449,Manual,11651,Petrol,53.3,1.5,mazda,30196705
+709,C-HR,2021,23049,Automatic,11658,Hybrid,57.7,1.8,toyota,30132412
+710,Aygo,2018,9549,Manual,11665,Petrol,68.9,1.0,toyota,30084510
+711,Q2,2021,23549,Manual,11696,Petrol,45.6,1.0,audi,29836479
+712,1 Series,2018,18999,Semi-Auto,11700,Petrol,47.9,2.0,bmw,29916156
+713,A1,2020,20049,Manual,11720,Petrol,47.9,1.0,audi,30267181
+714,Fiesta,2018,14599,Semi-Auto,11734,Petrol,48.7,1.0,ford,30178427
+715,Corsa,2018,10049,Manual,11741,Petrol,54.3,1.4,vauxhall,30107834
+716,500,2019,10549,Manual,11748,Petrol,55.4,1.2,fiat,30281439
+717,Corsa,2020,14049,Manual,11784,Petrol,52.3,1.2,vauxhall,30103758
+718,Aygo,2019,10849,Manual,11790,Petrol,57.7,1.0,toyota,30272311
+719,Sandero Stepway,2018,10349,Manual,11833,Petrol,55.4,0.9,dacia,30295107
+720,Fiesta,2020,15899,Manual,11841,Petrol,55.4,1.0,ford,30075370
+721,Fabia,2019,12299,Manual,11877,Petrol,47.1,1.0,skoda,30042247
+722,Countryman,2020,22199,Manual,11900,Petrol,44.8,1.5,mini,29969102
+723,Mazda2,2021,16549,Manual,11911,Petrol,53.3,1.5,mazda,30255953
+724,108,2019,9599,Manual,11923,Petrol,58.9,1.0,peugeot,30103568
+725,Viva,2019,10049,Manual,11947,Petrol,46.3,1.0,vauxhall,29915904
+726,Other,2017,9549,Manual,11957,Petrol,65.7,1.2,peugeot,30251032
+727,Fiesta,2020,15349,Manual,11983,Petrol,55.4,1.0,ford,29831220
+728,Tipo,2020,12349,Manual,11984,Petrol,None,1.4,fiat,30208401
+729,C1,2021,10799,Manual,11985,Petrol,None,1.0,citroen,30208476
+730,2 Series,2018,19999,Semi-Auto,14943,Petrol,38.2,2.0,bmw,29974769
+731,Swift,2020,12349,Manual,15034,Petrol,51.4,1.2,suzuki,30178423
+732,Corsa,2021,15549,Manual,15067,Petrol,53.3,1.2,vauxhall,30233469
+733,Crossland X,2020,13049,Manual,15070,Petrol,47.1,1.2,vauxhall,29888486
+734,Mokka X,2019,15349,Semi-Auto,15078,Petrol,37.2,1.4,vauxhall,30178436
+735,Kuga,2018,16799,Manual,15121,Petrol,45.6,1.5,ford,29898673
+736,Touran,2019,21699,Manual,15128,Petrol,40.9,1.0,volkswagen,29898745
+737,CLA Class,2019,20549,Manual,15195,Petrol,51.4,1.6,mercedes-benz,30251101
+738,Focus,2020,17049,Manual,15196,Petrol,60.1,1.0,ford,30107716
+739,Fabia,2019,11049,Manual,15209,Petrol,47.9,1.0,skoda,30178558
+740,Mazda2,2019,12999,Manual,15308,Petrol,48.7,1.5,mazda,29888406
+741,Polo,2020,17199,Semi-Auto,15308,Petrol,45.6,1.0,volkswagen,30079735
+742,Aygo,2020,9699,Manual,15316,Petrol,56.5,1.0,toyota,29915890
+743,Juke,2017,14049,Automatic,15380,Petrol,45,1.6,nissan,29993414
+744,Leon,2020,18349,Manual,15412,Petrol,44.8,1.5,seat,30107769
+745,Yaris,2018,12099,Manual,15434,Petrol,47.1,1.5,toyota,30284804
+746,SQ2,2021,30049,Semi-Auto,15439,Petrol,32.5,2.0,audi,30198647
+747,Swift,2019,11049,Manual,15463,Petrol,51.4,1.2,suzuki,30095334
+748,2008,2019,14049,Manual,15467,Petrol,56.5,1.2,peugeot,30251129
+749,Mazda6,2020,20299,Manual,15491,Petrol,41.5,2.0,mazda,30196724
+750,T-Cross,2022,20049,Manual,15506,Petrol,49.6,1.0,volkswagen,30167926
+751,Qashqai,2019,16249,Manual,15518,Petrol,41.5,1.3,nissan,30155585
+752,T-Roc,2020,22049,Manual,15553,Petrol,44.8,1.5,volkswagen,30281336
+753,SpaceTourer,2019,28049,Manual,15602,Diesel,58.9,1.5,citroen,30233439
+754,108,2018,9349,Manual,15611,Petrol,68.9,1.0,peugeot,30281080
+755,Fiesta,2019,12049,Manual,15612,Petrol,48.7,1.1,ford,29969268
+756,C3,2019,12549,Manual,15647,Petrol,51.4,1.2,citroen,30050216
+757,Picanto,2019,11349,Manual,15672,Petrol,55.4,1.0,kia,30042377
+758,308,2019,13999,Manual,15680,Petrol,48.7,1.2,peugeot,29888347
+759,MX-5,2017,17349,Manual,15741,Petrol,46.3,1.5,mazda,30042336
+760,Q2,2020,20049,Manual,15744,Diesel,49.6,1.6,audi,30107780
+761,Picanto,2019,9899,Manual,15752,Petrol,54.3,1.2,kia,30103464
+762,1 Series,2020,21199,Manual,15759,Petrol,44.1,1.5,bmw,30075359
+763,500,2019,9749,Manual,15824,Petrol,55.4,1.2,fiat,30084506
+764,CLA Class,2019,25549,Semi-Auto,15856,Petrol,40.9,2.0,mercedes-benz,29798974
+765,Fortwo,2016,9599,Manual,15911,Petrol,68.9,1.0,smart,30281243
+766,Passat,2019,21049,Semi-Auto,15911,Petrol,41.5,1.5,volkswagen,30251155
+767,Fiesta,2020,13299,Manual,15929,Petrol,53.3,1.0,ford,29773163
+768,Mazda2,2019,14849,Manual,15950,Petrol,48.7,1.5,mazda,30284845
+769,C3,2019,11499,Manual,16010,Petrol,51.4,1.2,citroen,30123773
+770,IX20,2017,11049,Manual,16027,Petrol,50.4,1.4,hyundai,30155526
+771,Polo,2018,14899,Manual,16027,Petrol,64.2,1.0,volkswagen,30251258
+772,Celerio,2019,8749,Manual,16078,Petrol,58.9,1.0,suzuki,30225544
+773,Fiesta,2019,15049,Semi-Auto,16110,Petrol,48.7,1.0,ford,30251026
+774,i10,2019,9299,Manual,16124,Petrol,60.1,1.0,hyundai,29969065
+775,Pro Ceed,2021,21349,Manual,16165,Petrol,48.7,1.5,kia,30178629
+776,Yaris,2019,12549,Manual,16177,Petrol,47.9,1.5,toyota,30075268
+777,C1,2019,10049,Manual,16204,Petrol,68.9,1.0,citroen,30225486
+778,Aygo,2020,12549,Semi-Auto,16208,Petrol,56.5,1.0,toyota,30260931
+779,A Class,2018,17399,Manual,16215,Petrol,51.4,1.6,mercedes-benz,30281331
+780,Astra,2020,16049,Manual,12647,Petrol,54.3,1.2,vauxhall,30079614
+781,Hatch,2016,11399,Manual,12663,Petrol,61.4,1.2,mini,30132350
+782,500,2019,9049,Manual,12668,Petrol,46.3,1.2,fiat,30267217
+783,Mokka X,2018,15299,Semi-Auto,12678,Petrol,37.2,1.4,vauxhall,30103606
+784,Cooper,2020,19549,Manual,12692,Petrol,44.8,1.5,mini,30196728
+785,Arona,2020,16749,Semi-Auto,12699,Petrol,47.1,1.0,seat,30188227
+786,208,2019,11499,Manual,12716,Petrol,51.4,1.2,peugeot,29968979
+787,Fiesta,2020,15299,Manual,12727,Petrol,57.7,1.0,ford,30295008
+788,Focus,2019,16699,Manual,12732,Petrol,58.9,1.0,ford,30240344
+789,Swift,2020,12299,Manual,12759,Petrol,56.5,1.2,suzuki,30281472
+790,Polo,2020,16149,Manual,12788,Petrol,52.3,1.0,volkswagen,30281423
+791,Corsa,2020,15049,Manual,12791,Petrol,52.3,1.2,vauxhall,30015231
+792,C4 Cactus,2019,15399,Semi-Auto,12794,Petrol,47.1,1.2,citroen,29993475
+793,Leon,2019,17099,Manual,12821,Petrol,52.3,1.5,seat,30250937
+794,Citigo,2019,9899,Manual,12841,Petrol,None,1.0,skoda,30208748
+795,Xceed,2020,16799,Manual,12852,Petrol,45.6,1.0,kia,30240222
+796,Captur,2019,12549,Manual,12877,Petrol,52.3,0.9,renault,30250899
+797,Captur,2020,15799,Manual,12913,Petrol,47.1,1.0,renault,30050240
+798,Panda,2020,11749,Manual,12921,Petrol,49.6,1.0,fiat,29888123
+799,1 Series,2021,26549,Semi-Auto,12963,Petrol,None,1.5,bmw,30208474
+800,Corsa,2020,13899,Manual,12986,Petrol,52.3,1.2,vauxhall,29878661
+801,Kamiq,2020,21499,Semi-Auto,13006,Petrol,43.5,1.5,skoda,30003945
+802,108,2019,9249,Manual,13017,Petrol,58.9,1.0,peugeot,29871856
+803,500,2019,10249,Manual,13048,Petrol,51.4,1.2,fiat,30196628
+804,CLA Class,2018,23599,Semi-Auto,13050,Petrol,44.1,1.6,mercedes-benz,30260947
+805,Polo,2020,15849,Manual,13065,Petrol,51.4,1.0,volkswagen,30103585
+806,Polo,2016,12299,Manual,13093,Petrol,58.9,1.0,volkswagen,30188245
+807,T-Roc,2021,22549,Manual,13124,Petrol,46.3,1.0,volkswagen,30050294
+808,Aygo,2018,10449,Manual,13134,Petrol,56.5,1.0,toyota,30042401
+809,Puma,2020,19049,Manual,13155,Petrol,51.4,1.0,ford,30132231
+810,Corsa,2020,14049,Manual,16760,Petrol,52.3,1.2,vauxhall,30155471
+811,C1,2019,10049,Manual,16788,Petrol,68.9,1.0,citroen,30250270
+812,Clio,2020,13499,Manual,16820,Petrol,54.3,1.0,renault,29768430
+813,5 Series,2020,28299,Semi-Auto,16837,Diesel,49.6,2.0,bmw,30046169
+814,Juke,2020,17949,Manual,16857,Petrol,45.6,1.0,nissan,29756672
+815,T-Cross,2019,19599,Manual,16859,Petrol,47.9,1.0,volkswagen,30075207
+816,Golf,2020,20849,Manual,16859,Petrol,49.6,1.5,volkswagen,30250938
+817,S-MAX,2020,31049,Semi-Auto,16879,Diesel,43.5,2.0,ford,30256003
+818,Arona,2020,17349,Semi-Auto,16893,Petrol,47.1,1.0,seat,30284900
+819,Aygo,2019,10449,Manual,16940,Petrol,57.7,1.0,toyota,30075287
+820,C3,2019,12949,Manual,16972,Petrol,51.4,1.2,citroen,30251096
+821,Ka+,2018,9999,Manual,16995,Petrol,57.7,1.2,ford,30107753
+822,A1,2017,16699,Semi-Auto,17013,Petrol,58.9,1.4,audi,30181505
+823,Corsa,2018,9899,Manual,17016,Petrol,43.5,1.4,vauxhall,30050263
+824,EcoSport,2020,14699,Manual,17016,Petrol,53.3,1.0,ford,30050233
+825,EcoSport,2020,16049,Manual,17019,Petrol,51.4,1.0,ford,30272263
+826,Corsa,2019,11349,Manual,17024,Petrol,43.5,1.4,vauxhall,30075090
+827,Mokka X,2019,12699,Manual,17033,Petrol,39.2,1.4,vauxhall,29734072
+828,C1,2016,7949,Manual,17038,Petrol,65.7,1.2,citroen,30272411
+829,i30,2021,16399,Manual,17063,Petrol,53.3,1.0,hyundai,30042521
+830,GLA Class,2020,26799,Semi-Auto,17071,Petrol,35.8,1.6,mercedes-benz,30281206
+831,Mii,2019,9399,Manual,17102,Petrol,55.4,1.0,seat,30267277
+832,Clio,2019,11349,Manual,17121,Petrol,46.3,0.9,renault,30168001
+833,Picanto,2019,12349,Automatic,17163,Petrol,47.9,1.2,kia,30281198
+834,Corsa,2019,11649,Manual,17176,Petrol,43.5,1.4,vauxhall,30225498
+835,MX-5,2017,16849,Manual,17185,Petrol,46.3,1.5,mazda,30240311
+836,108,2018,9249,Manual,17192,Petrol,65.7,1.2,peugeot,30132230
+837,4 Series,2019,22049,Semi-Auto,17198,Diesel,65.7,2.0,bmw,29739648
+838,Ka+,2018,10049,Manual,17203,Petrol,47.9,1.2,ford,30181496
+839,C3,2019,12549,Manual,17205,Petrol,60.1,1.2,citroen,30281240
+840,Corsa,2019,10599,Manual,17221,Petrol,43.5,1.4,vauxhall,29924995
+841,Stonic,2021,16049,Manual,17246,Petrol,51.4,1.0,kia,30107828
+842,3008,2019,19799,Manual,17264,Petrol,None,1.2,peugeot,30208516
+843,Range Rover Evoque,2020,27549,Manual,17264,Diesel,44.8,2.0,land rover,30267263
+844,Aygo,2019,10049,Manual,17314,Petrol,56.5,1.0,toyota,30255980
+845,Stonic,2020,17649,Automatic,17325,Petrol,46.3,1.0,kia,30251111
+846,Polo,2021,16349,Manual,17341,Petrol,51.4,1.0,volkswagen,30178568
+847,Hatch,2019,14299,Manual,17348,Petrol,45.6,1.5,mini,30084396
+848,C1,2019,9049,Manual,17354,Petrol,58.9,1.0,citroen,30042374
+849,CX-3,2019,16849,Manual,17367,Petrol,42.8,2.0,mazda,30084505
+850,Sportage,2021,24549,Automatic,13643,Diesel,47.1,1.6,kia,29825995
+851,1 Series,2019,20599,Manual,13654,Petrol,44.1,1.5,bmw,30255938
+852,Aygo,2020,13349,Semi-Auto,13685,Petrol,55.4,1.0,toyota,30255888
+853,Baleno,2018,9299,Manual,13745,Petrol,67.3,1.2,suzuki,30050268
+854,Fortwo,2017,10299,Automatic,13762,Petrol,68.9,1.0,smart,30178433
+855,Adam,2018,9799,Manual,13764,Petrol,53.3,1.2,vauxhall,30042324
+856,Ateca,2021,23249,Semi-Auto,13767,Petrol,41.5,1.5,seat,30095346
+857,Corsa,2018,10049,Manual,13779,Petrol,43.5,1.4,vauxhall,29855040
+858,Aygo,2019,8749,Manual,13784,Petrol,56.5,1.0,toyota,30046119
+859,Ka+,2019,10749,Manual,13821,Petrol,47.9,1.2,ford,29986690
+860,Viva,2019,8999,Manual,17624,Petrol,46.3,1.0,vauxhall,30196630
+861,Corsa,2019,10599,Manual,17642,Petrol,43.5,1.4,vauxhall,30132325
+862,Corsa,2019,12849,Manual,17677,Petrol,53.3,1.2,vauxhall,30250956
+863,1 Series,2019,19049,Manual,17709,Petrol,52.3,1.5,bmw,30233550
+864,Hatch,2020,17949,Semi-Auto,17719,Petrol,None,1.5,mini,30208539
+865,Corsa,2019,11049,Manual,17734,Petrol,43.5,1.4,vauxhall,30042286
+866,Arona,2019,15949,Manual,17736,Petrol,49.6,1.0,seat,30219129
+867,Golf,2021,22049,Semi-Auto,17737,Diesel,61.4,2.0,volkswagen,29854898
+868,Kadjar,2020,18349,Manual,17751,Petrol,42.16,1.3,renault,30281111
+869,Tiguan,2016,20049,Semi-Auto,17753,Diesel,49.6,2.0,volkswagen,30042619
+870,Polo,2021,16549,Manual,17804,Petrol,52.3,1.0,volkswagen,30095381
+871,Aygo,2019,10049,Manual,17935,Petrol,57.7,1.0,toyota,29915760
+872,E Class,2020,32049,Semi-Auto,17942,Diesel,70.6,1.9,mercedes-benz,30075103
+873,Ateca,2021,21849,Manual,17981,Petrol,42.8,1.5,seat,30250947
+874,Micra,2017,10199,Manual,17997,Petrol,64.2,0.9,nissan,30103731
+875,Golf,2018,21849,Semi-Auto,18010,Petrol,43.5,1.5,volkswagen,30103672
+876,Vitara,2019,14349,Manual,18030,Petrol,44.1,1.0,suzuki,30281156
+877,C Class,2019,24699,Semi-Auto,18041,Petrol,47.1,1.5,mercedes-benz,29916077
+878,Juke,2019,12299,Manual,18103,Petrol,34.9,1.6,nissan,30188185
+879,A1,2020,18549,Manual,18145,Petrol,48.7,1.0,audi,30250884
+880,Xceed,2021,19049,Manual,18169,Petrol,44.8,1.5,kia,30251137
+881,A1,2017,14049,Manual,18171,Petrol,67.3,1.0,audi,30132219
+882,Civic,2016,13399,Manual,18188,Petrol,51.4,1.3,honda,30284817
+883,Fortwo,2017,7949,Manual,18199,Petrol,68.9,1.0,smart,30079660
+884,Clio,2019,10749,Manual,18220,Petrol,47.1,0.9,renault,30251114
+885,E-PACE,2019,27799,Automatic,18245,Diesel,47.1,2.0,jaguar,30181574
+886,Aygo,2020,12549,Semi-Auto,18257,Petrol,56.5,1.0,toyota,30255912
+887,Focus,2020,20399,Manual,18257,Petrol,51.4,1.5,ford,30260912
+888,A1,2019,17049,Manual,18264,Petrol,51.4,1.0,audi,29916035
+889,EcoSport,2019,15549,Manual,18265,Petrol,51.4,1.0,ford,30095473
+890,500X,2020,19049,Semi-Auto,14244,Petrol,38.7,1.3,fiat,30196708
+891,208,2018,11049,Manual,14250,Petrol,58.9,1.2,peugeot,30225533
+892,Yaris,2017,11849,Manual,14250,Petrol,56.5,1.5,toyota,30281338
+893,Qashqai,2017,15549,Manual,14253,Diesel,74.3,1.5,nissan,30118220
+894,Celerio,2017,7549,Manual,14269,Petrol,65.7,1.0,suzuki,30046076
+895,Picanto,2019,9199,Manual,14299,Petrol,56.5,1.0,kia,29888056
+896,MG3,2021,12349,Manual,14306,Petrol,42.8,1.5,mg,30188165
+897,Aygo,2018,10299,Manual,14316,Petrol,None,1.0,toyota,30208605
+898,108,2019,9049,Manual,14337,Petrol,68.9,1.0,peugeot,30272240
+899,500,2018,9799,Manual,14349,Petrol,55.4,1.2,fiat,30251317
+900,C1,2019,8799,Manual,18379,Petrol,68.9,1.0,citroen,29854912
+901,Up,2018,11549,Manual,18381,Petrol,60.1,1.0,volkswagen,30281161
+902,RAV4,2017,21299,Automatic,18393,Petrol,43.5,2.0,toyota,30181551
+903,Corsa,2019,10549,Manual,18433,Petrol,43.5,1.4,vauxhall,30168053
+904,Mokka X,2017,11749,Manual,18438,Petrol,42.2,1.6,vauxhall,30132599
+905,V40,2019,19049,Semi-Auto,18442,Petrol,47.1,1.5,volvo,30281150
+906,C5 Aircross,2019,17349,Manual,18464,Petrol,44.1,1.2,citroen,30281403
+907,Corsa,2019,10399,Manual,18470,Petrol,43.5,1.4,vauxhall,30002097
+908,Q3,2019,31049,Semi-Auto,18488,Petrol,31.4,2.0,audi,30225428
+909,Focus,2017,14149,Automatic,18532,Petrol,46.3,1.5,ford,30260932
+910,Aygo,2020,9599,Manual,14462,Petrol,56.5,1.0,toyota,29854914
+911,Ibiza,2020,15049,Manual,14468,Petrol,55.4,1.0,seat,30075369
+912,Corsa,2019,11199,Manual,14486,Petrol,43.5,1.4,vauxhall,30103431
+913,CLA Class,2020,28699,Semi-Auto,14489,Petrol,44.8,1.3,mercedes-benz,30196577
+914,Corsa,2021,15449,Manual,14490,Petrol,53.3,1.2,vauxhall,30250966
+915,Hatch,2020,18599,Manual,14494,Petrol,43.5,2.0,mini,30250877
+916,308,2017,11099,Manual,14503,Diesel,80.7,1.6,peugeot,30255972
+917,Fabia,2021,16999,Semi-Auto,14505,Petrol,47.9,1.0,skoda,30075237
+918,Sandero Stepway,2020,10899,Manual,14509,Petrol,55.4,0.9,dacia,30161896
+919,Aygo,2017,9399,Manual,14541,Petrol,68.9,1.0,toyota,30281350
+920,Corsa,2019,13049,Automatic,18671,Petrol,39.8,1.4,vauxhall,30225490
+921,1 Series,2019,19199,Manual,18695,Petrol,52.3,1.5,bmw,30168050
+922,2 Series,2018,19349,Semi-Auto,18728,Diesel,62.8,2.0,bmw,30233489
+923,Fiesta,2019,15349,Manual,18734,Petrol,58.9,1.0,ford,30281325
+924,C3,2019,13799,Manual,18755,Petrol,51.4,1.2,citroen,29958042
+925,Rio,2019,12799,Manual,18767,Petrol,48.7,1.0,kia,30118231
+926,Scirocco,2017,18799,Semi-Auto,18777,Petrol,44.1,2.0,volkswagen,30240206
+927,Fiesta,2016,10149,Manual,18819,Petrol,54.3,1.2,ford,30255975
+928,Polo,2017,13299,Manual,18834,Petrol,60.1,1.2,volkswagen,30281381
+929,Corsa,2021,13049,Manual,18837,Petrol,54.3,1.2,vauxhall,30255986
+930,Viva,2016,7799,Manual,18849,Petrol,62.8,1.0,vauxhall,30255983
+931,Polo,2017,12899,Manual,18858,Petrol,58.9,1.0,volkswagen,30084528
+932,Clio,2020,15549,Manual,18871,Petrol,49.6,1.0,renault,30075242
+933,Polo,2018,12899,Manual,18894,Petrol,64.2,1.0,volkswagen,29768303
+934,Kamiq,2021,18299,Manual,18896,Petrol,52.3,1.0,skoda,30075307
+935,Picanto,2019,11749,Manual,18899,Petrol,None,1.2,kia,30208450
+936,Range Rover Evoque,2018,25049,Automatic,18927,Diesel,44.8,2.0,land rover,29905976
+937,Corsa,2020,12899,Manual,18928,Petrol,53.3,1.2,vauxhall,30255992
+938,Fiesta,2019,15049,Manual,18934,Petrol,58.9,1.0,ford,30233448
+939,CX-3,2019,17799,Manual,18944,Petrol,42.8,2.0,mazda,30103558
+940,Up,2019,9799,Manual,18959,Petrol,None,1.0,volkswagen,30208686
+941,Touran,2017,20049,Manual,18984,Petrol,49.6,1.4,volkswagen,29915909
+942,208,2017,10999,Manual,18996,Petrol,65.7,1.2,peugeot,29969006
+943,Qashqai,2020,19699,Semi-Auto,19013,Petrol,40.9,1.3,nissan,30251068
+944,Fiesta,2020,13299,Manual,19016,Petrol,56.5,1.0,ford,29871777
+945,108,2019,9949,Manual,19018,Petrol,68.9,1.0,peugeot,30251130
+946,500,2020,10549,Manual,19028,Petrol,51.4,1.2,fiat,30251182
+947,Focus,2020,18049,Manual,19045,Petrol,49.6,1.0,ford,29958110
+948,Corsa,2016,11499,Automatic,19052,Petrol,47.9,1.4,vauxhall,30284825
+949,Polo,2016,11799,Manual,19056,Petrol,58.9,1.0,volkswagen,30178468
+950,Hatch,2020,18049,Manual,14811,Petrol,48.7,1.5,mini,30281232
+951,Corsa,2017,10599,Manual,14812,Petrol,55.4,1.4,vauxhall,30233566
+952,Mazda6,2019,20899,Automatic,14817,Diesel,47.9,2.2,mazda,29950383
+953,Ka+,2017,9699,Manual,14842,Petrol,57.7,1.2,ford,30251160
+954,Tarraco,2019,24049,Manual,14872,Petrol,38.7,1.5,seat,30201139
+955,Picanto,2020,11549,Manual,14876,Petrol,48.7,1.2,kia,29826024
+956,Hatch,2021,24049,Semi-Auto,14884,Petrol,45.6,2.0,mini,29866387
+957,Polo,2021,22849,Semi-Auto,14907,Petrol,41.5,2.0,volkswagen,30233529
+958,Sandero Stepway,2020,11749,Manual,14912,Petrol,47.9,0.9,dacia,30050184
+959,Aygo,2017,9049,Manual,14926,Petrol,68.9,1.0,toyota,30003904
+960,Up,2018,11049,Manual,19244,Petrol,54.3,1.0,volkswagen,30267254
+961,XE,2019,22249,Automatic,19247,Diesel,42.8,2.0,jaguar,30280346
+962,Ateca,2021,20699,Manual,19290,Petrol,42.8,1.5,seat,29915775
+963,Scala,2019,15399,Semi-Auto,19342,Petrol,47.1,1.0,skoda,30148626
+964,HRV,2017,16049,Manual,19364,Diesel,68.9,1.6,honda,30075277
+965,Kadjar,2020,17349,Manual,19367,Petrol,42.16,1.3,renault,30107839
+966,Ceed,2021,16399,Manual,19385,Diesel,62.8,1.6,kia,30281271
+967,Corsa,2021,15449,Manual,19402,Petrol,53.3,1.2,vauxhall,30188212
+968,Aygo,2019,10749,Manual,19403,Petrol,57.7,1.0,toyota,30272418
+969,Corsa,2018,10599,Manual,19410,Petrol,54.3,1.4,vauxhall,30281109
+970,Tucson,2019,24299,Semi-Auto,19410,Petrol,35.8,1.6,hyundai,30095402
+971,Fiesta,2018,12699,Manual,19440,Petrol,65.7,1.0,ford,30225411
+972,GLA Class,2018,20049,Semi-Auto,19456,Diesel,67.3,2.1,mercedes-benz,30281223
+973,Aygo,2019,10399,Manual,19460,Petrol,57.7,1.0,toyota,30103533
+974,Kadjar,2019,16849,Manual,19476,Petrol,42.16,1.3,renault,30240220
+975,Kamiq,2021,21299,Manual,19478,Petrol,47.9,1.5,skoda,29916197
+976,T-Roc,2019,21849,Manual,19478,Petrol,44.1,1.5,volkswagen,30272267
+977,Q3,2020,25349,Manual,19495,Petrol,42.2,1.5,audi,30161889
+978,Mokka X,2019,15199,Manual,19505,Petrol,39.2,1.4,vauxhall,30255905
+979,2 Series,2019,18499,Manual,19517,Petrol,52.3,1.5,bmw,30050194
+980,Q3,2016,20549,Manual,19532,Diesel,51.4,2.0,audi,30255943
+981,Corsa,2020,14799,Manual,19540,Petrol,52.3,1.2,vauxhall,30251248
+982,Fiesta,2020,15049,Manual,19574,Petrol,54.3,1.0,ford,30284896
+983,Polo,2018,16049,Manual,19581,Petrol,60.1,1.0,volkswagen,30240200
+984,A3,2017,20749,Semi-Auto,19581,Petrol,56.5,1.5,audi,30046091
+985,500,2019,9749,Manual,19587,Petrol,55.4,1.2,fiat,30079658
+986,Ka+,2019,11349,Manual,19611,Petrol,43.5,1.2,ford,30155539
+987,Kamiq,2021,17549,Manual,19617,Petrol,50.4,1.0,skoda,30251152
+988,500,2017,9049,Manual,19619,Petrol,60.1,1.2,fiat,30284829
+989,Picanto,2019,10299,Manual,19630,Petrol,None,1.2,kia,30208619

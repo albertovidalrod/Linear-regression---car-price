@@ -1,0 +1,7 @@
+,model,year,price,transmission,mileage,fuelType,mpg,engineSize,brand,carId
+0,A3,2004,5990,Automatic,99000,Petrol,28.2,3.2,audi,26509590
+1,A5,2010,4990,Manual,124000,Petrol,42.2,2.0,audi,27342704
+2,A5,2012,11990,Automatic,56000,Petrol,44.1,2.0,audi,30180091
+3,R8,2015,65495,Automatic,32000,Petrol,21.9,5.2,audi,30142964
+4,A6,2018,53495,Automatic,32300,Petrol,29.4,4.0,audi,29432645
+5,Q8,2020,42991,Automatic,44543,Diesel,33.2,3.0,audi,29850658

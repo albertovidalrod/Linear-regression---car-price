@@ -8,7 +8,7 @@ import numpy as np
 class PredictCarPrice:
     def __init__(self):
         sample_data = pd.read_parquet("model/model_data/sample_data-v1.parquet")
-        self.transformer = load("model/model_data/data_transformer-v1.joblib")
+        self.transformer = load("model/model_data/data_transformer-v2.joblib")
         self.transformer.fit(sample_data)
         # Find all the previous models
         previous_models = [

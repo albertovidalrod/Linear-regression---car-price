@@ -1,5 +1,9 @@
+import os
+import time
+import traceback
+
 from bs4 import BeautifulSoup
-from requests_html import HTMLSession
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,9 +14,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 import pandas as pd
-
-import time
-import traceback
 
 
 def car_details(car, driver, wait) -> list:
@@ -123,9 +124,13 @@ def save_data(cars_data: list, postcode: str, car_type: str) -> None:
     cars_df.columns = col_names
     # Save the dataframe to csv
     if car_type == "all":
-        cars_df.to_csv(f"../data/Scraped data/June 2023/{SEARCH_BRAND}_{postcode}.csv")
+        cars_df.to_csv(
+            f"../data/Scraped data/{DATE_FOLDER}/{SEARCH_BRAND}_{postcode}.csv"
+        )
     else:
-        cars_df.to_csv(f"../data/Scraped data/June 2023/{SEARCH_BRAND}_{car_type}.csv")
+        cars_df.to_csv(
+            f"../data/Scraped data/{DATE_FOLDER}/{SEARCH_BRAND}_{car_type}.csv"
+        )
 
 
 def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
@@ -244,8 +249,8 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
             save_data(cars_data, postcode, car_type)
 
 
-SEARCH_BRAND = "audi"
-CAR_TYPE = "all"
+SEARCH_BRAND = "volkswagen"
+CAR_TYPE = "electric"
 
 postcode_all = [
     "E34JN",  # East London
@@ -266,7 +271,16 @@ postcode_all = [
     "BT12HB",  # Belfast - Audi
 ]
 
-# postcode_all = postcode_all[-2:]
+postcode_all = postcode_all[-2:]
+
+# Get the current month and create a folder to save the data
+current_month = datetime.now().strftime("%B")
+current_year = datetime.now().year
+DATE_FOLDER = f"{current_month} {current_year}"
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+data_dir = os.path.join(current_dir, "..", f"data/Scraped data/{DATE_FOLDER}")
+os.makedirs(data_dir, exist_ok=True)
 
 for postcode in postcode_all:
     scrape_car_data(SEARCH_BRAND, postcode, CAR_TYPE)
