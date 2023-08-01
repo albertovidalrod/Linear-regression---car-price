@@ -138,7 +138,12 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
     url = f"https://www.exchangeandmart.co.uk/used-cars-for-sale/{brand}"
 
     # Get url information
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    # driver.get(url)
+
+    service = Service()
+    options = webdriver.ChromeOptions()
+    driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
 
     # Define the wait element to pause the script until an element is found or ready to
@@ -250,7 +255,7 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
 
 
 SEARCH_BRAND = "volkswagen"
-CAR_TYPE = "electric"
+CAR_TYPE = "all"
 
 postcode_all = [
     "E34JN",  # East London
@@ -271,7 +276,7 @@ postcode_all = [
     "BT12HB",  # Belfast - Audi
 ]
 
-postcode_all = postcode_all[-2:]
+postcode_all = postcode_all[:-2]
 
 # Get the current month and create a folder to save the data
 current_month = datetime.now().strftime("%B")

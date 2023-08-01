@@ -1,0 +1,58 @@
+,model,year,price,transmission,mileage,fuelType,mpg,engineSize,brand,carId
+0,1 Series,2014,8495,Manual,77536,Diesel,74.3,1.6,bmw,30067891
+1,Hatch,2015,9495,Manual,82669,Petrol,60.1,1.5,mini,30135722
+2,Mondeo,2016,8495,Manual,92550,Diesel,78.5,1.5,ford,30135718
+3,308,2016,6495,Manual,94465,Diesel,88.3,1.6,peugeot,30203452
+4,Golf,2014,7995,Manual,94561,Diesel,68.9,1.6,volkswagen,30067895
+5,S60,2012,5995,Manual,99562,Diesel,65.7,2.0,volvo,29927682
+6,A6,2014,9995,Manual,101591,Diesel,57.6,2.0,audi,30238504
+7,Golf,2014,7995,Manual,109451,Diesel,68.9,2.0,volkswagen,29954554
+8,Kuga,2010,3995,Manual,109701,Diesel,46.3,2.0,ford,30203453
+9,3 Series,2013,9995,Automatic,109841,Diesel,60.1,2.0,bmw,30218973
+10,Golf,2009,3995,Manual,116807,Diesel,51.4,2.0,volkswagen,30244881
+11,Golf,2010,5495,Manual,117862,Diesel,57.6,2.0,volkswagen,29663151
+12,Mondeo,2014,3995,Manual,122017,Petrol,44.1,1.6,ford,30238505
+13,1 Series,2011,5495,Manual,123998,Diesel,62.8,2.0,bmw,29686494
+14,3008,2013,4495,Manual,132895,Diesel,58.9,1.6,peugeot,29573474
+15,Jazz,2016,11995,Automatic,22133,Petrol,57.6,1.3,honda,30266098
+16,3008,2014,7995,Manual,41344,Diesel,57.7,1.6,peugeot,30342209
+17,207,2011,4495,Manual,54212,Diesel,61.4,1.6,peugeot,30322379
+18,Clio,2013,6295,Manual,61572,Diesel,83.1,1.5,renault,30322383
+19,208,2015,5495,Manual,69021,Petrol,62.8,1.2,peugeot,30322381
+20,C4,2013,4995,Manual,74930,Diesel,61.4,1.6,citroen,30261605
+21,E Class,2014,11495,Automatic,90481,Diesel,57.7,2.1,mercedes-benz,30322378
+22,Golf,2012,5995,Automatic,95569,Diesel,62.8,1.6,volkswagen,30322377
+23,Focus,2015,6495,Manual,123116,Diesel,74.3,1.5,ford,30275710
+24,Sandero Stepway,2022,18500,Automatic,620,Petrol,45.6,1,dacia,30279436
+25,Focus,2022,25200,Manual,643,Petrol,46.3,1,ford,30076098
+26,Corolla,2022,23100,Automatic,799,Hybrid,62.8,1.8,toyota,29703184
+27,Duster,2022,17995,Manual,1728,Petrol,45.6,1,dacia,30302800
+28,Kona,2018,22900,Yellow,Electric,Automatic,1965,,hyundai,28966572
+29,ZS,2022,20000,Semi-Auto,3039,Petrol,39.2,1,mg,30180672
+30,Focus,2022,19200,Manual,3410,Petrol,52.3,1,ford,29917361
+31,Mazda2,2022,19400,Automatic,3989,Petrol,52.3,1.5,mazda,29970413
+32,Tiguan,2020,24600,Semi-Auto,5285,Petrol,37.7,1.5,volkswagen,30258624
+33,Hatch,2022,21550,Manual,5982,Petrol,50.4,1.5,mini,29856666
+34,308,2022,22950,Semi-Auto,6017,Petrol,52.3,1.2,peugeot,29917355
+35,2008,2022,27000,Semi-Auto,6274,Petrol,46.3,1.2,peugeot,30213088
+36,Tucson,2021,33200,Semi-Auto,7640,Hybrid,49.6,1.6,hyundai,30287056
+37,Hatch,2022,23800,Semi-Auto,8113,Petrol,50.4,1.5,mini,29933017
+38,Tiguan,2019,24000,Semi-Auto,9141,Petrol,37.7,1.5,volkswagen,30126364
+39,i40,2019,19300,Semi-Auto,9704,Diesel,53.3,1.6,hyundai,30287058
+40,2008,2021,18250,Manual,9811,Petrol,52.3,1.2,peugeot,30310066
+41,Vitara,2019,16800,Manual,9855,Petrol,43.5,1.4,suzuki,30297522
+42,RAV4,2021,37250,Automatic,10517,Hybrid,47.9,2.5,toyota,30006029
+43,Touareg,2021,50700,Semi-Auto,11434,Diesel,33.6,3,volkswagen,29035487
+44,Leon,2021,16100,Manual,11920,Petrol,51.4,1,seat,28804517
+45,3 Series,2019,28100,Semi-Auto,13951,Petrol,40.9,2,bmw,29507208
+46,A Class,2021,26600,Semi-Auto,14370,Diesel,54.3,2,mercedes-benz,30180671
+47,Rio,2021,15000,Manual,14633,Petrol,52.3,1,kia,29423826
+48,2 Series,2021,24700,Manual,14795,Petrol,43.5,1.5,bmw,30310068
+49,Tipo,2019,10900,Manual,15492,Petrol,40.4,1.4,fiat,30283087
+50,Polo,2021,16000,Manual,16192,Petrol,51.4,1,volkswagen,29976142
+51,Clio,2017,10500,Manual,16842,Petrol,60.1,0.9,renault,30292296
+52,A3,2017,19800,Semi-Auto,17025,Petrol,56.5,1.5,audi,29814078
+53,Clio,2019,15995,Semi-Auto,17871,Petrol,45.6,1.3,renault,30170417
+54,SLK,2016,15995,Manual,18642,Petrol,41.5,2,mercedes-benz,30279437
+55,3 Series,2018,17700,Semi-Auto,18843,Petrol,54.3,1.5,bmw,30297524
+56,Polo,2017,14250,Manual,19141,Petrol,65.7,1,volkswagen,29917364
