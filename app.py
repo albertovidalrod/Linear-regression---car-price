@@ -22,7 +22,7 @@ latest_data = sorted_data_files[-1]
 clean_data = pd.read_parquet("model/model_data" + f"/{latest_data}")
 
 # Define values for input data elements
-car_brands = sorted(clean_data["brand"].unique().tolist())
+car_brands = ["Audi", "BMW", "Volkswagen"]
 car_transmission = sorted(clean_data["transmission"].unique().tolist())
 car_fuel_type = sorted(clean_data["fuelType"].unique().tolist())
 car_engine_size = sorted(clean_data["engineSize"].unique().tolist())
