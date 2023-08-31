@@ -1,0 +1,692 @@
+,model,year,price,transmission,mileage,fuelType,mpg,engineSize,brand,carId
+0,3 Series,2017,12689,Automatic,79032,Petrol,148.7,2.0,bmw,30426704
+1,X1,2022,31549,Semi-Auto,11684,Hybrid,148.7,1.5,bmw,30298495
+2,3 Series,2019,25499,Semi-Auto,31795,Hybrid,None,2.0,bmw,30190721
+3,2 Series,2019,19849,Automatic,38377,Hybrid,113,1.5,bmw,30401215
+4,3 Series,2018,16049,Semi-Auto,50552,Hybrid,148.7,2.0,bmw,30424968
+5,5 Series,2022,35990,Semi-Auto,7999,Hybrid,40.4,2,bmw,30158378
+6,X3,2022,51790,Semi-Auto,8006,Hybrid,30.7,3,bmw,30310219
+7,2 Series,2018,20995,Automatic,23041,Hybrid,113,1.5,bmw,30458512
+8,2 Series,2022,34990,Automatic,4490,Hybrid,None,1.5,bmw,30441795
+9,3 Series,2021,37000,Semi-Auto,23420,Hybrid,176.6,2,bmw,30287460
+10,i3,2018,18890,Red,Petrol,Automatic,None,,bmw,29298044
+11,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+12,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+13,2 Series,2019,18200,Automatic,41324,Hybrid,113,1.5,bmw,30230348
+14,X2,2020,26895,Semi-Auto,39969,Hybrid,156.9,1.5,bmw,30357944
+15,5 Series,2023,52945,Semi-Auto,1,Hybrid,156.9,2,bmw,30315313
+16,5 Series,2023,50995,Semi-Auto,15,Hybrid,156.9,2,bmw,30340767
+17,3 Series,2023,51994,Semi-Auto,80,Hybrid,156.9,2,bmw,30340765
+18,2 Series,2023,44995,Semi-Auto,3759,Hybrid,None,1.5,bmw,30340768
+19,3 Series,2021,38780,Semi-Auto,15679,Hybrid,43.5,3,bmw,30169288
+20,3 Series,2022,43750,Semi-Auto,1866,Hybrid,35.8,3,bmw,29626410
+21,X5,2023,75850,Semi-Auto,5887,Hybrid,188.3,3,bmw,30190908
+22,X3,2023,59850,Semi-Auto,8000,Hybrid,30.7,3,bmw,30317977
+23,X5,2022,65750,Automatic,7066,Petrol,188.3,3.0,bmw,30319173
+24,X1,2020,32699,Automatic,11796,Petrol/PlugIn,148.7,1.5,bmw,30402510
+25,2 Series,2023,35450,Semi-Auto,11050,Hybrid,None,1.5,bmw,30408528
+26,3 Series,2020,29950,Semi-Auto,11624,Hybrid,188.3,2,bmw,30317978
+27,5 Series,2021,34440,Semi-Auto,12407,Hybrid,40.4,2,bmw,30053818
+28,3 Series,2021,36950,Semi-Auto,16482,Hybrid,56.5,2,bmw,30295714
+29,X3,2021,39750,Semi-Auto,18459,Hybrid,44.1,2,bmw,30174092
+30,3 Series,2022,31940,Semi-Auto,29659,Hybrid,56.5,2,bmw,30374116
+31,X1,2023,49950,Semi-Auto,4075,Hybrid,None,1.5,bmw,30288216
+32,5 Series,2023,50950,Semi-Auto,4287,Hybrid,141.3,2,bmw,30290638
+33,4 Series,2023,51440,Semi-Auto,4805,Hybrid,34,3,bmw,30315086
+34,X1,2021,33950,Semi-Auto,9185,Hybrid,148.7,1.5,bmw,30215723
+35,5 Series,2018,16880,Automatic,105000,Petrol,156.9,2.0,bmw,30363367
+36,X5,2023,67000,Automatic,4912,Diesel,34.9,3.0,bmw,30087360
+37,2 Series,2023,35450,Semi-Auto,9838,Hybrid,None,1.5,bmw,30438798
+38,X5,2022,66950,Semi-Auto,12198,Hybrid,188.3,3,bmw,29987006
+39,X6,2022,61450,Semi-Auto,12499,Hybrid,36.2,3,bmw,30362350
+40,X3,2020,39950,Semi-Auto,13665,Hybrid,None,2,bmw,30179205
+41,5 Series,2020,30450,Semi-Auto,15453,Hybrid,47.9,2,bmw,30429872
+42,5 Series,2022,44850,Semi-Auto,15915,Hybrid,166.2,2,bmw,30355488
+43,3 Series,2021,31940,Semi-Auto,15920,Hybrid,56.5,2,bmw,29987000
+44,5 Series,2021,34440,Semi-Auto,16279,Hybrid,40.4,2,bmw,30243677
+45,3 Series,2022,39850,Semi-Auto,16791,Hybrid,43.5,3,bmw,29469967
+46,X3,2021,39750,Semi-Auto,17338,Hybrid,44.1,2,bmw,30133114
+47,3 Series,2019,17880,Automatic,101000,Petrol,8.8,2.0,bmw,29429814
+48,i3,2018,18890,Red,Petrol,Automatic,None,,bmw,29298044
+49,5 Series,2021,34950,Semi-Auto,17415,Hybrid,51.4,2,bmw,30292481
+50,3 Series,2021,29750,Semi-Auto,19349,Hybrid,None,2,bmw,30368133
+51,3 Series,2021,31940,Semi-Auto,20408,Hybrid,56.5,2,bmw,29469973
+52,4 Series,2021,37950,Semi-Auto,23052,Hybrid,50.4,3,bmw,29469986
+53,2 Series,2019,21950,Automatic,24134,Hybrid,113,1.5,bmw,30364333
+54,7 Series,2021,58950,Semi-Auto,26123,Hybrid,104.6,3,bmw,30355487
+55,3 Series,2021,38450,Semi-Auto,29472,Hybrid,43.5,3,bmw,29622511
+56,5 Series,2017,23440,Semi-Auto,40213,Hybrid,156.9,2,bmw,30387436
+57,5 Series,2020,30450,Semi-Auto,41419,Hybrid,47.9,2,bmw,30293402
+58,2 Series,2022,29990,Semi-Auto,6124,Hybrid,45.6,1.5,bmw,30463837
+59,X3,2020,30880,Automatic,83000,Petrol,None,2.0,bmw,30386314
+60,7 Series,2019,33880,Automatic,94000,Petrol,104.6,3.0,bmw,30423372
+61,5 Series,2023,48950,Automatic,3501,Hybrid,49.6,2.0,bmw,30224216
+62,X5,2023,69950,Automatic,3703,Hybrid,28,3.0,bmw,30292696
+63,5 Series,2023,43950,Automatic,4107,Hybrid,156.9,2.0,bmw,30106138
+64,X5,2023,69950,Automatic,5007,Hybrid,37.7,3.0,bmw,30260034
+65,X7,2023,94950,Automatic,7700,Hybrid,32.8,3.0,bmw,30260033
+66,4 Series,2022,38950,Automatic,8692,Hybrid,57.7,2.0,bmw,30320038
+67,3 Series,2022,41950,Automatic,9132,Hybrid,188.3,2.0,bmw,30121820
+68,X7,2022,81950,Automatic,13244,Hybrid,None,3.0,bmw,30369319
+69,X5,2021,65950,Automatic,15205,Hybrid,37.7,3.0,bmw,30320041
+70,3 Series,2020,29950,Automatic,19823,Hybrid,8.8,2.0,bmw,30320048
+71,7 Series,2019,33880,Automatic,97000,Petrol,104.6,3.0,bmw,30423373
+72,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+73,3 Series,2020,29950,Automatic,19823,Hybrid,8.8,2.0,bmw,30320048
+74,X6,2021,51950,Automatic,19941,Hybrid,38.7,3.0,bmw,30043191
+75,X5,2021,51450,Automatic,29403,Hybrid,37.7,3.0,bmw,30066538
+76,X4,2021,42950,Automatic,32679,Hybrid,40.9,3.0,bmw,30334189
+77,i8,2016,43950,Automatic,33553,Hybrid,134.5,1.5,bmw,30275334
+78,4 Series,2022,33450,Automatic,36521,Hybrid,54.3,2.0,bmw,30193210
+79,X5,2020,55950,Automatic,42000,Hybrid,None,3.0,bmw,29969790
+80,3 Series,2019,26450,Automatic,42742,Hybrid,8.8,2.0,bmw,30070775
+81,3 Series,2020,28950,Automatic,45575,Hybrid,188.3,2.0,bmw,30320046
+82,3 Series,2021,34790,Semi-Auto,31989,Hybrid,188.3,2,bmw,30310223
+83,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+84,7 Series,2019,33880,Automatic,94000,Petrol,104.6,3.0,bmw,30423372
+85,X5,2023,64950,Automatic,4950,Hybrid,37.7,3.0,bmw,30264299
+86,X3,2022,48950,Automatic,5908,Hybrid,None,2.0,bmw,30302354
+87,3 Series,2023,44950,Automatic,9701,Hybrid,52.3,2.0,bmw,30230568
+88,X1,2023,43950,Automatic,11467,Hybrid,55.4,2.0,bmw,30432591
+89,X2,2022,30950,Automatic,11942,Hybrid,156.9,1.5,bmw,29328953
+90,3 Series,2023,45450,Automatic,12126,Hybrid,188.3,2.0,bmw,30441881
+91,X5,2021,62950,Automatic,15806,Hybrid,188.3,3.0,bmw,30423734
+92,4 Series,2021,34950,Automatic,16176,Hybrid,54.3,2.0,bmw,30432590
+93,4 Series,2021,45950,Automatic,16786,Hybrid,34.9,3.0,bmw,30414150
+94,3 Series,2021,42950,Automatic,20173,Hybrid,None,3.0,bmw,30243428
+95,X5,2021,59750,Automatic,15100,Petrol,188.3,3.0,bmw,30286459
+96,3 Series,2019,17880,Automatic,101000,Petrol,8.8,2.0,bmw,29429814
+97,5 Series,2020,26950,Automatic,31232,Hybrid,49.6,2.0,bmw,30111353
+98,X1,2020,34450,Automatic,20651,Hybrid,148.7,1.5,bmw,30458583
+99,3 Series,2022,42950,Automatic,8756,Hybrid,52.3,2.0,bmw,30129967
+100,5 Series,2020,27950,Automatic,12699,Hybrid,49.6,2.0,bmw,30164712
+101,4 Series,2022,48950,Automatic,21178,Hybrid,34,3.0,bmw,30297735
+102,5 Series,2019,26950,Automatic,29290,Hybrid,156.9,2.0,bmw,30463259
+103,i3,2015,10689,Automatic,82604,Hybrid,470.8,0.6,bmw,29472230
+104,5 Series,2019,28975,Semi-Auto,22324,Hybrid,141.3,2,bmw,30092552
+105,i3,2016,12995,Solar,Petrol,Automatic,None,,bmw,29507323
+106,3 Series,2020,23995,Automatic,44502,Petrol,8.8,2.0,bmw,29894774
+107,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+108,X5,2022,55750,Automatic,22807,Diesel,34.9,3.0,bmw,29847479
+109,3 Series,2020,23490,Semi-Auto,20689,Hybrid,201.8,2,bmw,30057692
+110,4 Series,2023,51990,Semi-Auto,879,Hybrid,34,3,bmw,30292866
+111,5 Series,2023,50290,Semi-Auto,3062,Hybrid,134.5,2,bmw,30290397
+112,5 Series,2023,45490,Semi-Auto,5303,Hybrid,156.9,2,bmw,30385739
+113,4 Series,2022,37290,Semi-Auto,6494,Hybrid,57.7,2,bmw,30119400
+114,X5,2022,59990,Semi-Auto,10895,Hybrid,37.7,3,bmw,30190570
+115,2 Series,2022,34690,Semi-Auto,10941,Hybrid,None,1.5,bmw,30214482
+116,3 Series,2022,42290,Semi-Auto,15619,Hybrid,43.5,3,bmw,30140463
+117,X6,2021,54890,Semi-Auto,15734,Hybrid,36.2,3,bmw,30214486
+118,X3,2021,38990,Semi-Auto,16643,Hybrid,44.1,2,bmw,30407851
+119,5 Series,2012,12497,Automatic,75000,Hybrid,None,3.0,bmw,30282447
+120,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+121,X5,2019,42790,Semi-Auto,37347,Hybrid,188.3,3,bmw,30126330
+122,3 Series,2022,38950,Automatic,4839,Hybrid,201.8,2.0,bmw,30264316
+123,5 Series,2022,41750,Automatic,7437,Hybrid,46.3,3.0,bmw,29963741
+124,4 Series,2022,38950,Automatic,8050,Hybrid,57.7,2.0,bmw,30320114
+125,i8,2020,69950,Automatic,8192,Hybrid,141.2,1.5,bmw,30275337
+126,X5,2022,68950,Automatic,8853,Hybrid,37.7,3.0,bmw,30297738
+127,4 Series,2022,38950,Automatic,9989,Hybrid,57.7,2.0,bmw,29882360
+128,4 Series,2022,48950,Automatic,10957,Hybrid,44.8,3.0,bmw,30432624
+129,X3,2021,47950,Automatic,11248,Hybrid,None,2.0,bmw,30441916
+130,7 Series,2021,52950,Automatic,12842,Hybrid,None,3.0,bmw,29995128
+131,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+132,7 Series,2019,33880,Automatic,94000,Petrol,104.6,3.0,bmw,30423372
+133,X6,2021,57950,Automatic,16130,Hybrid,28.8,3.0,bmw,30445533
+134,X5,2021,56950,Automatic,18035,Hybrid,188.3,3.0,bmw,29724813
+135,4 Series,2020,33990,Automatic,30016,Hybrid,57.7,2.0,bmw,30375802
+136,X5,2022,58950,Automatic,36369,Hybrid,188.3,3.0,bmw,30419461
+137,5 Series,2020,25950,Automatic,39371,Hybrid,49.6,2.0,bmw,30419465
+138,3 Series,2023,60950,Automatic,998,Hybrid,33.6,3.0,bmw,30458637
+139,3 Series,2021,31450,Automatic,9847,Hybrid,188.3,2.0,bmw,30432622
+140,X4,2022,40950,Automatic,29462,Hybrid,46.3,2.0,bmw,30458639
+141,3 Series,2020,33950,Automatic,41845,Hybrid,188.3,2.0,bmw,30447076
+142,X1,2022,43950,Automatic,6019,Hybrid,55.4,2.0,bmw,30473038
+143,3 Series,2017,12689,Automatic,79032,Petrol,148.7,2.0,bmw,30426704
+144,X4,2020,35750,Automatic,27951,Diesel,42.8,2.0,bmw,30286453
+145,X5,2022,70000,Automatic,7796,Hybrid,188.3,3.0,bmw,29963746
+146,4 Series,2021,46950,Automatic,10748,Hybrid,34.9,3.0,bmw,30469691
+147,X3,2021,39950,Automatic,10821,Hybrid,44.1,2.0,bmw,30473040
+148,7 Series,2020,53750,Automatic,12178,Hybrid,104.6,3.0,bmw,30260043
+149,X5,2021,54750,Automatic,17073,Hybrid,34.9,3.0,bmw,29963750
+150,4 Series,2020,33950,Automatic,22145,Hybrid,54.3,2.0,bmw,29963751
+151,X5,2021,62450,Automatic,22938,Hybrid,188.3,3.0,bmw,30070879
+152,X5,2021,56950,Automatic,23143,Hybrid,188.3,3.0,bmw,30445531
+153,3 Series,2020,23600,Automatic,47590,Petrol,8.8,2.0,bmw,30356987
+154,5 Series,2018,16800,Automatic,93440,Petrol,156.9,2.0,bmw,30310636
+155,X3,2020,30880,Automatic,83000,Petrol,None,2.0,bmw,30386314
+156,X5,2021,58000,Automatic,17312,Petrol,188.3,3.0,bmw,30252657
+157,5 Series,2018,16800,Automatic,93440,Petrol,156.9,2.0,bmw,30310636
+158,i3,2015,8900,White,Petrol,Automatic,None,,bmw,29758213
+159,X6,2023,66990,Semi-Auto,1867,Hybrid,36.2,3,bmw,30395583
+160,5 Series,2023,46890,Semi-Auto,2626,Hybrid,156.9,2,bmw,30449735
+161,4 Series,2023,52990,Semi-Auto,4929,Hybrid,36.2,3,bmw,30395586
+162,3 Series,2022,43190,Semi-Auto,7793,Hybrid,34.5,3,bmw,30157945
+163,5 Series,2023,49590,Semi-Auto,9017,Hybrid,134.5,2,bmw,30119383
+164,4 Series,2021,36890,Semi-Auto,15087,Hybrid,54.3,2,bmw,30344261
+165,X3,2021,40390,Semi-Auto,16374,Hybrid,44.1,2,bmw,30285299
+166,3 Series,2021,29990,Semi-Auto,16418,Hybrid,56.5,2,bmw,30300454
+167,3 Series,2020,25500,Automatic,46292,Diesel,56.5,2.0,bmw,30339930
+168,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+169,X2,2021,29690,Semi-Auto,20858,Hybrid,156.9,1.5,bmw,30438664
+170,X3,2020,42090,Semi-Auto,28943,Hybrid,None,2,bmw,30285300
+171,X5,2021,52090,Semi-Auto,29498,Hybrid,188.3,3,bmw,30119382
+172,3 Series,2020,30890,Semi-Auto,34164,Hybrid,8.8,2,bmw,30357565
+173,X5,2021,54190,Semi-Auto,34602,Hybrid,None,3,bmw,30192958
+174,X5,2020,52490,Semi-Auto,47685,Hybrid,188.3,3,bmw,30463011
+175,2 Series,2022,32989,Automatic,7100,Hybrid,44.1,2.0,bmw,30461754
+176,7 Series,2014,21495,Automatic,36499,Hybrid,41.5,3.0,bmw,30449947
+177,3 Series,2020,25977,Semi-Auto,39176,Hybrid,188.3,2,bmw,30470166
+178,3 Series,2020,24477,Semi-Auto,44951,Hybrid,8.8,2,bmw,30393182
+179,X3,2020,31000,Automatic,28062,Diesel,54.3,2.0,bmw,30468842
+180,5 Series,2012,12497,Automatic,75000,Hybrid,None,3.0,bmw,30282447
+181,3 Series,2018,16998,Semi-Auto,49151,Hybrid,134.5,2,bmw,30290196
+182,5 Series,2018,23998,Semi-Auto,49444,Hybrid,156.9,2,bmw,30256067
+183,5 Series,2020,26500,Semi-Auto,41000,Hybrid,47.1,2,bmw,30158335
+184,3 Series,2023,42950,Automatic,6410,Hybrid,188.3,2.0,bmw,30260027
+185,4 Series,2023,55950,Automatic,6948,Hybrid,34.9,3.0,bmw,30458581
+186,3 Series,2022,49950,Automatic,7974,Hybrid,46.3,3.0,bmw,30230567
+187,5 Series,2022,41950,Automatic,8536,Hybrid,51.4,2.0,bmw,30302350
+188,3 Series,2022,41950,Automatic,8849,Hybrid,188.3,2.0,bmw,30302348
+189,5 Series,2023,45950,Automatic,9448,Hybrid,156.9,2.0,bmw,30469626
+190,X5,2022,65450,Automatic,13773,Hybrid,None,3.0,bmw,30051110
+191,i3,2018,18890,Red,Petrol,Automatic,None,,bmw,29298044
+192,3 Series,2020,25500,Automatic,46292,Diesel,56.5,2.0,bmw,30339930
+193,X5,2022,66450,Automatic,17939,Hybrid,188.3,3.0,bmw,30230564
+194,3 Series,2020,28950,Automatic,20459,Hybrid,52.3,2.0,bmw,30186856
+195,3 Series,2021,38950,Automatic,25776,Hybrid,None,3.0,bmw,30363727
+196,4 Series,2023,55950,Automatic,6948,Hybrid,34.9,3.0,bmw,30458581
+197,5 Series,2023,45950,Automatic,9448,Hybrid,156.9,2.0,bmw,30469626
+198,5 Series,2020,29950,Automatic,42827,Hybrid,47.9,2.0,bmw,30320012
+199,5 Series,2012,12497,Automatic,75000,Hybrid,None,3.0,bmw,30282447
+200,2 Series,2019,21799,Automatic,14287,Hybrid,113,1.5,bmw,30456531
+201,X3,2021,38699,Semi-Auto,18291,Hybrid,None,2,bmw,30115149
+202,2 Series,2023,36999,Automatic,5256,Hybrid,None,1.5,bmw,30213635
+203,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+204,X3,2020,31000,Automatic,28062,Diesel,54.3,2.0,bmw,30468842
+205,4 Series,2023,48850,Semi-Auto,1550,Hybrid,47.1,3,bmw,30215720
+206,2 Series,2022,37850,Semi-Auto,5607,Hybrid,None,1.5,bmw,30190923
+207,5 Series,2023,45850,Semi-Auto,6611,Hybrid,156.9,2,bmw,30215719
+208,X3,2021,38750,Semi-Auto,6947,Hybrid,44.1,2,bmw,30448575
+209,X2,2022,33950,Semi-Auto,11443,Hybrid,156.9,1.5,bmw,29469855
+210,3 Series,2021,31950,Semi-Auto,13103,Hybrid,188.3,2,bmw,30355484
+211,4 Series,2021,33440,Semi-Auto,14306,Hybrid,57.7,2,bmw,30097857
+212,X3,2021,44950,Semi-Auto,15097,Hybrid,42.2,3,bmw,30391874
+213,3 Series,2021,31940,Semi-Auto,18992,Hybrid,56.5,2,bmw,29915124
+214,3 Series,2021,33450,Semi-Auto,20861,Hybrid,56.5,2,bmw,30097860
+215,7 Series,2019,33490,Automatic,112000,Petrol,104.6,3.0,bmw,30423374
+216,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+217,3 Series,2021,35950,Semi-Auto,22704,Hybrid,56.5,2,bmw,30133111
+218,X3,2021,35850,Semi-Auto,24569,Hybrid,44.1,2,bmw,30402356
+219,5 Series,2021,34950,Semi-Auto,24788,Hybrid,38.2,2,bmw,29645893
+220,5 Series,2021,34950,Semi-Auto,36478,Hybrid,166.2,2,bmw,29833135
+221,2 Series,2020,23990,Automatic,12732,Hybrid,113,1.5,bmw,30439414
+222,3 Series,2020,26350,Automatic,28788,Hybrid,56.5,2.0,bmw,30369725
+223,3 Series,2017,12689,Automatic,79032,Petrol,148.7,2.0,bmw,30426704
+224,5 Series,2018,24299,Semi-Auto,30948,Hybrid,156.9,2,bmw,30417879
+225,4 Series,2022,49799,Semi-Auto,5049,Hybrid,34,3,bmw,30290270
+226,5 Series,2022,46999,Semi-Auto,7437,Hybrid,134.5,2,bmw,30429507
+227,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+228,X5,2023,67000,Automatic,4912,Diesel,34.9,3.0,bmw,30087360
+229,4 Series,2021,48999,Semi-Auto,13454,Hybrid,34.9,3,bmw,30364105
+230,X5,2022,61999,Semi-Auto,16242,Hybrid,188.3,3,bmw,30280961
+231,7 Series,2022,52999,Semi-Auto,52809,Hybrid,104.6,3,bmw,29982848
+232,5 Series,2022,46999,Semi-Auto,6631,Hybrid,134.5,2,bmw,30373784
+233,2 Series,2020,21999,Automatic,20237,Hybrid,113,1.5,bmw,30395406
+234,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+235,3 Series,2019,18500,Automatic,95320,Petrol,8.8,2.0,bmw,30180055
+236,X3,2020,29500,Automatic,96980,Petrol,None,2.0,bmw,30386475
+237,3 Series,2018,13000,Automatic,105110,Petrol,134.5,2.0,bmw,30297079
+238,3 Series,2018,11700,Automatic,106430,Petrol,148.7,2.0,bmw,30333451
+239,X5,2021,59750,Automatic,15100,Petrol,188.3,3.0,bmw,30286459
+240,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+241,4 Series,2021,45380,Semi-Auto,7684,Hybrid,36.2,3,bmw,30413350
+242,3 Series,2018,17000,Automatic,76070,Petrol,None,2.0,bmw,30431881
+243,5 Series,2018,20000,Automatic,76210,Petrol,156.9,2.0,bmw,30350806
+244,3 Series,2018,15900,Automatic,97900,Petrol,None,2.0,bmw,30369121
+245,5 Series,2018,18200,Automatic,105310,Petrol,156.9,2.0,bmw,30441201
+246,5 Series,2018,21500,Automatic,34150,Petrol,156.9,2.0,bmw,30369119
+247,2 Series,2019,15700,Automatic,69630,Petrol,113,1.5,bmw,30333494
+248,i3,2018,12800,White,Petrol,Automatic,None,,bmw,30462566
+249,2 Series,2019,13500,Automatic,75540,Petrol,113,1.5,bmw,30131467
+250,3 Series,2018,15500,Automatic,87570,Petrol,None,2.0,bmw,30096597
+251,X4,2020,35750,Automatic,27951,Diesel,42.8,2.0,bmw,30286453
+252,X3,2020,31000,Automatic,28062,Diesel,54.3,2.0,bmw,30468842
+253,5 Series,2019,21500,Automatic,91590,Petrol,156.9,2.0,bmw,30462565
+254,3 Series,2020,27995,Automatic,21270,Hybrid,50.4,2.0,bmw,30419523
+255,5 Series,2020,25495,Automatic,41512,Hybrid,49.6,2.0,bmw,30427720
+256,5 Series,2018,23000,Automatic,33580,Petrol,156.9,2.0,bmw,30449681
+257,3 Series,2018,17500,Automatic,74300,Petrol,None,2.0,bmw,30449684
+258,2 Series,2019,13800,Automatic,83410,Petrol,148.7,1.5,bmw,30409171
+259,3 Series,2017,12800,Automatic,92760,Petrol,134.5,2.0,bmw,30229764
+260,3 Series,2019,19200,Automatic,93040,Petrol,8.8,2.0,bmw,30314348
+261,2 Series,2019,13700,Automatic,94020,Petrol,113,1.5,bmw,30395019
+262,5 Series,2019,19000,Automatic,94420,Petrol,156.9,2.0,bmw,30356909
+263,3 Series,2017,12689,Automatic,79032,Petrol,148.7,2.0,bmw,30426704
+264,X5,2021,57250,Automatic,15079,Diesel,34.9,3.0,bmw,29861441
+265,3 Series,2017,12400,Automatic,108030,Petrol,134.5,2.0,bmw,30392555
+266,5 Series,2018,21300,Automatic,59490,Petrol,156.9,2.0,bmw,30105433
+267,3 Series,2019,21000,Automatic,68720,Petrol,8.8,2.0,bmw,30472919
+268,3 Series,2020,20500,Automatic,73380,Petrol,8.8,2.0,bmw,30237265
+269,X3,2020,34000,Automatic,76660,Petrol,None,2.0,bmw,30350662
+270,5 Series,2018,22000,Automatic,58710,Petrol,156.9,2.0,bmw,30475923
+271,5 Series,2018,18300,Automatic,67670,Petrol,156.9,2.0,bmw,30475925
+272,3 Series,2019,18500,Automatic,95370,Petrol,8.8,2.0,bmw,30475904
+273,3 Series,2018,11500,Automatic,107820,Petrol,148.7,2.0,bmw,30475921
+274,3 Series,2018,13800,Automatic,73040,Petrol,148.7,2.0,bmw,30475938
+275,X5,2022,57500,Automatic,13030,Diesel,37.7,3.0,bmw,30363332
+276,5 Series,2012,12497,Automatic,75000,Hybrid,None,3.0,bmw,30282447
+277,3 Series,2018,11500,Automatic,107820,Petrol,148.7,2.0,bmw,30475921
+278,2 Series,2018,17234,Automatic,31704,Hybrid,113,1.5,bmw,30088149
+279,3 Series,2020,26100,Automatic,45229,Hybrid,50.4,2.0,bmw,30450785
+280,X2,2023,33750,Automatic,2590,Hybrid,156.9,1.5,bmw,30307374
+281,X4,2020,34250,Automatic,21215,Hybrid,44.1,2.0,bmw,30082535
+282,3 Series,2020,24308,Automatic,40271,Hybrid,8.8,2.0,bmw,30419943
+283,3 Series,2020,24890,Automatic,40983,Hybrid,188.3,2.0,bmw,30365060
+284,3 Series,2020,24582,Automatic,41043,Hybrid,8.8,2.0,bmw,30463692
+285,5 Series,2020,24722,Automatic,60905,Hybrid,47.9,2.0,bmw,30396655
+286,3 Series,2020,20750,Automatic,72501,Hybrid,8.8,2.0,bmw,30293238
+287,X5,2022,65750,Automatic,7066,Petrol,188.3,3.0,bmw,30319173
+288,3 Series,2020,25500,Automatic,46292,Diesel,56.5,2.0,bmw,30339930
+289,X1,2020,32699,Automatic,11796,Petrol/PlugIn,148.7,1.5,bmw,30402510
+290,X3,2022,45790,Semi-Auto,5389,Hybrid,141.3,2,bmw,30057683
+291,3 Series,2022,47190,Semi-Auto,5299,Hybrid,166.2,2,bmw,30150067
+292,4 Series,2023,42790,Semi-Auto,6537,Hybrid,53.3,2,bmw,30376125
+293,X6,2023,67390,Semi-Auto,6761,Hybrid,36.2,3,bmw,30427248
+294,X1,2023,48990,Semi-Auto,6762,Hybrid,None,1.5,bmw,30296162
+295,3 Series,2023,47590,Semi-Auto,6956,Hybrid,188.3,2,bmw,30417766
+296,5 Series,2023,51190,Semi-Auto,7160,Hybrid,44.1,3,bmw,30427247
+297,2 Series,2023,36190,Semi-Auto,8980,Hybrid,None,1.5,bmw,30417762
+298,X3,2022,55490,Semi-Auto,8980,Hybrid,30.7,3,bmw,29600447
+299,X5,2020,54250,Automatic,16825,Petrol,188.3,3.0,bmw,30363339
+300,3 Series,2022,39250,Automatic,10500,Petrol,156.9,2.0,bmw,30033616
+301,5 Series,2023,48790,Semi-Auto,3328,Hybrid,47.9,2,bmw,30458305
+302,2 Series,2022,35290,Automatic,4350,Hybrid,44.1,2,bmw,30458306
+303,X5,2021,63990,Semi-Auto,7638,Hybrid,28,3,bmw,30385733
+304,X5,2023,58590,Semi-Auto,8141,Hybrid,37.7,3,bmw,30236706
+305,X5,2021,51090,Semi-Auto,14443,Hybrid,37.7,3,bmw,30196989
+306,3 Series,2021,37690,Semi-Auto,16388,Hybrid,43.5,3,bmw,30162556
+307,5 Series,2022,42190,Semi-Auto,20729,Hybrid,156.9,2,bmw,30385732
+308,5 Series,2019,25590,Semi-Auto,37547,Hybrid,156.9,2,bmw,30439252
+309,3 Series,2020,25690,Semi-Auto,39316,Hybrid,8.8,2,bmw,30439259
+310,3 Series,2020,25190,Semi-Auto,44333,Hybrid,8.8,2,bmw,30439260
+311,7 Series,2019,33880,Automatic,97000,Petrol,104.6,3.0,bmw,30423373
+312,3 Series,2022,39250,Automatic,10500,Petrol,156.9,2.0,bmw,30033616
+313,5 Series,2018,20199,Semi-Auto,67250,Hybrid,156.9,2,bmw,30317702
+314,2 Series,2019,20500,Automatic,19693,Petrol/Electric,113,1.5,bmw,30448113
+315,3 Series,2019,28950,Automatic,35000,Petrol/Plugin,8.8,2.0,bmw,30419874
+316,3 Series,2022,36300,Semi-Auto,9725,Hybrid,188.3,2,bmw,30310079
+317,3 Series,2019,22500,Semi-Auto,60837,Hybrid,8.8,2,bmw,30462924
+318,3 Series,2020,25500,Automatic,32000,Petrol,8.8,2.0,bmw,30307281
+319,3 Series,2019,22571,Automatic,49709,Hybrid,8.8,2.0,bmw,30474934
+320,3 Series,2019,24490,Automatic,25933,Hybrid,8.8,2.0,bmw,30419922
+321,4 Series,2021,38765,Automatic,36586,Hybrid,36.2,3.0,bmw,30347461
+322,5 Series,2019,21590,Automatic,60501,Hybrid,156.9,2.0,bmw,30427839
+323,X5,2020,52500,Automatic,26381,Petrol,188.3,3.0,bmw,30418677
+324,7 Series,2019,33880,Automatic,94000,Petrol,104.6,3.0,bmw,30423372
+325,2 Series,2019,12990,Automatic,93616,Hybrid,113,1.5,bmw,30427843
+326,i3,2016,12990,Automatic,65000,Hybrid,470.8,0.6,bmw,30368994
+327,2 Series,2017,15995,Automatic,39500,Petrol,141.2,1.5,bmw,30307285
+328,i3,2016,12000,Automatic,38899,Hybrid,470.8,0.6,bmw,30012832
+329,i3,2018,18145,Automatic,12529,Hybrid,None,0,bmw,29072954
+330,3 Series,2021,30587,Semi-Auto,11672,Hybrid,56.5,2,bmw,29777769
+331,3 Series,2022,42500,Automatic,11161,Hybrid,43.5,3.0,bmw,30448916
+332,X3,2020,33921,Automatic,32011,Hybrid,44.1,2.0,bmw,30453146
+333,3 Series,2019,24000,Automatic,41410,Petrol,8.8,2.0,bmw,30363549
+334,3 Series,2017,14400,Automatic,72660,Petrol,134.5,2.0,bmw,30453810
+335,3 Series,2017,12689,Automatic,79032,Petrol,148.7,2.0,bmw,30426704
+336,X5,2020,52500,Automatic,26381,Petrol,188.3,3.0,bmw,30418677
+337,2 Series,2019,14200,Automatic,87040,Petrol,113,1.5,bmw,30333478
+338,5 Series,2018,16300,Automatic,92610,Petrol,156.9,2.0,bmw,30415980
+339,3 Series,2019,24000,Automatic,41410,Petrol,8.8,2.0,bmw,30363549
+340,5 Series,2018,24475,Semi-Auto,29015,Hybrid,156.9,2,bmw,28532741
+341,3 Series,2018,18975,Semi-Auto,56386,Hybrid,None,2,bmw,29040893
+342,i3,2014,8995,Automatic,75485,Hybrid,470.8,0.65,bmw,29496954
+343,i3,2014,8500,Automatic,99848,Hybrid,470.8,0.65,bmw,29497028
+344,i3,2017,13295,Automatic,32814,Hybrid,470.8,0,bmw,30211674
+345,4 Series,2021,35895,Semi-Auto,8216,Hybrid,53.3,2,bmw,30178355
+346,3 Series,2019,27998,Semi-Auto,52629,Hybrid,8.8,2,bmw,30257140
+347,i3,2015,14995,Automatic,29500,Petrol/Electric,470.8,0.6,bmw,29832034
+348,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+349,X3,2020,30880,Automatic,83000,Petrol,None,2.0,bmw,30386314
+350,7 Series,2019,34480,Automatic,87000,Petrol,104.6,3.0,bmw,30457787
+351,7 Series,2019,32880,Automatic,102000,Petrol,104.6,3.0,bmw,30462391
+352,5 Series,2018,16880,Automatic,105000,Petrol,156.9,2.0,bmw,30363367
+353,7 Series,2019,33490,Automatic,112000,Petrol,104.6,3.0,bmw,30423374
+354,7 Series,2019,33880,Automatic,94000,Petrol,104.6,3.0,bmw,30423372
+355,7 Series,2019,33880,Automatic,97000,Petrol,104.6,3.0,bmw,30423373
+356,3 Series,2019,17880,Automatic,101000,Petrol,8.8,2.0,bmw,29429814
+357,3 Series,2021,26950,Automatic,38850,Petrol/Electric,188.3,2,bmw,29290608
+358,i3,2015,14995,Automatic,29500,Petrol/Electric,470.8,0.6,bmw,29832034
+359,X5,2021,59750,Automatic,15100,Petrol,188.3,3.0,bmw,30286459
+360,i3,2015,14995,Automatic,29500,Petrol/Electric,470.8,0.6,bmw,29832034
+361,X3,2021,38400,Semi-Auto,12658,Hybrid,44.1,2,bmw,30410300
+362,X6,2021,48920,Semi-Auto,33500,Hybrid,38.7,3,bmw,28549984
+363,X3,2020,34420,Semi-Auto,50969,Hybrid,None,2,bmw,30283817
+364,X2,2020,25920,Semi-Auto,29004,Hybrid,156.9,1.5,bmw,30360781
+365,5 Series,2019,28775,Semi-Auto,21500,Hybrid,156.9,2,bmw,30308931
+366,5 Series,2018,24775,Semi-Auto,37500,Hybrid,156.9,2,bmw,30394222
+367,X5,2020,54990,Semi-Auto,21349,Hybrid,188.3,3,bmw,30285149
+368,3 Series,2018,16398,Semi-Auto,61041,Hybrid,134.5,2,bmw,30425152
+369,3 Series,2022,44997,Semi-Auto,12500,Hybrid,35.8,3,bmw,30240591
+370,3 Series,2019,27000,Automatic,9701,Petrol,8.8,2.0,bmw,30282878
+371,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+372,7 Series,2019,33490,Automatic,112000,Petrol,104.6,3.0,bmw,30423374
+373,2 Series,2022,32800,Automatic,10268,Diesel,57.7,2.0,bmw,30409451
+374,X4,2020,37300,Automatic,18198,Diesel,44.1,2.0,bmw,30391100
+375,3 Series,2020,26800,Automatic,19780,Petrol,188.3,2.0,bmw,30423585
+376,X4,2021,40100,Automatic,20502,Diesel,42.8,3.0,bmw,30363672
+377,3 Series,2019,25000,Automatic,24344,Petrol,8.8,2.0,bmw,30381341
+378,X4,2020,36400,Automatic,25597,Diesel,44.1,2.0,bmw,30409471
+379,3 Series,2021,28600,Automatic,26401,Petrol,188.3,2.0,bmw,30469103
+380,3 Series,2019,24700,Automatic,29485,Petrol,8.8,2.0,bmw,30274746
+381,3 Series,2019,24100,Automatic,32349,Petrol,8.8,2.0,bmw,30418938
+382,5 Series,2019,24100,Automatic,37336,Petrol,156.9,2.0,bmw,30418959
+383,7 Series,2019,33880,Automatic,97000,Petrol,104.6,3.0,bmw,30423373
+384,3 Series,2020,25500,Automatic,46292,Diesel,56.5,2.0,bmw,30339930
+385,3 Series,2018,14900,Automatic,41258,Petrol,148.7,2.0,bmw,30445458
+386,3 Series,2020,25000,Automatic,59590,Diesel,50.4,2.0,bmw,30418940
+387,X5,2020,48000,Automatic,62418,Petrol,188.3,3.0,bmw,30307214
+388,3 Series,2019,21300,Automatic,64185,Petrol,8.8,2.0,bmw,30369218
+389,3 Series,2021,28600,Automatic,26401,Petrol,188.3,2.0,bmw,30469103
+390,5 Series,2017,21350,Automatic,42000,Petrol,156.9,2.0,bmw,30469112
+391,5 Series,2019,22300,Automatic,67627,Petrol,156.9,2.0,bmw,30453915
+392,5 Series,2018,18350,Automatic,53388,Petrol,156.9,2.0,bmw,30375657
+393,5 Series,2019,20350,Automatic,82459,Petrol,156.9,2.0,bmw,30475977
+394,2 Series,2019,19299,Automatic,31658,Hybrid,113,1.5,bmw,30262676
+395,X3,2021,40000,Automatic,34269,Petrol,None,2.0,bmw,30449484
+396,X5,2020,52500,Automatic,26381,Petrol,188.3,3.0,bmw,30418677
+397,3 Series,2020,28800,Automatic,4132,Diesel,52.3,2.0,bmw,30414057
+398,5 Series,2020,26800,Automatic,18219,Diesel,47.9,2.0,bmw,30381010
+399,3 Series,2019,25600,Automatic,23637,Petrol,8.8,2.0,bmw,30447153
+400,3 Series,2020,25100,Automatic,25504,Petrol,8.8,2.0,bmw,30380693
+401,3 Series,2019,24200,Automatic,26479,Petrol,8.8,2.0,bmw,30380699
+402,5 Series,2020,29550,Automatic,26500,Diesel,49.6,2.0,bmw,30469035
+403,3 Series,2019,23500,Automatic,30941,Petrol,8.8,2.0,bmw,30469064
+404,5 Series,2019,24600,Automatic,34674,Petrol,156.9,2.0,bmw,30469054
+405,5 Series,2019,23800,Automatic,37465,Diesel,49.6,2.0,bmw,30395146
+406,3 Series,2019,20000,Automatic,50011,Petrol,8.8,2.0,bmw,30380762
+407,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+408,X5,2022,55750,Automatic,22807,Diesel,34.9,3.0,bmw,29847479
+409,3 Series,2019,23500,Automatic,30941,Petrol,8.8,2.0,bmw,30469064
+410,5 Series,2019,24600,Automatic,34674,Petrol,156.9,2.0,bmw,30469054
+411,2 Series,2017,13500,Automatic,61274,Petrol,135.5,1.5,bmw,30453844
+412,3 Series,2021,30650,Automatic,13400,Petrol/Electric,8.8,2,bmw,30448099
+413,5 Series,2018,21400,Automatic,52650,Petrol,156.9,2.0,bmw,30291951
+414,i3,2017,13200,Black,Petrol,Automatic,None,,bmw,30110583
+415,i3,2018,13700,Grey,Petrol,Automatic,None,,bmw,29734832
+416,2 Series,2019,14900,Automatic,80850,Petrol,113,1.5,bmw,30350814
+417,3 Series,2019,20000,Automatic,80970,Petrol,8.8,2.0,bmw,30163965
+418,3 Series,2019,18000,Automatic,107210,Petrol,8.8,2.0,bmw,30363564
+419,5 Series,2018,16880,Automatic,105000,Petrol,156.9,2.0,bmw,30363367
+420,i3,2018,18890,Red,Petrol,Automatic,None,,bmw,29298044
+421,3 Series,2018,13800,Automatic,111250,Petrol,None,2.0,bmw,30209475
+422,5 Series,2017,22444,Semi-Auto,33640,Hybrid,156.9,2,bmw,30184882
+423,3 Series,2019,23600,Automatic,31234,Petrol,8.8,2.0,bmw,30350863
+424,3 Series,2017,19300,Automatic,35850,Petrol,None,2.0,bmw,30427000
+425,X5,2018,31100,Automatic,47452,Petrol,85.6,2.0,bmw,30449912
+426,3 Series,2019,23300,Automatic,34292,Petrol,8.8,2.0,bmw,30105579
+427,i3,2015,11390,Automatic,73000,Hybrid,470.8,0.6,bmw,29496253
+428,2 Series,2021,23995,Automatic,17651,Hybrid,113,1.5,bmw,30393942
+429,i3,2019,19526,Automatic,19542,Hybrid,None,0,bmw,30333927
+430,X6,2023,65750,Automatic,5581,Diesel,36.2,3.0,bmw,30319244
+431,X5,2022,57500,Automatic,13030,Diesel,37.7,3.0,bmw,30363332
+432,X5,2022,55750,Automatic,22807,Diesel,34.9,3.0,bmw,29847479
+433,5 Series,2022,37750,Automatic,6290,Petrol,40.4,2.0,bmw,30151224
+434,4 Series,2022,43950,Automatic,8512,Diesel,50.4,3.0,bmw,30253868
+435,5 Series,2022,42500,Automatic,8888,Petrol,156.9,2.0,bmw,30269526
+436,5 Series,2022,36500,Automatic,8971,Diesel,51.4,2.0,bmw,30282590
+437,3 Series,2023,40000,Automatic,9318,Diesel,54.3,2.0,bmw,30076443
+438,3 Series,2022,38650,Automatic,9634,Diesel,53.3,2.0,bmw,30187275
+439,5 Series,2021,36850,Automatic,10031,Diesel,51.4,2.0,bmw,30390939
+440,4 Series,2022,34250,Automatic,13543,Diesel,57.7,2.0,bmw,30449652
+441,X3,2021,38750,Automatic,14574,Diesel,44.1,2.0,bmw,30274506
+442,5 Series,2021,38250,Automatic,15060,Diesel,49.6,2.0,bmw,30390940
+443,X5,2023,67000,Automatic,4912,Diesel,34.9,3.0,bmw,30087360
+444,X3,2020,31000,Automatic,28062,Diesel,54.3,2.0,bmw,30468842
+445,5 Series,2021,38250,Automatic,15060,Diesel,49.6,2.0,bmw,30390940
+446,4 Series,2022,32950,Automatic,19048,Diesel,None,2.0,bmw,30202195
+447,5 Series,2021,42950,Automatic,26058,Petrol,128.4,3.0,bmw,30390937
+448,i3,2016,15000,Blue,Petrol,Automatic,None,,bmw,30431767
+449,X5,2021,58500,Automatic,36789,Petrol,188.3,3.0,bmw,30114648
+450,5 Series,2020,26950,Automatic,42172,Diesel,49.6,2.0,bmw,30297008
+451,5 Series,2018,23450,Automatic,66498,Petrol,156.9,2.0,bmw,30209325
+452,5 Series,2020,26490,Semi-Auto,27140,Hybrid,49.6,2,bmw,30339108
+453,X5,2016,22990,Automatic,74605,Hybrid,85.6,2,bmw,30385789
+454,3 Series,2020,23990,Semi-Auto,57636,Hybrid,8.8,2,bmw,30357381
+455,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+456,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+457,3 Series,2022,29995,Semi-Auto,2200,Hybrid,188.3,2,bmw,30002163
+458,3 Series,2020,19250,Automatic,87887,Hybrid,8.8,2.0,bmw,30358558
+459,3 Series,2019,19990,Semi-Auto,78839,Hybrid,8.8,2,bmw,30169230
+460,i3,2016,12948,Automatic,51000,Hybrid,470.8,0.6,bmw,30339408
+461,3 Series,2020,26795,Semi-Auto,28814,Hybrid,8.8,2,bmw,30432519
+462,2 Series,2016,14749,Automatic,54835,Hybrid,141.2,1.5,bmw,30452522
+463,3 Series,2018,19998,Semi-Auto,35198,Hybrid,None,2,bmw,30224941
+464,3 Series,2020,25741,Semi-Auto,31451,Hybrid,8.8,2,bmw,30401292
+465,7 Series,2021,57750,Automatic,14100,Petrol/Electric,104.6,3,bmw,30349902
+466,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+467,2 Series,2017,15995,Automatic,39500,Petrol,141.2,1.5,bmw,30307285
+468,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+469,X5,2021,53850,Automatic,22562,Diesel,34.9,3.0,bmw,30423353
+470,X5,2020,52500,Automatic,26381,Petrol,188.3,3.0,bmw,30418677
+471,3 Series,2020,25750,Automatic,34500,Diesel,56.5,2.0,bmw,30386307
+472,X4,2023,57000,Automatic,1913,Diesel,42.8,3.0,bmw,30252650
+473,X3,2022,44500,Automatic,2792,Diesel,47.1,2.0,bmw,30179954
+474,X5,2023,67000,Automatic,4912,Diesel,34.9,3.0,bmw,30087360
+475,X5,2022,65750,Automatic,7066,Petrol,188.3,3.0,bmw,30319173
+476,3 Series,2022,39250,Automatic,10500,Petrol,156.9,2.0,bmw,30033616
+477,X5,2022,57500,Automatic,13030,Diesel,37.7,3.0,bmw,30363332
+478,X5,2021,57250,Automatic,15079,Diesel,34.9,3.0,bmw,29861441
+479,3 Series,2017,12689,Automatic,79032,Petrol,148.7,2.0,bmw,30426704
+480,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+481,X5,2021,59750,Automatic,15100,Petrol,188.3,3.0,bmw,30286459
+482,X5,2020,54250,Automatic,16825,Petrol,188.3,3.0,bmw,30363339
+483,X5,2021,58000,Automatic,17312,Petrol,188.3,3.0,bmw,30252657
+484,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+485,i3,2017,13250,Multicolour,Petrol,Automatic,None,,bmw,29027513
+486,X5,2022,55750,Automatic,22807,Diesel,34.9,3.0,bmw,29847479
+487,X4,2020,35750,Automatic,27951,Diesel,42.8,2.0,bmw,30286453
+488,X3,2020,31000,Automatic,28062,Diesel,54.3,2.0,bmw,30468842
+489,X3,2021,40000,Automatic,34269,Petrol,None,2.0,bmw,30449484
+490,3 Series,2020,25500,Automatic,46292,Diesel,56.5,2.0,bmw,30339930
+491,X5,2022,57500,Automatic,13030,Diesel,37.7,3.0,bmw,30363332
+492,i3,2018,18890,Red,Petrol,Automatic,None,,bmw,29298044
+493,2 Series,2023,36990,Automatic,4000,Petrol,None,1.5,bmw,30051176
+494,X2,2022,41990,Automatic,6500,Petrol,156.9,1.5,bmw,29297875
+495,X5,2022,77990,Automatic,17370,Petrol,188.3,3.0,bmw,30027023
+496,X1,2021,32990,Automatic,18315,Petrol,148.7,1.5,bmw,30340003
+497,X5,2015,54990,Automatic,23215,Petrol,188.3,3.0,bmw,30449588
+498,3 Series,2020,27990,Automatic,47255,Petrol,188.3,2.0,bmw,30462437
+499,3 Series,2020,28900,Automatic,3800,Diesel,52.3,2.0,bmw,30380473
+500,4 Series,2020,34400,Automatic,13839,Diesel,57.7,2.0,bmw,30192206
+501,3 Series,2020,27100,Automatic,16154,Petrol,8.8,2.0,bmw,30253876
+502,3 Series,2020,26700,Automatic,17358,Petrol,188.3,2.0,bmw,30043295
+503,X5,2023,67000,Automatic,4912,Diesel,34.9,3.0,bmw,30087360
+504,X3,2020,31000,Automatic,28062,Diesel,54.3,2.0,bmw,30468842
+505,3 Series,2019,24200,Automatic,18505,Petrol,8.8,2.0,bmw,29988214
+506,3 Series,2021,28100,Automatic,18576,Petrol,188.3,2.0,bmw,30286617
+507,3 Series,2018,21000,Automatic,19818,Petrol,None,2.0,bmw,30269586
+508,3 Series,2020,26700,Automatic,22233,Petrol,8.8,2.0,bmw,30453782
+509,3 Series,2021,28200,Automatic,23806,Petrol,188.3,2.0,bmw,30282620
+510,3 Series,2021,27200,Automatic,24286,Diesel,56.5,2.0,bmw,30093387
+511,3 Series,2020,25900,Automatic,26316,Petrol,188.3,2.0,bmw,30432740
+512,2 Series,2020,20700,Automatic,27585,Petrol,113,1.5,bmw,30441137
+513,3 Series,2019,23600,Automatic,31089,Petrol,8.8,2.0,bmw,30151309
+514,3 Series,2019,23700,Automatic,31939,Petrol,8.8,2.0,bmw,30286606
+515,X4,2023,57000,Automatic,1913,Diesel,42.8,3.0,bmw,30252650
+516,7 Series,2019,33880,Automatic,97000,Petrol,104.6,3.0,bmw,30423373
+517,3 Series,2019,22800,Automatic,40795,Petrol,8.8,2.0,bmw,30223121
+518,5 Series,2019,23100,Automatic,45293,Diesel,49.6,2.0,bmw,30291892
+519,5 Series,2019,20700,Automatic,46422,Petrol,156.9,2.0,bmw,30431812
+520,3 Series,2019,22100,Automatic,49448,Petrol,8.8,2.0,bmw,30392556
+521,3 Series,2019,22300,Automatic,50392,Petrol,8.8,2.0,bmw,30198054
+522,3 Series,2017,16000,Automatic,51932,Petrol,134.5,2.0,bmw,30369058
+523,3 Series,2020,22400,Automatic,54393,Petrol,8.8,2.0,bmw,30414033
+524,3 Series,2019,21600,Automatic,62496,Petrol,8.8,2.0,bmw,30347160
+525,3 Series,2020,18500,Automatic,74404,Petrol,8.8,2.0,bmw,30242276
+526,3 Series,2021,27200,Automatic,24286,Diesel,56.5,2.0,bmw,30093387
+527,X3,2020,31000,Automatic,28062,Diesel,54.3,2.0,bmw,30468842
+528,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+529,3 Series,2019,22500,Automatic,44625,Petrol,8.8,2.0,bmw,30170140
+530,5 Series,2018,22000,Automatic,44882,Petrol,156.9,2.0,bmw,30453778
+531,5 Series,2019,23100,Automatic,45293,Diesel,49.6,2.0,bmw,30291892
+532,5 Series,2019,23600,Automatic,46196,Diesel,49.6,2.0,bmw,30457878
+533,5 Series,2019,20700,Automatic,46422,Petrol,156.9,2.0,bmw,30431812
+534,3 Series,2019,22400,Automatic,48922,Petrol,8.8,2.0,bmw,30462481
+535,3 Series,2019,22100,Automatic,49448,Petrol,8.8,2.0,bmw,30392556
+536,3 Series,2019,22300,Automatic,50392,Petrol,8.8,2.0,bmw,30198054
+537,3 Series,2020,22700,Automatic,51435,Diesel,52.3,2.0,bmw,30092175
+538,3 Series,2017,16000,Automatic,51932,Petrol,134.5,2.0,bmw,30369058
+539,3 Series,2020,25500,Automatic,46292,Diesel,56.5,2.0,bmw,30339930
+540,7 Series,2019,33880,Automatic,94000,Petrol,104.6,3.0,bmw,30423372
+541,5 Series,2018,22000,Automatic,44882,Petrol,156.9,2.0,bmw,30453778
+542,5 Series,2019,23600,Automatic,46196,Diesel,49.6,2.0,bmw,30457878
+543,3 Series,2019,22400,Automatic,48922,Petrol,8.8,2.0,bmw,30462481
+544,3 Series,2019,21500,Automatic,56916,Petrol,8.8,2.0,bmw,30457876
+545,5 Series,2019,18900,Automatic,67024,Petrol,156.9,2.0,bmw,30453760
+546,5 Series,2019,22500,Automatic,68664,Petrol,156.9,2.0,bmw,30457886
+547,3 Series,2020,21000,Automatic,69842,Petrol,8.8,2.0,bmw,30462490
+548,3 Series,2019,20350,Automatic,67554,Petrol,8.8,2.0,bmw,30087844
+549,5 Series,2022,43290,Semi-Auto,872,Hybrid,51.4,2,bmw,30285312
+550,3 Series,2022,40790,Semi-Auto,5828,Hybrid,188.3,2,bmw,30403842
+551,i3,2018,18890,Red,Petrol,Automatic,None,,bmw,29298044
+552,7 Series,2019,33880,Automatic,97000,Petrol,104.6,3.0,bmw,30423373
+553,3 Series,2021,40990,Semi-Auto,7456,Hybrid,43.5,3,bmw,30430457
+554,5 Series,2022,48990,Semi-Auto,8312,Hybrid,134.5,2,bmw,30338611
+555,X5,2022,70990,Semi-Auto,12313,Hybrid,188.3,3,bmw,30222245
+556,X5,2021,58790,Semi-Auto,12658,Hybrid,188.3,3,bmw,29801698
+557,3 Series,2019,28290,Semi-Auto,12938,Hybrid,8.8,2,bmw,30272703
+558,X5,2020,52890,Semi-Auto,14481,Hybrid,188.3,3,bmw,30272698
+559,X5,2022,62890,Semi-Auto,15560,Hybrid,28,3,bmw,30272707
+560,X5,2021,61890,Semi-Auto,16564,Hybrid,188.3,3,bmw,29937063
+561,X3,2022,44890,Semi-Auto,20242,Hybrid,42.2,3,bmw,30422049
+562,X3,2020,40590,Semi-Auto,27366,Hybrid,None,2,bmw,30272700
+563,X3,2021,40000,Automatic,34269,Petrol,None,2.0,bmw,30449484
+564,X5,2022,65750,Automatic,7066,Petrol,188.3,3.0,bmw,30319173
+565,3 Series,2021,28190,Semi-Auto,28852,Hybrid,56.5,2,bmw,30368038
+566,3 Series,2021,27890,Semi-Auto,30955,Hybrid,56.5,2,bmw,30370122
+567,X3,2020,35190,Semi-Auto,32673,Hybrid,44.1,2,bmw,30422561
+568,5 Series,2020,24590,Semi-Auto,54962,Hybrid,49.6,2,bmw,30124450
+569,3 Series,2021,30590,Semi-Auto,32867,Hybrid,188.3,2,bmw,30450186
+570,X4,2020,35977,Semi-Auto,21147,Hybrid,44.1,2,bmw,30212276
+571,3 Series,2020,24000,Automatic,46570,Petrol,188.3,2.0,bmw,30441193
+572,5 Series,2019,23900,Automatic,61430,Diesel,47.9,2.0,bmw,30441197
+573,5 Series,2017,17500,Automatic,68260,Petrol,156.9,2.0,bmw,30395085
+574,5 Series,2018,20000,Automatic,70690,Petrol,156.9,2.0,bmw,30092225
+575,X5,2021,58000,Automatic,17312,Petrol,188.3,3.0,bmw,30252657
+576,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+577,3 Series,2019,20000,Automatic,82690,Petrol,8.8,2.0,bmw,30418835
+578,3 Series,2020,21000,Automatic,90410,Petrol,188.3,2.0,bmw,30409256
+579,3 Series,2019,19000,Automatic,93140,Petrol,8.8,2.0,bmw,30223182
+580,5 Series,2019,20000,Automatic,97830,Petrol,156.9,2.0,bmw,30449813
+581,3 Series,2018,10500,Automatic,132630,Petrol,148.7,2.0,bmw,30449816
+582,3 Series,2021,36058,Semi-Auto,19117,Hybrid,43.5,3,bmw,29474105
+583,2 Series,2019,18759,Automatic,35529,Hybrid,113,1.5,bmw,29838474
+584,3 Series,2020,27559,Semi-Auto,37888,Hybrid,56.5,2,bmw,30216671
+585,2 Series,2017,13358,Automatic,65559,Hybrid,141.2,1.5,bmw,30216669
+586,5 Series,2022,45120,Automatic,1312,Petrol,156.9,2.0,bmw,30197804
+587,X4,2023,57000,Automatic,1913,Diesel,42.8,3.0,bmw,30252650
+588,X3,2020,30880,Automatic,83000,Petrol,None,2.0,bmw,30386314
+589,2 Series,1499cc,37000,White,Petrol,Automatic,None,,bmw,30350604
+590,5 Series,2993cc,46500,White,Diesel,Automatic,None,,bmw,30170086
+591,4 Series,2993cc,54500,White,Diesel,Automatic,None,,bmw,30185614
+592,3 Series,2993cc,64000,Grey,Diesel,Automatic,None,,bmw,30114637
+593,X6,2993cc,68500,Black,Diesel,Automatic,None,,bmw,30070788
+594,X5,2998cc,92000,Black,Petrol,Automatic,None,,bmw,30229714
+595,2 Series,2022,34000,Automatic,4908,Petrol,None,1.5,bmw,29847593
+596,5 Series,2022,53000,Automatic,6814,Petrol,128.4,3.0,bmw,29297902
+597,X3,2021,47500,Automatic,7779,Petrol,141.3,2.0,bmw,30394989
+598,3 Series,2020,27000,Automatic,9092,Petrol,188.3,2.0,bmw,29899175
+599,X4,2023,57000,Automatic,1913,Diesel,42.8,3.0,bmw,30252650
+600,3 Series,2019,17880,Automatic,101000,Petrol,8.8,2.0,bmw,29429814
+601,X1,2022,37000,Automatic,10051,Petrol,148.7,1.5,bmw,30236662
+602,X3,2021,48500,Automatic,15176,Petrol,128.4,2.0,bmw,30314295
+603,X5,2021,55500,Automatic,22349,Petrol,188.3,3.0,bmw,30375465
+604,3 Series,2022,42500,Automatic,34471,Petrol,188.3,2.0,bmw,30380450
+605,3 Series,2017,16000,Automatic,54759,Petrol,148.7,2.0,bmw,30314302
+606,2 Series,2019,19995,Automatic,17647,Hybrid,113,1.5,bmw,30086473
+607,3 Series,2020,26890,Semi-Auto,27517,Hybrid,188.3,2,bmw,29872938
+608,5 Series,2018,19998,Semi-Auto,58550,Hybrid,156.9,2,bmw,29485676
+609,3 Series,2020,26998,Semi-Auto,20762,Hybrid,188.3,2,bmw,30283358
+610,3 Series,2020,26977,Semi-Auto,26141,Hybrid,8.8,2,bmw,30287708
+611,X3,2020,30880,Automatic,83000,Petrol,None,2.0,bmw,30386314
+612,X5,2020,52500,Automatic,26381,Petrol,188.3,3.0,bmw,30418677
+613,X2,2023,35190,Semi-Auto,5066,Hybrid,156.9,1.5,bmw,29974913
+614,5 Series,2023,47290,Semi-Auto,6148,Hybrid,166.2,2,bmw,30452870
+615,4 Series,2021,36690,Semi-Auto,8939,Hybrid,54.3,2,bmw,30300456
+616,3 Series,2021,44990,Semi-Auto,11157,Hybrid,34.9,3,bmw,30370116
+617,2 Series,2022,31090,Semi-Auto,15180,Hybrid,44.1,2,bmw,29481591
+618,4 Series,2021,34890,Semi-Auto,17380,Hybrid,54.3,2,bmw,30228367
+619,5 Series,2020,33190,Semi-Auto,23770,Hybrid,44.8,2,bmw,30308801
+620,5 Series,2020,30490,Semi-Auto,23789,Hybrid,49.6,2,bmw,30452874
+621,5 Series,2019,29790,Semi-Auto,31667,Hybrid,141.3,2,bmw,30253351
+622,X5,2020,53990,Semi-Auto,34846,Hybrid,188.3,3,bmw,30452869
+623,X5,2021,58000,Automatic,17312,Petrol,188.3,3.0,bmw,30252657
+624,X3,2021,40000,Automatic,34269,Petrol,None,2.0,bmw,30449484
+625,4 Series,2022,40090,Semi-Auto,21475,Hybrid,50.4,3,bmw,30228362
+626,3 Series,2021,23798,Semi-Auto,61141,Hybrid,188.3,2,bmw,30361998
+627,3 Series,2020,32998,Semi-Auto,22048,Hybrid,8.8,2,bmw,30393246
+628,3 Series,2021,26498,Semi-Auto,39890,Hybrid,56.5,2,bmw,30472048
+629,3 Series,2017,16277,Semi-Auto,51024,Hybrid,134.5,2,bmw,30472807
+630,3 Series,2021,27777,Semi-Auto,30697,Hybrid,188.3,2,bmw,30475400
+631,3 Series,2017,18599,Semi-Auto,50660,Hybrid,None,2,bmw,30230820
+632,3 Series,2020,25599,Semi-Auto,36443,Hybrid,8.8,2,bmw,30351925
+633,i8,2015,42499,Automatic,28500,Hybrid,134.5,1.5,bmw,30408182
+634,X5,2020,47399,Semi-Auto,29755,Hybrid,188.3,3,bmw,30221849
+635,X5,2020,52500,Automatic,26381,Petrol,188.3,3.0,bmw,30418677
+636,3 Series,2020,30000,Automatic,17603,Diesel,50.4,2.0,bmw,30286437
+637,2 Series,2019,16499,Automatic,54530,Hybrid,113,1.5,bmw,30460984
+638,3 Series,2019,24999,Semi-Auto,30138,Hybrid,8.8,2,bmw,30124971
+639,2 Series,2023,32500,Automatic,3322,Hybrid,44.8,2,bmw,30303189
+640,2 Series,2023,36950,Semi-Auto,4458,Hybrid,None,1.5,bmw,30450472
+641,3 Series,2021,32995,Semi-Auto,11000,Hybrid,188.3,2,bmw,30463183
+642,X5,2021,52490,Semi-Auto,27297,Hybrid,188.3,3,bmw,30111172
+643,X5,2020,51490,Semi-Auto,27351,Hybrid,188.3,3,bmw,30017617
+644,X5,2021,60000,Automatic,26514,Petrol/Electric,None,3.0,bmw,30184636
+645,3 Series,2021,29500,Semi-Auto,19462,Hybrid,56.5,2,bmw,30281585
+646,2 Series,2018,14490,Automatic,75926,Hybrid,148.7,1.5,bmw,29967816
+647,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+648,X5,2021,58000,Automatic,17312,Petrol,188.3,3.0,bmw,30252657
+649,X3,2022,45500,Semi-Auto,18591,Hybrid,141.3,2,bmw,30355156
+650,3 Series,2021,37500,Semi-Auto,27509,Hybrid,176.6,2,bmw,30295938
+651,3 Series,2018,19294,Semi-Auto,49373,Hybrid,None,2,bmw,30241070
+652,i3,2018,16999,Automatic,16820,Hybrid,None,0,bmw,30273140
+653,2 Series,2019,20990,Automatic,18201,Hybrid,113,1.5,bmw,30097171
+654,X3,2021,34990,Semi-Auto,22205,Hybrid,44.1,2,bmw,30444142
+655,2 Series,2022,33259,Semi-Auto,7506,Hybrid,45.6,1.5,bmw,30319916
+656,2 Series,2022,31990,Semi-Auto,11333,Hybrid,44.1,2,bmw,30454332
+657,X1,2020,30100,Semi-Auto,12912,Hybrid,148.7,1.5,bmw,30265257
+658,X5,2020,56250,Semi-Auto,26174,Hybrid,188.3,3,bmw,30376379
+659,X6,2023,62150,Automatic,4970,Petrol,28.8,3.0,bmw,30426756
+660,i3,2016,12000,Automatic,38899,Hybrid,470.8,0.6,bmw,30012832
+661,3 Series,2022,42499,Semi-Auto,6951,Hybrid,188.3,2,bmw,30157795
+662,X5,2017,24499,Automatic,95748,Hybrid,85.6,2,bmw,30348968
+663,5 Series,2022,39995,Semi-Auto,6497,Hybrid,49.6,2,bmw,30408113
+664,5 Series,2020,27500,Semi-Auto,42893,Hybrid,47.1,2,bmw,30190854
+665,X2,2020,35450,Automatic,8012,Petrol/Electric,156.9,1.5,bmw,29834788
+666,3 Series,2022,41500,Automatic,9072,Diesel/Electric,43.5,3.0,bmw,29132127
+667,X5,2021,55990,Blue,Diesel/Electric,Automatic,None,,bmw,30253930
+668,3 Series,2000cc,29500,Mineral,Petrol/Electric,Automatic,None,,bmw,29591047
+669,5 Series,2023,49750,Semi-Auto,3000,Hybrid,134.5,2,bmw,30433272
+670,X5,2022,74000,Semi-Auto,5315,Hybrid,None,3,bmw,30077212
+671,2 Series,2016,14495,Automatic,45556,Petrol,141.2,1.5,bmw,30333429
+672,X3,2020,30880,Automatic,83000,Petrol,None,2.0,bmw,30386314
+673,3 Series,2022,42250,Semi-Auto,6000,Hybrid,35.8,3,bmw,29953420
+674,5 Series,2022,40500,Semi-Auto,7390,Hybrid,156.9,2,bmw,29513248
+675,X6,2023,67000,Semi-Auto,8221,Hybrid,36.2,3,bmw,30287196
+676,X5,2021,55000,Semi-Auto,8327,Hybrid,37.7,3,bmw,30433275
+677,3 Series,2020,29500,Semi-Auto,10567,Hybrid,56.5,2,bmw,29796249
+678,4 Series,2023,53000,Semi-Auto,1800,Hybrid,34,3,bmw,30314864
+679,X5,2022,59000,Semi-Auto,7000,Hybrid,None,3,bmw,30370030
+680,4 Series,2022,35800,Semi-Auto,9657,Hybrid,54.3,2,bmw,28244512
+681,X3,2020,43500,Semi-Auto,13421,Hybrid,None,2,bmw,29891819
+682,X6,2021,56500,Semi-Auto,17027,Hybrid,36.2,3,bmw,30454890
+683,5 Series,2012,12497,Automatic,75000,Hybrid,None,3.0,bmw,30282447
+684,X5,2022,57500,Automatic,13030,Diesel,37.7,3.0,bmw,30363332
+685,3 Series,2022,30000,Semi-Auto,19982,Hybrid,56.5,2,bmw,28784680
+686,X5,2022,60000,Semi-Auto,20756,Hybrid,37.7,3,bmw,30454889
+687,X5,2021,52000,Semi-Auto,28387,Hybrid,37.7,3,bmw,30391647
+688,5 Series,2020,28000,Semi-Auto,28536,Hybrid,47.1,2,bmw,30311171
+689,X5,2020,52000,Semi-Auto,46228,Hybrid,188.3,3,bmw,30467290
+690,X5,2021,57250,Automatic,15079,Diesel,34.9,3.0,bmw,29861441

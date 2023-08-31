@@ -1,0 +1,181 @@
+,model,year,price,transmission,mileage,fuelType,mpg,engineSize,brand,carId
+0,e-tron,2020,29698,Blue,Electric,Automatic,11720,,audi,30384824
+1,e-tron,2021,37000,Black,Electric,Automatic,12800,,audi,30375707
+2,e-tron,2020,34950,White,Electric,Automatic,17250,,audi,29923716
+3,e-tron,2021,43990,Silver,Electric,Automatic,12006,,audi,30389403
+4,e-tron,2020,34498,Grey,Electric,Automatic,28758,,audi,30410212
+5,Q4 e-tron,7,46923,SUV,Automatic,Grey,7,e,audi,30278335
+6,e-tron,7,101969,Saloon,Automatic,Black,7,e,audi,30283947
+7,Q4 e-tron,20,43820,SUV,Automatic,Grey,20,e,audi,30265454
+8,Q4 e-tron,20,44971,SUV,Automatic,Grey,20,e,audi,30293184
+9,Q4 e-tron,20,49074,SUV,Automatic,Grey,20,e,audi,30163195
+10,Other,20,89912,SUV,Automatic,Grey,20,e,audi,30315772
+11,RS e-tron GT,20,121333,Saloon,Automatic,Black,20,e,audi,29898525
+12,RS e-tron GT,20,121333,Saloon,Automatic,Grey,20,e,audi,30010481
+13,Q4 e-tron,21,46997,SUV,Automatic,Grey,21,e,audi,29959980
+14,Other,21,78931,SUV,Automatic,Blue,21,e,audi,30301390
+15,RS e-tron GT,2023,119999,Grey,Electric,Automatic,3000,,audi,30369694
+16,e-tron,2023,45999,Blue,Electric,Automatic,3488,,audi,29913756
+17,e-tron,2021,37977,Blue,Electric,Automatic,23223,,audi,30402132
+18,e-tron,2020,31998,Black,Electric,Automatic,25116,,audi,30426126
+19,Q4 e-tron,14,48335,SUV,Automatic,Blue,14,e,audi,30104786
+20,Q4 e-tron,14,48335,SUV,Automatic,Grey,14,e,audi,30109969
+21,e-tron,14,71485,SUV,Automatic,Black,14,e,audi,29669884
+22,e-tron,14,71749,SUV,Automatic,Black,14,e,audi,29669883
+23,e-tron,14,78990,SUV,Automatic,Black,14,e,audi,29669882
+24,RS e-tron GT,14,114990,Saloon,Automatic,Black,14,e,audi,29669918
+25,RS e-tron GT,14,124990,Saloon,Automatic,Blue,14,e,audi,29730215
+26,Q4 e-tron,17,52970,SUV,Automatic,Blue,17,e,audi,30419885
+27,RS e-tron GT,17,104990,Saloon,Automatic,Grey,17,e,audi,29669915
+28,RS e-tron GT,17,125977,Saloon,Automatic,Grey,17,e,audi,30427989
+29,Q8,2023,73880,Black,Electric,Automatic,1965,,audi,30224748
+30,RS e-tron GT,2022,91400,Black,Electric,Automatic,3989,,audi,30101636
+31,Q8,2023,65580,Blue,Electric,Automatic,4521,,audi,29730214
+32,Q4 e-tron,2023,44650,Grey,Electric,Automatic,4854,,audi,30271038
+33,Q4 e-tron,2023,37680,Blue,Electric,Automatic,6758,,audi,29669827
+34,Q4 e-tron,17,52520,SUV,Automatic,Black,17,e,audi,30418290
+35,Q4 e-tron,33,45780,SUV,Automatic,Blue,33,e,audi,30410678
+36,Q4 e-tron,33,46280,SUV,Automatic,Grey,33,e,audi,30408737
+37,Q4 e-tron,33,49280,SUV,Automatic,Silver,33,e,audi,30410680
+38,Q4 e-tron,33,51280,SUV,Automatic,Grey,33,e,audi,30410679
+39,Q4 e-tron,33,56480,SUV,Automatic,Grey,33,e,audi,30408738
+40,Other,33,81980,SUV,Automatic,Grey,33,e,audi,30362526
+41,e-tron,50,79980,Saloon,Automatic,Grey,50,e,audi,29670142
+42,e-tron,50,81480,SUV,Automatic,Black,50,e,audi,29670144
+43,e-tron,2023,89980,Grey,Electric,Automatic,50,,audi,29953589
+44,e-tron,50,90980,Saloon,Automatic,Blue,50,e,audi,29937203
+45,e-tron,50,94980,SUV,Automatic,Black,50,e,audi,29670143
+46,e-tron,50,96980,SUV,Automatic,Grey,50,e,audi,29670145
+47,RS e-tron GT,50,117980,Saloon,Automatic,Black,50,e,audi,29670159
+48,RS e-tron GT,50,119980,Saloon,Automatic,Grey,50,e,audi,29670160
+49,RS e-tron GT,150,129980,Hatchback,Automatic,Black,150,e,audi,30283934
+50,e-tron,"1,000",49980,Hatchback,Automatic,Black,1000,e,audi,30410677
+51,e-tron,2023,69980,Black,Electric,Automatic,1000,,audi,30341213
+52,RS e-tron GT,2023,129980,Black,Electric,Automatic,1000,,audi,30341214
+53,e-tron,2023,47480,Black,Electric,Automatic,3265,,audi,30385953
+54,e-tron,2022,47780,Black,Electric,Automatic,3755,,audi,30385952
+55,e-tron,2023,51380,Blue,Electric,Automatic,5626,,audi,30376755
+56,RS e-tron GT,2022,96780,Grey,Electric,Automatic,6798,,audi,29670113
+57,e-tron,2023,46980,Blue,Electric,Automatic,11565,,audi,30442134
+58,RS e-tron GT,2021,84480,Grey,Electric,Automatic,12652,,audi,30265449
+59,Q4 e-tron,2021,34980,Blue,Electric,Automatic,13655,,audi,30156300
+60,e-tron,2020,25490,Grey,Electric,Automatic,42384,,audi,30358560
+61,Q4 e-tron,10,43555,SUV,Automatic,Grey,10,e,audi,30418313
+62,Q4 e-tron,10,44592,SUV,Automatic,Grey,10,e,audi,30390435
+63,Q4 e-tron,10,48825,SUV,Automatic,Grey,10,e,audi,30390436
+64,Q4 e-tron,10,48992,SUV,Automatic,White,10,e,audi,30408767
+65,Q4 e-tron,10,50652,SUV,Automatic,White,10,e,audi,30405080
+66,Q4 e-tron,10,50990,SUV,Automatic,Grey,10,e,audi,30385954
+67,e-tron,10,83952,Saloon,Automatic,White,10,e,audi,30311043
+68,e-tron,10,86490,Saloon,Automatic,Grey,10,e,audi,30418314
+69,e-tron,10,87995,Saloon,Automatic,Black,10,e,audi,30383708
+70,Q4 e-tron,2023,42778,Grey,Electric,Automatic,3321,,audi,30433131
+71,e-tron,2022,41800,Silver,Electric,Automatic,9844,,audi,30109999
+72,Q4 e-tron,2021,37985,Blue,Electric,Automatic,15875,,audi,30387669
+73,RS e-tron GT,2022,99850,Green,Electric,Automatic,8049,,audi,30410717
+74,e-tron,2021,31940,Black,Electric,Automatic,17134,,audi,30402565
+75,e-tron,2021,29950,Grey,Electric,Automatic,22702,,audi,30410716
+76,Q4 e-tron,2023,51490,Black,Electric,Automatic,1652,,audi,30019369
+77,e-tron,2022,38920,Grey,Electric,Automatic,23079,,audi,29571261
+78,e-tron,2020,28420,White,Electric,Automatic,30019,,audi,30401522
+79,e-tron,2020,27977,Grey,Electric,Automatic,26791,,audi,30433174
+80,e-tron,2020,28400,Silver,Electric,Automatic,30991,,audi,30168465
+81,e-tron,2021,40000,Black,Electric,Automatic,16140,,audi,30242227
+82,e-tron,2020,27498,Grey,Electric,Automatic,27000,,audi,30438357
+83,e-tron,10,69995,SUV,Automatic,Grey,10,e,audi,29787883
+84,e-tron,10,89995,Saloon,Automatic,Grey,10,e,audi,30347433
+85,RS e-tron GT,10,115995,Saloon,Automatic,Grey,10,e,audi,29719101
+86,RS e-tron GT,10,124995,Saloon,Automatic,Black,10,e,audi,30293166
+87,Q4 e-tron,2023,48995,Silver,Electric,Automatic,3221,,audi,30169428
+88,e-tron,2022,79995,Black,Electric,Automatic,5226,,audi,30099096
+89,e-tron,2021,44995,Black,Electric,Automatic,22968,,audi,30376746
+90,Q4 e-tron,10,50375,SUV,Automatic,Grey,10,e,audi,30439629
+91,Q4 e-tron,10,54135,SUV,Automatic,Silver,10,e,audi,30442132
+92,Other,2023,85495,Grey,Electric,Automatic,3221,,audi,30120352
+93,e-tron,2021,32995,Red,Electric,Automatic,32805,,audi,30178356
+94,Q4 e-tron,2023,42995,Black,Electric,Automatic,414,,audi,29689048
+95,Q4 e-tron,2023,42995,Grey,Electric,Automatic,962,,audi,29620732
+96,Q4 e-tron,2022,39995,Grey,Electric,Automatic,1677,,audi,29170801
+97,e-tron,2023,59999,Blue,Electric,Automatic,3000,,audi,29407499
+98,Q4 e-tron,2022,39999,Grey,Electric,Automatic,5000,,audi,29872078
+99,Q4 e-tron,2023,62990,Black,Electric,Automatic,5440,,audi,29608383
+100,e-tron,2023,69995,Blue,Electric,Automatic,5923,,audi,29316536
+101,Q4 e-tron,2022,47995,Grey,Electric,Automatic,8267,,audi,28915047
+102,RS e-tron GT,2022,96990,Blue,Electric,Automatic,12444,,audi,28832330
+103,e-tron,2020,27999,Black,Electric,Automatic,24500,,audi,29464574
+104,RS e-tron GT,2022,112990,Grey,Electric,Automatic,117,,audi,29506663
+105,e-tron,2023,74990,Silver,Electric,Automatic,386,,audi,29689060
+106,Q4 e-tron,2023,47990,Grey,Electric,Automatic,1000,,audi,30151165
+107,Q4 e-tron,2023,49990,Blue,Electric,Automatic,1000,,audi,29872106
+108,Q4 e-tron,2023,50990,Blue,Electric,Automatic,1000,,audi,30151168
+109,Q4 e-tron,2023,51990,Black,Electric,Automatic,1000,,audi,30087396
+110,e-tron,2023,64990,Black,Electric,Automatic,1000,,audi,29717494
+111,e-tron,2023,73990,Black,Electric,Automatic,1000,,audi,30236632
+112,Q8,2023,79990,Grey,Electric,Automatic,1000,,audi,29689071
+113,Q4 e-tron,2022,43990,Black,Electric,Automatic,3969,,audi,29752450
+114,e-tron,2021,48990,Silver,Electric,Automatic,20842,,audi,30236634
+115,RS e-tron GT,2022,89999,Red,Electric,Automatic,5594,,audi,30373769
+116,e-tron,2021,41900,Black,Electric,Automatic,3175,,audi,27482585
+117,e-tron,2020,36900,Silver,Electric,Automatic,14800,,audi,29249993
+118,e-tron,2022,42400,Grey,Electric,Automatic,18895,,audi,29416963
+119,Q4 e-tron,2023,53950,Grey,Electric,Automatic,10,,audi,30339948
+120,Q4 e-tron,2023,44950,Black,Electric,Automatic,4695,,audi,29614753
+121,Q4 e-tron,2022,44950,Black,Electric,Automatic,7310,,audi,30151142
+122,e-tron,2022,59950,Black,Electric,Automatic,14721,,audi,28749810
+123,Q8,2023,79950,Black,Electric,Automatic,2458,,audi,29652611
+124,e-tron,2020,27100,Black,Electric,Automatic,26798,,audi,30429362
+125,Q4 e-tron,2023,53990,Black,Electric,Automatic,500,,audi,30386284
+126,Q8,2023,84990,Black,Electric,Automatic,4000,,audi,29740216
+127,Q4 e-tron,2023,48990,Black,Electric,Automatic,6000,,audi,29757886
+128,Q4 e-tron,2022,70990,Blue,Electric,Automatic,6500,,audi,29059799
+129,RS e-tron GT,2021,89900,Grey,Electric,Automatic,9841,,audi,30184408
+130,e-tron,2020,32900,Grey,Electric,Automatic,32701,,audi,30272997
+131,e-tron,2020,34900,Grey,Electric,Automatic,19492,,audi,30413481
+132,e-tron,2020,39900,Grey,Electric,Automatic,29857,,audi,30429336
+133,e-tron,2020,33990,Blue,Electric,Automatic,13075,,audi,29545179
+134,e-tron,2020,29998,Grey,Electric,Automatic,11818,,audi,30444100
+135,e-tron,2022,74599,Silver,Electric,Automatic,9164,,audi,30082722
+136,e-tron,2020,38690,Red,Electric,Automatic,37917,,audi,30355264
+137,e-tron,2020,37991,Grey,Electric,Automatic,37619,,audi,30401366
+138,e-tron,2020,37880,Blue,Electric,Automatic,26597,,audi,30281779
+139,Q4 e-tron,10,45885,SUV,Automatic,Purple,10,e,audi,30163217
+140,Q4 e-tron,10,48996,SUV,Automatic,Grey,10,e,audi,30433138
+141,Q4 e-tron,10,62000,SUV,Automatic,Black,10,e,audi,30413714
+142,RS e-tron GT,10,116997,Saloon,Automatic,Blue,10,e,audi,29868524
+143,Q4 e-tron,2023,41450,Grey,Electric,Automatic,2000,,audi,30113856
+144,e-tron,2023,69990,Black,Electric,Automatic,7245,,audi,30396672
+145,Q4 e-tron,2021,43580,Grey,Electric,Automatic,11500,,audi,30156347
+146,Q4 e-tron,2021,35618,Black,Electric,Automatic,22169,,audi,30224874
+147,Q4 e-tron,10,53680,SUV,Automatic,Grey,10,e,audi,30445861
+148,Q4 e-tron,2023,52991,Mauve/Purple,Electric,Automatic,1552,,audi,30156349
+149,Q4 e-tron,2021,46999,Silver,Electric,Automatic,9776,,audi,28702653
+150,e-tron,2019,40780,Blue,Electric,Automatic,18000,,audi,29371878
+151,e-tron,2022,68250,Black,Electric,Automatic,5532,,audi,28969581
+152,e-tron,2021,72500,Grey,Electric,Automatic,7200,,audi,29142327
+153,e-tron,2021,35500,Black,Electric,Automatic,7010,,audi,29952226
+154,e-tron,2021,48500,Silver,Electric,Automatic,16512,,audi,30192394
+155,RS e-tron GT,2022,96990,Grey,Electric,Automatic,2450,,audi,29457158
+156,e-tron,2022,73990,Red,Electric,Automatic,2733,,audi,30302961
+157,e-tron,2020,27790,Blue,Electric,Automatic,27690,,audi,30212739
+158,e-tron,2022,42202,Silver,Electric,Automatic,1639,,audi,29589443
+159,RS e-tron GT,2022,87999,Green,Electric,Automatic,6641,,audi,30373746
+160,RS e-tron GT,2021,85999,Grey,Electric,Automatic,12611,,audi,30368083
+161,e-tron,2020,35999,Black,Electric,Automatic,18107,,audi,30407909
+162,e-tron,2021,34000,Grey,Electric,Automatic,17103,,audi,30011924
+163,e-tron,2020,34900,Black,Electric,Automatic,33075,,audi,29837186
+164,e-tron,2022,35000,Silver,Electric,Automatic,34003,,audi,30441154
+165,e-tron,2021,50590,Black,Electric,Automatic,30295,,audi,30292801
+166,e-tron,2021,43990,Red,Electric,Automatic,4352,,audi,29761489
+167,e-tron,2019,40690,Blue,Electric,Automatic,15204,,audi,30126171
+168,e-tron,2020,31487,Blue,Electric,Automatic,33766,,audi,30392779
+169,e-tron,2022,69990,White,Electric,Automatic,2366,,audi,30352484
+170,e-tron,2022,69990,White,Electric,Automatic,2366,,audi,30352484
+171,e-tron,2020,28087,Black,Electric,Automatic,22338,,audi,30392780
+172,e-tron,2020,32426,Blue,Electric,Automatic,27550,,audi,30405061
+173,e-tron,2020,34947,Black,Electric,Automatic,31477,,audi,30427853
+174,RS e-tron GT,2022,94000,Black,Electric,Automatic,10500,,audi,30256487
+175,e-tron,2021,68899,Black,Electric,Automatic,11869,,audi,30383183
+176,e-tron,2022,59950,Grey,Electric,Automatic,24000,,audi,30034125
+177,e-tron,2022,69871,Grey,Electric,Automatic,9998,,audi,29408993
+178,e-tron,2021,58991,Black,Electric,Automatic,16900,,audi,29391493
+179,Q4 e-tron,2023,44490,Purple,Electric,Automatic,516,,audi,30287873

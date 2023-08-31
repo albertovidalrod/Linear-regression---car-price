@@ -1,6 +1,10 @@
 import os
 import time
 import traceback
+import sys
+
+# import chromedriver_autoinstaller
+
 
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -11,7 +15,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.select import Select
 from webdriver_manager.chrome import ChromeDriverManager
-
 
 import pandas as pd
 
@@ -141,10 +144,11 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
     # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     # driver.get(url)
 
-    service = Service()
+    service = Service(executable_path="/opt/homebrew/bin/chromedriver")
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
+    time.sleep(1)
 
     # Define the wait element to pause the script until an element is found or ready to
     # be clicked
@@ -240,7 +244,9 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
                 # find a particular car in case an error is thrown
                 current_page = driver.current_url
             except:
-                print("Finished scraping")
+                print(f"Finished scraping {postcode}")
+                driver.quit()
+                del driver
                 break
         save_data(cars_data, postcode, car_type)
 
@@ -254,40 +260,55 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
             save_data(cars_data, postcode, car_type)
 
 
-SEARCH_BRAND = "volkswagen"
-CAR_TYPE = "all"
+if __name__ == "__main__":
+    # chromedriver_autoinstaller.install()
+    # Check if the correct number of command-line arguments is provided
+    if len(sys.argv) != 4:
+        print("Incorrect number of inputs. Three inputs should be provided")
+    else:
+        SEARCH_BRAND = sys.argv[1]
+        # Extract the car type list from the second argument
+        car_type_str = sys.argv[2]
+        car_types = car_type_str.split(",")
+        # Extract the postcode list from the third argument
+        postcode_list_str = sys.argv[3]
+        postcode_all = postcode_list_str.split(",")
 
-postcode_all = [
-    "E34JN",  # East London
-    "B24QA",  # Birmingham - Audi
-    "NR13JU",  # Norwich - Audi
-    "SO140YG",  # Southampton
-    "BS11JQ",  # Bristol
-    "S14PF",  # Sheffield
-    "LS28BH",  # Leeds
-    "L34AD",  # Bristol
-    "NE77DN",  # Newcastle
-    "EH12NG",  # Edinburgh
-    "HU67RX",  # Hull
-    "EX11SG",  # Exeter
-    "CB13EW",  # Cambridge
-    "CT12EH",  # Canterbury
-    "SA11NU",  # Swansea - Audi
-    "BT12HB",  # Belfast - Audi
-]
+        # # SEARCH_BRAND = "bmw"
+        # car_types = ["all", "electric", "hybrid"]
 
-postcode_all = postcode_all[:-2]
+        # postcode_all = [
+        #     "E34JN",  # East London
+        #     "B24QA",  # Birmingham - Audi
+        #     "NR13JU",  # Norwich - Audi
+        #     "SO140YG",  # Southampton
+        #     "BS11JQ",  # Bristol
+        #     "S14PF",  # Sheffield
+        #     "LS28BH",  # Leeds
+        #     "L34AD",  # Bristol
+        #     "NE77DN",  # Newcastle
+        #     "EH12NG",  # Edinburgh
+        #     "HU67RX",  # Hull
+        #     "EX11SG",  # Exeter
+        #     "CB13EW",  # Cambridge
+        #     "CT12EH",  # Canterbury
+        #     "SA11NU",  # Swansea
+        #     "BT12HB",  # Belfast
+        # ]
 
-# Get the current month and create a folder to save the data
-current_month = datetime.now().strftime("%B")
-current_year = datetime.now().year
-DATE_FOLDER = f"{current_month} {current_year}"
+        # Get the current month and create a folder to save the data
+        current_month = datetime.now().strftime("%B")
+        current_year = datetime.now().year
+        DATE_FOLDER = f"{current_month} {current_year}"
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-data_dir = os.path.join(current_dir, "..", f"data/Scraped data/{DATE_FOLDER}")
-os.makedirs(data_dir, exist_ok=True)
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(current_dir, "..", f"data/Scraped data/{DATE_FOLDER}")
+        os.makedirs(data_dir, exist_ok=True)
 
-for postcode in postcode_all:
-    scrape_car_data(SEARCH_BRAND, postcode, CAR_TYPE)
-    if CAR_TYPE != "all":
-        break
+        # chromedriver_autoinstaller.install()
+
+        for car_type in car_types:
+            for postcode in postcode_all:
+                scrape_car_data(SEARCH_BRAND, postcode, car_type)
+                if car_type != "all":
+                    break
