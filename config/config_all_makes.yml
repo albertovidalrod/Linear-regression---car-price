@@ -1,0 +1,25 @@
+POSTCODES: {
+  6: "PL34HQ", # Plymouth
+  7: "G14NP", # Glasgow
+  8: "TS43BW", # Middlesbrough
+  9: "L18JQ", # Liverpool
+  10: "M23JL", # Manchester
+  11: "NG11HF", # Nottingham
+  12: "RG17UU", # Reading
+  13: "E34JN",  # East London
+  14: "B24QA",  # Birmingham 
+  15: "NR13JU",  # Norwich
+  16: "SO140YG",  # Southampton
+  17: "BS11JQ",  # Bristol
+  18: "S14PF",  # Sheffield
+  19: "LS28BH",  # Leeds
+  20: "L34AD",  # Bristol
+  21: "NE77DN",  # Newcastle
+  22: "EH12NG",  # Edinburgh
+  23: "HU67RX",  # Hull
+  24: "EX11SG",  # Exeter
+  25: "CB13EW",  # Cambridge
+  26: "CT12EH",  # Canterbury
+  27: "SA11NU",  # Swansea
+  28: "BT12HB",  # Belfast
+}

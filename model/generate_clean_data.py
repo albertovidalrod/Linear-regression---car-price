@@ -54,7 +54,7 @@ data_kaggle.columns = col_names
 data_kaggle.drop(columns=["tax"], inplace=True)
 
 # Defined
-data_scraped_dir = os.path.join(current_dir, "..", "data/Scraped data")
+data_scraped_dir = os.path.join(current_dir, "..", "data/App data")
 os.makedirs(data_kaggle_dir, exist_ok=True)
 previous_files = [x for x in os.listdir(data_scraped_dir) if ".parquet" in x]
 

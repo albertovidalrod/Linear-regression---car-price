@@ -1,9 +1,9 @@
 name: retrain model
 
 on:
-  push:
-    paths:
-      - 'data/Scraped data/**.csv'
+  # push: Disable until code is developed
+  #   paths:
+  #     - 'data/App data/**.csv'
   workflow_dispatch:
 
 jobs:

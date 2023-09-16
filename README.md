@@ -33,11 +33,11 @@ The model is trained using the files in the `data` folder:
     .
     ├── ...
     ├── data                    # Car data to train the model
-    │   ├── Scraped data        # Data scraped from Exchange and Mart
+    │   ├── App data        # Data scraped from Exchange and Mart
     │   ├── UK used cars        # Dataset from Kaggle used to train the model
     │   └── autos.csv           # Dataset used in a .ipynb notebook - Not used for the mode
     └── ...
-Currently, the `Scraped data` isn't present in the repository because I want to use to trigger the automatic training of the model using GitHub actions. It's currently saved locally, but it will be committed soon.
+Currently, the `App data` isn't present in the repository because I want to use to trigger the automatic training of the model using GitHub actions. It's currently saved locally, but it will be committed soon.
 
 The linear regression model is created using `train.py`, which can be found in the `model` folder. This script generates the following files:
 

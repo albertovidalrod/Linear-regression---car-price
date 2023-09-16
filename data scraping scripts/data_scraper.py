@@ -1,18 +1,22 @@
-from bs4 import BeautifulSoup
-from requests_html import HTMLSession
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.select import Select
-from webdriver_manager.chrome import ChromeDriverManager
-
-
-import pandas as pd
-
+import argparse
+import os
+import sys
 import time
 import traceback
+from datetime import datetime
+
+import pandas as pd
+import yaml
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
+
+# import chromedriver_autoinstaller
 
 
 def car_details(car, driver, wait) -> list:
@@ -104,7 +108,7 @@ def car_details(car, driver, wait) -> list:
     return (combined_list, driver)
 
 
-def save_data(cars_data: list, postcode: str) -> None:
+def save_data(cars_data: list, postcode: str, car_type: str) -> None:
     # Create a dataframe containing the cars and save it
     cars_df = pd.DataFrame(cars_data)
     # Define and change the column names of the dataframe
@@ -122,22 +126,41 @@ def save_data(cars_data: list, postcode: str) -> None:
     ]
     cars_df.columns = col_names
     # Save the dataframe to csv
-    cars_df.to_csv(f"../data/Scraped data/June 2023/{SEARCH_BRAND}_{postcode}.csv")
+    if SEARCH_BRAND == "all makes".casefold():
+        search_brand_str = "all_makes"
+    else:
+        search_brand_str = SEARCH_BRAND
+
+    if car_type == "all":
+        cars_df.to_csv(
+            f"../data/Scraped data/{DATE_FOLDER}/{search_brand_str}_{postcode}.csv"
+        )
+    else:
+        cars_df.to_csv(
+            f"../data/Scraped data/{DATE_FOLDER}/{search_brand_str}_{car_type}.csv"
+        )
 
 
-def scrape_car_data(brand: str, postcode: str) -> None:
+def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
     # Define the url from which the data will be scraped
     url = f"https://www.exchangeandmart.co.uk/used-cars-for-sale/{brand}"
 
     # Get url information
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    # driver.get(url)
+
+    service = Service()
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
+    time.sleep(1)
 
     # Define the wait element to pause the script until an element is found or ready to
     # be clicked
     wait = WebDriverWait(driver, 20)
 
-    # Dind the postcode and update button elements
+    # Find the postcode and update button elements
     postcode_element = driver.find_element(
         by=By.XPATH, value="""//*[@id="txtPostcode"]"""
     )
@@ -152,11 +175,30 @@ def scrape_car_data(brand: str, postcode: str) -> None:
     driver.execute_script("arguments[0].click();", update_button)
 
     # Find the select element to sort the results
-    select_element = wait.until(EC.element_to_be_clickable((By.ID, "ddlSortBy")))
+    select_sort_element = wait.until(EC.element_to_be_clickable((By.ID, "ddlSortBy")))
     # Create a Select object from the select element
-    select = Select(select_element)
+    select_sort = Select(select_sort_element)
     # Select the option by its distance
-    select.select_by_value("distance")
+    select_sort.select_by_value("distance")
+
+    if car_type != "all":
+        # Find the select element by its ID
+        select_fuel_element = wait.until(EC.element_to_be_clickable((By.ID, "ddFuel")))
+
+        # Create a Select object from the select element
+        select_fuel = Select(select_fuel_element)
+
+        # Select the option by its visible text
+        select_fuel.select_by_value(car_type)
+
+        update_button_car_type = driver.find_element(
+            by=By.XPATH, value="""//*[@id="searchUpdate"]"""
+        )
+
+        wait.until(
+            EC.element_to_be_clickable((By.XPATH, """//*[@id="searchUpdate"]"""))
+        )
+        driver.execute_script("arguments[0].click();", update_button_car_type)
 
     # Press the "next" button to start scraping data in page 2 out 100 of results. For
     # reason, the script doesn't work on page 1, even if the steps are the same.
@@ -208,9 +250,11 @@ def scrape_car_data(brand: str, postcode: str) -> None:
                 # find a particular car in case an error is thrown
                 current_page = driver.current_url
             except:
-                print("Finished scraping")
+                print(f"Finished scraping {postcode}")
+                driver.quit()
+                del driver
                 break
-        save_data(cars_data, postcode)
+        save_data(cars_data, postcode, car_type)
 
     # In case an Exception is thrown, print the Exception and save the data if it's at least
     # 60 % complete
@@ -219,32 +263,53 @@ def scrape_car_data(brand: str, postcode: str) -> None:
     finally:
         # Save the data in 'cars_data' to a file if it's at least 60 % complete
         if cars_data and len(cars_data) > 600:
-            save_data(cars_data, postcode)
+            save_data(cars_data, postcode, car_type)
 
 
-# define the url
-SEARCH_BRAND = "volkswagen"
+if __name__ == "__main__":
+    # chromedriver_autoinstaller.install()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-s",
+        "--search_brand",
+        type=str,
+        choices=["All makes", "audi", "bmw", "volkswagen"],
+        help="Specify the brand to be searched",
+    )
+    parser.add_argument(
+        "-c",
+        "--car_type",
+        type=str,
+        choices=["all", "hybrid", "electric"],
+        help="Specify the type of car",
+    )
+    args = parser.parse_args()
+    SEARCH_BRAND = args.search_brand
+    car_types_str = args.car_type
+    car_types = car_types_str.split(",")
 
-postcode_all = [
-    "E34JN",  # East London
-    "B24QA",  # Birmingham - Audi
-    "NR13JU",  # Norwich - Audi
-    "SO140YG",  # Southampton
-    "BS11JQ",  # Bristol
-    "S14PF",  # Sheffield
-    "LS28BH",  # Leeds
-    "L34AD",  # Bristol
-    "NE77DN",  # Newcastle
-    "EH12NG",  # Edinburgh
-    "HU67RX",  # Hull
-    "EX11SG",  # Exeter
-    "CB13EW",  # Cambridge
-    "CT12EH",  # Canterbury
-    "SA11NU",  # Swansea - Audi
-    "BT12HB",  # Belfast - Audi
-]
+    # Get the current month and create a folder to save the data
+    current_month = datetime.now().strftime("%B")
+    current_year = datetime.now().year
+    DATE_FOLDER = f"{current_month} {current_year}"
 
-# postcode_all = postcode_all[1:3] + postcode_all[-2:]
+    CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(CURRENT_DIR, "..", f"data/Scraped data/{DATE_FOLDER}")
+    os.makedirs(data_dir, exist_ok=True)
 
-for postcode in postcode_all:
-    scrape_car_data(SEARCH_BRAND, postcode)
+    if SEARCH_BRAND.casefold() == "all makes".casefold():
+        config_file_path = os.path.join(CURRENT_DIR, "../config/config_all_makes.yml")
+    else:
+        config_file_path = os.path.join(CURRENT_DIR, "config/config.yml")
+
+    # Load the configuration from the YAML file
+    with open(config_file_path, "r") as config_file:
+        search_config = yaml.safe_load(config_file)
+
+    postcode_all = [search_config["POSTCODES"][datetime.now().day]]
+
+    for car_type in car_types:
+        for postcode in postcode_all:
+            scrape_car_data(SEARCH_BRAND, postcode, car_type)
+            if car_type != "all":
+                break
