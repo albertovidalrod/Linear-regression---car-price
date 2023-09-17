@@ -1,11 +1,11 @@
-name: Scrape data - All makes
+name: Scrape data - Volkswagen
 on:
   schedule:
-      - cron: 0 9 6-28 * *
+      - cron: 0 20 13-28 * *
   workflow_dispatch:
 
 env: 
-  SEARCH_BRAND: "All makes"
+  SEARCH_BRAND: "volkswagen"
 
 jobs:
   scrape:
@@ -29,13 +29,13 @@ jobs:
       - name: Removing previous chrome instances on runner 
         run: sudo apt purge google-chrome-stable
 
+      - name: Install xvfb
+        run: sudo apt-get install xvfb
+
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements_GH_actions.txt
-
-      - name: Install xvfb
-        run: sudo apt-get install xvfb
 
       - name: Running the Python script
         run: |

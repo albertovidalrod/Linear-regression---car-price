@@ -14,9 +14,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
 
-import chromedriver_autoinstaller
-from pyvirtualdisplay import Display
-
 
 def car_details(car, driver, wait) -> list:
     car_html = str(car)
@@ -138,7 +135,9 @@ def save_data(
         cars_df.to_csv(f"{data_dir}/{search_brand_str}_{car_type}.csv")
 
 
-def scrape_car_data(brand: str, postcode: str, car_type: str, data_dir: str) -> None:
+def scrape_car_data(
+    brand: str, postcode: str, car_type: str, data_dir: str, mode: str
+) -> None:
     # Define the url from which the data will be scraped
     url = f"https://www.exchangeandmart.co.uk/used-cars-for-sale/{brand}"
 
@@ -149,8 +148,9 @@ def scrape_car_data(brand: str, postcode: str, car_type: str, data_dir: str) -> 
     service = Service()
     options = webdriver.ChromeOptions()
     # options.add_argument("--headless")
-    options.add_argument("--window-size=1200,1200")
-    # options.add_argument("--ignore-certificate-errors")
+    if mode == "github":
+        options.add_argument("--window-size=1200,1200")
+        # options.add_argument("--ignore-certificate-errors")
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
     wait = WebDriverWait(driver, 20)
@@ -273,18 +273,18 @@ def scrape_car_data(brand: str, postcode: str, car_type: str, data_dir: str) -> 
 
 
 if __name__ == "__main__":
-    # Start display
-    display = Display(visible=0, size=(800, 800))
-    display.start()
-    # Update chrome
-    chromedriver_autoinstaller.install()
     # Parse arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-s",
         "--search_brand",
         type=str,
-        choices=["All makes", "audi", "bmw", "volkswagen"],
+        choices=[
+            "All makes",
+            "audi",
+            "bmw",
+            "volkswagen",
+        ],
         help="Specify the brand to be searched",
     )
     parser.add_argument(
@@ -294,10 +294,28 @@ if __name__ == "__main__":
         choices=["all", "hybrid", "electric"],
         help="Specify the type of car",
     )
+    parser.add_argument(
+        "-m",
+        "--mode",
+        type=str,
+        choices=["local", "github"],
+        help="Specify where the script will be run",
+    )
     args = parser.parse_args()
     SEARCH_BRAND = args.search_brand
     car_types_str = args.car_type
     car_types = car_types_str.split(",")
+    mode = args.mode
+
+    if mode == "github":
+        import chromedriver_autoinstaller
+        from pyvirtualdisplay import Display
+
+        # Start display
+        display = Display(visible=0, size=(800, 800))
+        display.start()
+        # Update chrome
+        chromedriver_autoinstaller.install()
 
     # Get the current month and create a folder to save the data
     DATE_FOLDER = datetime.now().strftime("%B %Y")
@@ -319,6 +337,6 @@ if __name__ == "__main__":
     for car_type in car_types:
         print(car_type)
         for postcode in postcode_all:
-            scrape_car_data(SEARCH_BRAND, postcode, car_type, DATA_DIR)
+            scrape_car_data(SEARCH_BRAND, postcode, car_type, DATA_DIR, mode)
             if car_type != "all":
                 break
