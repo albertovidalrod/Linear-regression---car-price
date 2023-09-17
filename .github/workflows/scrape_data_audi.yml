@@ -1,11 +1,11 @@
-name: Scrape data - Audi
+name: Scrape data - Audi,BMW,VW
 on:
   # schedule:
   #     - cron: 0 14 13-28 * *
   workflow_dispatch:
 
 env: 
-  SEARCH_BRAND: "audi"
+  SEARCH_BRAND: "audi,bmw,volkswagen"
 
 jobs:
   scrape:
@@ -37,7 +37,6 @@ jobs:
       - name: Running the Python script
         run: |
           python data\ scraping\ scripts/data_scraper.py -s "${{ env.SEARCH_BRAND }}" -c all
-          python house_scraper_headless.py -g NoGarden -s "${{ env.SEARCH_BRAND }}"
         
       - name: Commit and Push The Results From Python Selenium Action
         run: |
