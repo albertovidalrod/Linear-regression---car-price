@@ -1,0 +1,48 @@
+name: Scrape data - All makes
+on:
+  # schedule:
+  #     - cron: 0 14 13-28 * *
+  workflow_dispatch:
+
+env: 
+  SEARCH_BRAND: "audi"
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current date
+        id: get_date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        
+      - name: Checking out repo
+        uses: actions/checkout@v3
+        
+      - name: Setting up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Installing package list
+        run: apt list --installed    
+        
+      - name: Removing previous chrome instances on runner 
+        run: sudo apt purge google-chrome-stable
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements_GH_actions.txt
+
+      - name: Running the Python script
+        run: |
+          python data\ scraping\ scripts/data_scraper.py -s "${{ env.SEARCH_BRAND }}" -c all
+          python house_scraper_headless.py -g NoGarden -s "${{ env.SEARCH_BRAND }}"
+        
+      - name: Commit and Push The Results From Python Selenium Action
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Data update ${{ steps.get_date.outputs.date}} - ${{ env.SEARCH_BRAND }}"
+          git push

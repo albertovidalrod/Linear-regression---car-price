@@ -9,12 +9,12 @@ import pandas as pd
 import yaml
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
 
 # import chromedriver_autoinstaller
 
@@ -108,7 +108,9 @@ def car_details(car, driver, wait) -> list:
     return (combined_list, driver)
 
 
-def save_data(cars_data: list, postcode: str, car_type: str) -> None:
+def save_data(
+    brand: str, cars_data: list, postcode: str, car_type: str, data_dir: str
+) -> None:
     # Create a dataframe containing the cars and save it
     cars_df = pd.DataFrame(cars_data)
     # Define and change the column names of the dataframe
@@ -126,22 +128,18 @@ def save_data(cars_data: list, postcode: str, car_type: str) -> None:
     ]
     cars_df.columns = col_names
     # Save the dataframe to csv
-    if SEARCH_BRAND == "all makes".casefold():
+    if brand.casefold() == "all makes".casefold():
         search_brand_str = "all_makes"
     else:
-        search_brand_str = SEARCH_BRAND
+        search_brand_str = brand
 
     if car_type == "all":
-        cars_df.to_csv(
-            f"../data/Scraped data/{DATE_FOLDER}/{search_brand_str}_{postcode}.csv"
-        )
+        cars_df.to_csv(f"{data_dir}/{search_brand_str}_{postcode}.csv")
     else:
-        cars_df.to_csv(
-            f"../data/Scraped data/{DATE_FOLDER}/{search_brand_str}_{car_type}.csv"
-        )
+        cars_df.to_csv(f"{data_dir}/{search_brand_str}_{car_type}.csv")
 
 
-def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
+def scrape_car_data(brand: str, postcode: str, car_type: str, data_dir: str) -> None:
     # Define the url from which the data will be scraped
     url = f"https://www.exchangeandmart.co.uk/used-cars-for-sale/{brand}"
 
@@ -151,14 +149,21 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
 
     service = Service()
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
+    wait = WebDriverWait(driver, 20)
     time.sleep(1)
+
+    # cookies_element = driver.find_element(
+    #     by=By.CSS_SELECTOR, value="""button[title="I Accept"]"""
+    # )
+
+    # wait.until(EC.element_to_be_clickable((By.XPATH, """button[title="I Accept"]""")))
+    # driver.execute_script("arguments[0].click();", cookies_element)
 
     # Define the wait element to pause the script until an element is found or ready to
     # be clicked
-    wait = WebDriverWait(driver, 20)
 
     # Find the postcode and update button elements
     postcode_element = driver.find_element(
@@ -254,16 +259,16 @@ def scrape_car_data(brand: str, postcode: str, car_type: str) -> None:
                 driver.quit()
                 del driver
                 break
-        save_data(cars_data, postcode, car_type)
+        save_data(brand, cars_data, postcode, car_type, data_dir)
 
     # In case an Exception is thrown, print the Exception and save the data if it's at least
     # 60 % complete
     except Exception as e:
         traceback.print_exc()  # Print the traceback information
-    finally:
-        # Save the data in 'cars_data' to a file if it's at least 60 % complete
-        if cars_data and len(cars_data) > 600:
-            save_data(cars_data, postcode, car_type)
+    # finally:
+    #     # Save the data in 'cars_data' to a file if it's at least 60 % complete
+    #     if cars_data and len(cars_data) > 600:
+    #         save_data(brand, cars_data, postcode, car_type, data_dir)
 
 
 if __name__ == "__main__":
@@ -289,18 +294,15 @@ if __name__ == "__main__":
     car_types = car_types_str.split(",")
 
     # Get the current month and create a folder to save the data
-    current_month = datetime.now().strftime("%B")
-    current_year = datetime.now().year
-    DATE_FOLDER = f"{current_month} {current_year}"
-
+    DATE_FOLDER = datetime.now().strftime("%B %Y")
     CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(CURRENT_DIR, "..", f"data/Scraped data/{DATE_FOLDER}")
-    os.makedirs(data_dir, exist_ok=True)
+    DATA_DIR = os.path.join(CURRENT_DIR, "..", f"data/Scraped data/{DATE_FOLDER}")
+    os.makedirs(DATA_DIR, exist_ok=True)
 
     if SEARCH_BRAND.casefold() == "all makes".casefold():
         config_file_path = os.path.join(CURRENT_DIR, "../config/config_all_makes.yml")
     else:
-        config_file_path = os.path.join(CURRENT_DIR, "config/config.yml")
+        config_file_path = os.path.join(CURRENT_DIR, "../config/config.yml")
 
     # Load the configuration from the YAML file
     with open(config_file_path, "r") as config_file:
@@ -309,7 +311,8 @@ if __name__ == "__main__":
     postcode_all = [search_config["POSTCODES"][datetime.now().day]]
 
     for car_type in car_types:
+        print(car_type)
         for postcode in postcode_all:
-            scrape_car_data(SEARCH_BRAND, postcode, car_type)
+            scrape_car_data(SEARCH_BRAND, postcode, car_type, DATA_DIR)
             if car_type != "all":
                 break
