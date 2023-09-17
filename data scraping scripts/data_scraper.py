@@ -8,7 +8,6 @@ import pandas as pd
 import yaml
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -148,7 +147,7 @@ def scrape_car_data(brand: str, postcode: str, car_type: str, data_dir: str) -> 
 
     service = Service()
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
     wait = WebDriverWait(driver, 20)
