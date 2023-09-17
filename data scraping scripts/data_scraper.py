@@ -14,7 +14,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
 
-# import chromedriver_autoinstaller
+import chromedriver_autoinstaller
+from pyvirtualdisplay import Display
 
 
 def car_details(car, driver, wait) -> list:
@@ -147,7 +148,9 @@ def scrape_car_data(brand: str, postcode: str, car_type: str, data_dir: str) -> 
 
     service = Service()
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
+    options.add_argument("--window-size=1200,1200")
+    # options.add_argument("--ignore-certificate-errors")
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
     wait = WebDriverWait(driver, 20)
@@ -270,7 +273,12 @@ def scrape_car_data(brand: str, postcode: str, car_type: str, data_dir: str) -> 
 
 
 if __name__ == "__main__":
-    # chromedriver_autoinstaller.install()
+    # Start display
+    display = Display(visible=0, size=(800, 800))
+    display.start()
+    # Update chrome
+    chromedriver_autoinstaller.install()
+    # Parse arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-s",
