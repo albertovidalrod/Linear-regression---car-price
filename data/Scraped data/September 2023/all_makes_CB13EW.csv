@@ -1,0 +1,4 @@
+,model,year,price,transmission,mileage,fuelType,mpg,engineSize,brand,carId
+0,Tucson,2020,19899,Manual,23911,Diesel,48.7,1.6,hyundai,30225487
+1,Jazz,2021,23990,Automatic,8459,Hybrid,58.9,1.5,honda,30467256
+2,Jazz,2021,20990,Automatic,9536,Hybrid,62.8,1.5,honda,30349285
