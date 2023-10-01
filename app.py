@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 
-from utils import PredictCarPrice
+from src.utils import PredictCarPrice
 
 
 # Find all the data files

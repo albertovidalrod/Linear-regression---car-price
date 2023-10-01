@@ -1,7 +1,7 @@
 name: Scrape data - All makes
 on:
   schedule:
-      - cron: 0 9 6-28 * *
+      - cron: 0 9 4-28 * *
   workflow_dispatch:
 
 env: 

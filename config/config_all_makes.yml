@@ -1,4 +1,6 @@
 POSTCODES: {
+  4: "PE11XS", # Peterborough
+  5: "OX13DZ", # Oxford
   6: "PL34HQ", # Plymouth
   7: "G14NP", # Glasgow
   8: "TS43BW", # Middlesbrough
