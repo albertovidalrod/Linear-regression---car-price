@@ -1,7 +1,7 @@
 name: Scrape data - Volkswagen
 on:
-  schedule:
-      - cron: 0 20 13-28 * *
+  # schedule:
+  #     - cron: 0 20 13-28 * *
   workflow_dispatch:
 
 env: 
