@@ -1,7 +1,7 @@
 name: Scrape data - BMW
 on:
-  schedule:
-      - cron: 0 17 13-28 * *
+  # schedule:
+  #     - cron: 0 17 13-28 * *
   workflow_dispatch:
 
 env: 
