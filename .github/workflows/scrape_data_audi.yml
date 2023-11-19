@@ -1,7 +1,7 @@
 name: Scrape data - Audi
 on:
-  schedule:
-      - cron: 0 14 13-28 * *
+  # schedule:
+  #     - cron: 0 14 13-28 * *
   workflow_dispatch:
 
 env: 
